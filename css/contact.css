@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+body {
+	 background: #0C3439;
+     background-size: cover;	
+}
+h2{
+	text-align: center;
+	font-size: 8vw;
+}
+.wrapper{
+	position: absolute;
+	padding-top: 50%;
+	transform: translate(-50%);
+	width: 100%;
+    padding: 0 20px;	
+}
+
+.contact-form{
+	max-width: 500px;
+	margin:0 auto;
+	background: rgba(0,0,0,0.15);
+	padding: 30px;
+	border-radius: 5px;
+	display: flex;
+	box-shadow: 0 0 10px;
+}
+
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;	
+}
+
+.input-fields .input,
+.msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #c5ecfd;
+	padding: 10px;
+	color: #c5ecfd;
+	width: 100%;
+}
+
+.msg textarea{
+	height: 186px;
+	margin-left: 10px;
+}
+
+.btn{
+	background: rgba(8,116,134,0.80);
+	text-align: center;
+	border-radius: 5px;
+	padding: 15px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+.btn:hover{
+	opacity: 5;
+}
