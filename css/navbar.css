@@ -1,0 +1,17 @@
+#navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+    line-height: 50px;
+}
+#navbar a:hover{
+    background-color: brown;
+}
+#navbar{
+    background-color: gray;
+    height: 50px;
+    padding-left: 10px;
+}
+.active-nav{
+    background-color: black;
+}

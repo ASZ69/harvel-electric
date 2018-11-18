@@ -1,0 +1,74 @@
+.line::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="box-"] {
+    box-sizing: border-box;
+}
+
+/* for our desktop */
+.box-1 {
+    width: 7.14%;
+}
+
+.box-2 {
+    width: 14.28%;
+}
+
+.box-3 {
+    width: 21.42%;
+}
+
+.box-4 {
+    width: 28.56%;
+}
+
+.box-5 {
+    width: 35.71%;
+}
+
+.box-6 {
+    width: 42.85%;
+}
+
+.box-7 {
+    width: 49.99%;
+}
+
+.box-8 {
+    width: 57.13%;
+}
+
+.box-9 {
+    width: 64.27%;
+}
+
+.box-10 {
+    width: 71.42%;
+}
+
+.box-11 {
+    width: 78.56%;
+}
+
+.box-12 {
+    width: 85.70%;
+}
+
+.box-13 {
+    width: 92.84%;
+}
+
+.box-14 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* for our mobile phone */
+    [class*="box-"] {
+        width: 100%;
+    }
+}
