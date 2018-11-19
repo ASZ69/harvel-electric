@@ -8,10 +8,10 @@
     background-color: brown;
 }
 #navbar{
-    background-color: gray;
+    background-color: #002125;
     height: 50px;
     padding-left: 10px;
 }
 .active-nav{
-    background-color: black;
+    background-color: rgba(29,0,219,0.88);
 }
