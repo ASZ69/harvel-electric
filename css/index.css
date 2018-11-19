@@ -1,0 +1,29 @@
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.top-div{
+/*	color 1*/
+/*	background-color: #a5a2a2;*/
+	
+/*	color 2*/
+	background-color: #6d6a6a;
+}
+
+.heading {
+	position: absolute;
+	font-size: 5vw;
+	color: rgba(197,237,253,0.93);
+	top: 8vw;
+	left: 30%;
+}
+
+.sub-text {
+	position: absolute;
+	font-size: 2vw;
+	color: rgba(197,237,253,0.93);
+	top: 15vw;
+	left: 35%;
+}

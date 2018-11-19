@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Contact Us</title>
+	<title>Contact Us</title>
 	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/contact.css">
 </head>
+
 <body>
-	
+
 	<div id="navbar">
-        <a href="../index.html">Home</a>
-        <a href="products.html">All Products</a>
-        <a href="products.html#ac">Air Conditioner</a>
-        <a href="products.html#tv">TV</a>
-        <a href="products.html#laptop">Laptop</a>
-        <a class="active-nav" href="contact.html">Contact Us</a>
-        <a href="#about">About</a>
+		<a href="../index.html">Home</a>
+		<a href="products.html">All Products</a>
+		<a href="products.html#ac">Air Conditioner</a>
+		<a href="products.html#tv">TV</a>
+		<a href="products.html#laptop">Laptop</a>
+		<a class="active-nav" href="contact.html">Contact Us</a>
+		<a href="#about">About</a>
 	</div>
-	
+
 	<h2>Contact Us</h2>
-	
-  <div class="wrapper">
-    <form class="contact-form" action="javascript:sendMail()">
-      <div class="input-fields">
-		  <input id="name" type="text" class="input" placeholder="Name" required>
-		  <input id="email" type="email" class="input" placeholder="Email Address" required>
-		  <input id="num" type="tel" class="input" placeholder="Phone" required>
-		  <input id="sub" type="text" class="input" placeholder="Subject" required>
-      </div>
-	   <div class="msg">
-		   <textarea id="msg" placeholder="Message" required></textarea>
-		   <center><input type="submit" class="btn" value="Send"></center>
-	   </div>
-	</form>
-  
-  </div>
+
+	<div class="wrapper">
+		<form class="contact-form" action="javascript:sendMail()">
+			<div class="input-fields">
+				<input id="name" type="text" class="input" placeholder="Name" required>
+				<input id="email" type="email" class="input" placeholder="Email Address" required>
+				<input id="num" type="tel" class="input" placeholder="Phone" required>
+				<input id="sub" type="text" class="input" placeholder="Subject" required>
+			</div>
+			<div class="msg">
+				<textarea id="msg" placeholder="Message" required></textarea>
+				<center><input type="submit" class="btn" value="Send"></center>
+			</div>
+		</form>
+
+	</div>
 	<script>
-		function sendMail(){
+		function sendMail() {
 			var name = document.getElementById("name").value;
 			var email = document.getElementById("email").value;
 			var num = document.getElementById("num").value;
 			var sub = document.getElementById("sub").value;
 			var msg = document.getElementById("msg").value;
-			window.location.href = "mailto:"+email+"?subject="+sub+"&body=I'm "+name+" "+msg;
+			window.location.href = "mailto:" + email + "?subject=" + sub + "&body=I'm " + name + " " + msg;
 		}
 	</script>
 </body>
+
 </html>
