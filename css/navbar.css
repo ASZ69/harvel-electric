@@ -11,10 +11,23 @@
 
 #navbar {
     background-color: #002125;
-    height: 50px;
+    height: auto;
     padding-left: 10px;
 }
 
 .active-nav {
     background-color: rgba(29, 0, 219, 0.88);
+}
+
+@media only screen and (max-width : 700px){
+	#navbar a {
+		display: block;
+		height: 5px;
+/*		background-color: green;*/
+		text-align: center;
+		line-height: 5px;
+	}
+	#navbar {
+    padding-left: 0px;
+}
 }
