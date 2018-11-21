@@ -40,46 +40,64 @@
 	
 	<div class="mid-block">
 <!--		main block-->
+		<center>
 		<div class="slider">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
-			<img src="" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-1.jpg" class="slider-img" style="display: block" alt="Image">
+			<img src="images/index/slider/sl-2.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-3.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-4.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-5.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-6.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-7.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-8.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-9.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-10.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-11.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-12.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-13.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-14.jpg" class="slider-img" alt="Image">
+			<img src="images/index/slider/sl-16.jpg" class="slider-img" alt="Image">
 			<center><div class="slider-dot-div">
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
-				<span class="slider-dot"></span>
+				<span class="slider-dot  s-dot-active" onClick="slideImages('0')"></span>
+				<span class="slider-dot" onClick="slideImages('1')"></span>
+				<span class="slider-dot" onClick="slideImages('2')"></span>
+				<span class="slider-dot" onClick="slideImages('3')"></span>
+				<span class="slider-dot" onClick="slideImages('4')"></span>
+				<span class="slider-dot" onClick="slideImages('5')"></span>
+				<span class="slider-dot" onClick="slideImages('6')"></span>
+				<span class="slider-dot" onClick="slideImages('7')"></span>
+				<span class="slider-dot" onClick="slideImages('8')"></span>
+				<span class="slider-dot" onClick="slideImages('9')"></span>
+				<span class="slider-dot" onClick="slideImages('10')"></span>
+				<span class="slider-dot" onClick="slideImages('11')"></span>
+				<span class="slider-dot" onClick="slideImages('12')"></span>
+				<span class="slider-dot" onClick="slideImages('13')"></span>
+				<span class="slider-dot" onClick="slideImages('14')"></span>
 			</div>
 			</center>
 		</div>
+			</center>
 	</div>
 	
 	<div class="right-block">
 		
 	</div>
+	
+	<script>
+//		slider
+		function slideImages(imgNo){
+			var sImages = document.getElementsByClassName("slider-img");
+			var sDot = document.getElementsByClassName("slider-dot");
+			for(var i = 0; i < sImages.length; i++){
+				sImages[i].style.display = "none";
+				sDot[i].className = "slider-dot";
+			}
+			sImages[imgNo].style.display = "block";
+			sDot[imgNo].className += " s-dot-active";
+			setTimeout(slideImages("1"),1500);
+		}
+		
+	</script>
 	
 </body>
 

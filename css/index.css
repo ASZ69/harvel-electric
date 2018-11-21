@@ -76,24 +76,32 @@ body {
 
 /*slider css*/
 .slider{
-	width: 100%;
+	width: 80%;
 	height: auto;
 }
 
 .slider-dot-div{
 	height: auto;
-	background-color: green;
+/*	background-color: green;*/
+	padding-top: 6px;
 }
 
 .slider-dot{
 	border-radius: 50%;
-	background : yellow;
-	width: 1.3vw;
-	height: 1.3vw;
-	margin: 1px;
+	background : whitesmoke;
+	width: 1vw;
+	height: 1vw;
+	margin: 2px 3px;
+	cursor: pointer;
 	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.s-dot-active{
+	background: gray;
 }
 
 .slider-img{
 	display: none;
+	width: 100%;
 }
