@@ -14,6 +14,9 @@
 </head>
 
 <body>
+	
+<!--	top image and heading strat-->
+
 	<div class="top-div">
     <center>
         <div style="width: 100%; height: auto;">
@@ -23,6 +26,10 @@
         </div>
     </center>
 	</div>
+	
+<!--	top image and heading end-->
+	
+<!--	navbar start-->
 
     <div id="navbar">
         <a class="active-nav" href="index.html">Home</a>
@@ -33,7 +40,13 @@
         <a href="html/contact.html">Contact Us</a>
         <a href="#about">About</a>
     </div>
-<!--	Categories-->
+	
+	<div id="navbar-space"></div>
+	
+<!--	navbar end-->
+	
+<!--	Categories start-->
+	
 	<div class="left-block">
 		<h3>Categories</h3>
 		    <ul>
@@ -48,6 +61,8 @@
 			</ul>
 		
 	</div>
+	
+<!--	categories end-->
 	
 	<div class="mid-block">
 <!--		main block-->
@@ -69,7 +84,7 @@
 			<img src="images/index/slider/sl-14.jpg" class="slider-img" alt="Image">
 			<img src="images/index/slider/sl-16.jpg" class="slider-img" alt="Image">
 			<center><div class="slider-dot-div">
-				<span class="slider-dot  s-dot-active" onClick="slideImages('0')"></span>
+				<span class="slider-dot" onClick="slideImages('0')"></span>
 				<span class="slider-dot" onClick="slideImages('1')"></span>
 				<span class="slider-dot" onClick="slideImages('2')"></span>
 				<span class="slider-dot" onClick="slideImages('3')"></span>
@@ -91,7 +106,10 @@
 	</div>
 	
 	<div class="right-block">
-		<h3>Popular Categories</h3>
+		
+<!--		categories start-->
+		
+		<h3>Popular Items</h3>
 		 <ul>
 			<li>AC`s</li>
 			<li>Smart LED</li>
@@ -102,20 +120,71 @@
 			<li>Washing Machines</li>
 			
 			</ul>
+		
+<!--		categories end-->
+		
 	</div>
 	
 	<script>
 //		slider
+		
+		var num = 0;
+		
 		function slideImages(imgNo){
+			
 			var sImages = document.getElementsByClassName("slider-img");
 			var sDot = document.getElementsByClassName("slider-dot");
+			
+			num = imgNo;
 			for(var i = 0; i < sImages.length; i++){
 				sImages[i].style.display = "none";
 				sDot[i].className = "slider-dot";
 			}
-			sImages[imgNo].style.display = "block";
-			sDot[imgNo].className += " s-dot-active";
-			setTimeout(slideImages("1"),1500);
+			
+			sImages[num].style.display = "block";
+			sDot[num].className += " s-dot-active";
+		}
+		
+		autoSlideImages();
+		function autoSlideImages(){
+			var sImages = document.getElementsByClassName("slider-img");
+			var sDot = document.getElementsByClassName("slider-dot");
+			
+			if(num == 15) {
+				num = 0;
+			}
+			
+			for(var i = 0; i < sImages.length; i++){
+				sImages[i].style.display = "none";
+				sDot[i].className = "slider-dot";
+			}
+			
+			sImages[num].style.display = "block";
+			sDot[num].className += " s-dot-active";
+			
+			num++;
+			
+//			repeat function after some time make slider auto
+			setTimeout(autoSlideImages, 4000);
+		}
+		
+//		navbar
+		
+		window.onscroll = function(){
+			stickNavbar();
+		}
+		
+		var navbar = document.getElementById("navbar");
+		var navbarPosition = navbar.offsetTop;
+		
+		function stickNavbar(){
+			if(window.pageYOffset >= navbarPosition){
+			   navbar.classList.add("sticky");
+				$('#navbar-space').css("display" , "block");
+			   }else{
+				   navbar.classList.remove("sticky");
+				   $('#navbar-space').css("display" , "none");
+			   }
 		}
 		
 	</script>

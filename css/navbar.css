@@ -15,6 +15,17 @@
     padding-left: 10px;
 }
 
+#navbar-space{
+	height: 50px;
+	display: none;
+}
+
+.sticky{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
 .active-nav {
     background-color: rgba(29, 0, 219, 0.88);
 }
@@ -27,7 +38,8 @@
 		text-align: center;
 		line-height: 5px;
 	}
+	
 	#navbar {
-    padding-left: 0px;
-}
+    	padding-left: 0px;
+	}
 }
