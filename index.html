@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/box.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<title>Harvel Electric</title>
@@ -69,7 +70,7 @@
 		<!--		main block-->
 		<center>
 			<div class="slider">
-				<img src="images/index/slider/sl-1.jpg" class="slider-img" style="display: block" alt="Image">
+				<img src="images/index/slider/sl-1.jpg" class="slider-img" alt="Image">
 				<img src="images/index/slider/sl-2.jpg" class="slider-img" alt="Image">
 				<img src="images/index/slider/sl-3.jpg" class="slider-img" alt="Image">
 				<img src="images/index/slider/sl-4.jpg" class="slider-img" alt="Image">
@@ -84,32 +85,35 @@
 				<img src="images/index/slider/sl-13.jpg" class="slider-img" alt="Image">
 				<img src="images/index/slider/sl-14.jpg" class="slider-img" alt="Image">
 				<img src="images/index/slider/sl-16.jpg" class="slider-img" alt="Image">
-				<center>
-					<div class="slider-dot-div">
-						<span class="slider-dot" onClick="slideImages('0')"></span>
-						<span class="slider-dot" onClick="slideImages('1')"></span>
-						<span class="slider-dot" onClick="slideImages('2')"></span>
-						<span class="slider-dot" onClick="slideImages('3')"></span>
-						<span class="slider-dot" onClick="slideImages('4')"></span>
-						<span class="slider-dot" onClick="slideImages('5')"></span>
-						<span class="slider-dot" onClick="slideImages('6')"></span>
-						<span class="slider-dot" onClick="slideImages('7')"></span>
-						<span class="slider-dot" onClick="slideImages('8')"></span>
-						<span class="slider-dot" onClick="slideImages('9')"></span>
-						<span class="slider-dot" onClick="slideImages('10')"></span>
-						<span class="slider-dot" onClick="slideImages('11')"></span>
-						<span class="slider-dot" onClick="slideImages('12')"></span>
-						<span class="slider-dot" onClick="slideImages('13')"></span>
-						<span class="slider-dot" onClick="slideImages('14')"></span>
-					</div>
-				</center>
+
+				<a id="slider-btn-next"><span onClick="slideNext()" class="slider-span">&#10095;</span></a>
+
+				<a id="slider-btn-pre"><span onClick="slidePre()" class="slider-span">&#10094;</span></a>
+
+				<div class="slider-dot-div">
+					<span class="slider-dot" onClick="slideImages('0')"></span>
+					<span class="slider-dot" onClick="slideImages('1')"></span>
+					<span class="slider-dot" onClick="slideImages('2')"></span>
+					<span class="slider-dot" onClick="slideImages('3')"></span>
+					<span class="slider-dot" onClick="slideImages('4')"></span>
+					<span class="slider-dot" onClick="slideImages('5')"></span>
+					<span class="slider-dot" onClick="slideImages('6')"></span>
+					<span class="slider-dot" onClick="slideImages('7')"></span>
+					<span class="slider-dot" onClick="slideImages('8')"></span>
+					<span class="slider-dot" onClick="slideImages('9')"></span>
+					<span class="slider-dot" onClick="slideImages('10')"></span>
+					<span class="slider-dot" onClick="slideImages('11')"></span>
+					<span class="slider-dot" onClick="slideImages('12')"></span>
+					<span class="slider-dot" onClick="slideImages('13')"></span>
+					<span class="slider-dot" onClick="slideImages('14')"></span>
+				</div>
 			</div>
 		</center>
 	</div>
 
 	<div class="right-block">
 
-		<!--		categories start-->
+		<!--categories start-->
 
 		<h3>Popular Items</h3>
 		<ul>
@@ -120,17 +124,45 @@
 			<li>Pak Fans</li>
 			<li>Microwave</li>
 			<li>Washing Machines</li>
-
 		</ul>
 
-		<!--		categories end-->
+		<!--categories end-->
 
 	</div>
 
 	<script>
-		//		slider
+		//slider
 
 		var num = 0;
+		var sliderLength = 15;
+
+		function slideNext() {
+			if (sliderLength == num) {
+				num = 1;
+				slideImages(num);
+			} else {
+				slideImages(num);
+				num++;
+			}
+		}
+
+		function slidePre() {
+			//check if num is on 1 or 0
+			if (num == 1 || num == 0) {
+				num = 14;
+			} else {
+				//decrease 2 because num was previsously incremented by autoSlideImages
+				num = num - 2;
+			}
+
+			slideImages(num);
+
+			if (sliderLength == num) {
+				num = 1;
+			} else {
+				num++;
+			}
+		}
 
 		function slideImages(imgNo) {
 
@@ -153,7 +185,7 @@
 			var sImages = document.getElementsByClassName("slider-img");
 			var sDot = document.getElementsByClassName("slider-dot");
 
-			if (num == 15) {
+			if (num == sliderLength) {
 				num = 0;
 			}
 
@@ -171,7 +203,7 @@
 			setTimeout(autoSlideImages, 4000);
 		}
 
-		//		navbar
+		//		stick the navbar when scrolled
 
 		window.onscroll = function () {
 			stickNavbar();

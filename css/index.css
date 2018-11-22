@@ -12,6 +12,7 @@ body {
 	/*	background-color: #6d6a6a;*/
 }
 
+
 .heading {
 	position: absolute;
 	font-size: 5vw;
@@ -84,6 +85,7 @@ body {
 .slider {
 	width: 80%;
 	height: auto;
+	position: relative;
 }
 
 .slider-dot-div {
@@ -114,7 +116,43 @@ body {
 .slider-img {
 	display: none;
 	width: 100%;
+	height: auto;
 }
+
+#slider-btn-next,
+#slider-btn-pre {
+	height: 100%;
+	width: 10%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.slider-span {
+	position: relative;
+	top: 40%;
+	display: block;
+	padding: 10px 0px;
+}
+
+.slider-span:hover {
+	cursor: pointer;
+}
+
+#slider-btn-next {
+	right: 0;
+}
+
+#slider-btn-pre {
+	left: 0;
+}
+
+#slider-btn-next:hover .slider-span,
+#slider-btn-pre:hover .slider-span {
+	background-color: red;
+	opacity: 0.7;
+}
+
 
 /*extra typing animation*/
 .typeit {
