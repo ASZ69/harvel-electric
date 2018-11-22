@@ -4,21 +4,21 @@ body {
 	padding: 0;
 }
 
-.top-div{
-/*	color 1*/
+.top-div {
+	/*	color 1*/
 	background-color: #a5a2a2;
-	
-/*	color 2*/
-/*	background-color: #6d6a6a;*/
+
+	/*	color 2*/
+	/*	background-color: #6d6a6a;*/
 }
 
 .heading {
 	position: absolute;
 	font-size: 5vw;
-/*	color: rgba(197,237,253,0.93);*/
-/*	color: rgba(66,74,221,0.91);*/
-	
-/*
+	/*	color: rgba(197,237,253,0.93);*/
+	/*	color: rgba(66,74,221,0.91);*/
+
+	/*
 	color: #00FFCB;
 	text-shadow:
     -1px -1px 0 red,
@@ -26,10 +26,10 @@ body {
     -1px 1px 0 red,
     5px 5px 0 red;
 */
-	
+
 	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 	color: #000000;
-	
+
 	top: 8vw;
 	left: 30%;
 }
@@ -37,100 +37,122 @@ body {
 .sub-text {
 	position: absolute;
 	font-size: 2vw;
-/*	color: rgba(197,237,253,0.93);*/
-/*	color: #00FFCB;*/
-	
+	/*	color: rgba(197,237,253,0.93);*/
+	/*	color: #00FFCB;*/
+
 	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 	color: #000000;
-	
+
 	top: 16vw;
 	left: 35%;
 }
 
-.left-block, .mid-block, .right-block{
+.left-block,
+.mid-block,
+.right-block {
 	float: left;
 	height: 1024px;
 	margin-top: 10px;
 }
 
-.left-block, .right-block{
+.left-block,
+.right-block {
 	width: 20%;
 	background-color: red;
 }
 
-.mid-block{
+.mid-block {
 	width: 60%;
 	background-color: blue;
 }
 
 @media only screen and (max-width: 800px) {
-  .right-block {
-	  display: none;
+	.right-block {
+		display: none;
 	}
+
 	.left-block {
-	  width: 25%;
+		width: 25%;
 	}
+
 	.mid-block {
-	  width: 75%;
+		width: 75%;
 	}
 }
 
 /*slider css*/
-.slider{
+.slider {
 	width: 80%;
 	height: auto;
 }
 
-.slider-dot-div{
+.slider-dot-div {
 	height: auto;
-/*	background-color: green;*/
+	/*	background-color: green;*/
 	padding-top: 6px;
 }
 
-.slider-dot{
+.slider-dot {
 	border-radius: 50%;
-	background : #bbb;
+	background: #bbb;
 	width: 1vw;
 	height: 1vw;
-	margin: 2px 3px;	
+	margin: 2px 3px;
 	cursor: pointer;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 
-.slider-dot:hover{
+.slider-dot:hover {
 	opacity: 0.5;
 }
 
-.s-dot-active{
+.s-dot-active {
 	background: #717171;
 }
 
-.slider-img{
+.slider-img {
 	display: none;
 	width: 100%;
 }
 
 /*extra typing animation*/
 .typeit {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 8s steps(40, end),
-    blink-caret .75s step-end infinite;
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange;
+	/* The typwriter cursor */
+	white-space: nowrap;
+	/* Keeps the content on a single line */
+	margin: 0 auto;
+	/* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em;
+	/* Adjust as needed */
+	animation:
+		typing 8s steps(40, end),
+		blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+	from {
+		width: 0
+	}
+
+	to {
+		width: 100%
+	}
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+
+	from,
+	to {
+		border-color: transparent
+	}
+
+	50% {
+		border-color: orange;
+	}
 }
