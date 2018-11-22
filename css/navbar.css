@@ -22,6 +22,7 @@
 
 .sticky {
 	position: fixed;
+    z-index: 69;
 	top: 0px;
 	width: 100%;
 }
