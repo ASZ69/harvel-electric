@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
+<<<<<<< HEAD
 <file name="sl-1.jpg" server="C:/wamp64/www/Harvel-Electric" local="131872807607358759" remote="131872807600000000" Dst="0" />
 <file name="sl-2.jpg" server="C:/wamp64/www/Harvel-Electric" local="131872807608421554" remote="131872807600000000" Dst="0" />
 <file name="sl-3.jpg" server="C:/wamp64/www/Harvel-Electric" local="131872807608506588" remote="131872807600000000" Dst="0" />
@@ -15,4 +16,22 @@
 <file name="sl-13.jpg" server="C:/wamp64/www/Harvel-Electric" local="131872807607763812" remote="131872807600000000" Dst="0" />
 <file name="sl-14.jpg" server="C:/wamp64/www/Harvel-Electric" local="131872807607878823" remote="131872807600000000" Dst="0" />
 <file name="sl-16.jpg" server="C:/wamp64/www/Harvel-Electric" local="131872807608108868" remote="131872807600000000" Dst="0" />
+=======
+<file name="sl-1.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871900788991286" remote="131871900780000000" Dst="0" />
+<file name="sl-10.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871903201863324" remote="131871903200000000" Dst="0" />
+<file name="sl-11.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871903465310534" remote="131871903460000000" Dst="0" />
+<file name="sl-12.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871903784905434" remote="131871903780000000" Dst="0" />
+<file name="sl-13.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871904077647256" remote="131871904070000000" Dst="0" />
+<file name="sl-14.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871904441438786" remote="131871904440000000" Dst="0" />
+<file name="sl-15.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871904729041186" remote="131871904720000000" Dst="0" />
+<file name="sl-16.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871905213127561" remote="131871905210000000" Dst="0" />
+<file name="sl-2.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871900985751195" remote="131871900980000000" Dst="0" />
+<file name="sl-3.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871901190387217" remote="131871901190000000" Dst="0" />
+<file name="sl-4.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871901439886632" remote="131871901430000000" Dst="0" />
+<file name="sl-5.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871901596809470" remote="131871901590000000" Dst="0" />
+<file name="sl-6.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871901973454397" remote="131871901970000000" Dst="0" />
+<file name="sl-7.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871902357372725" remote="131871902350000000" Dst="0" />
+<file name="sl-8.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871902540812343" remote="131871902540000000" Dst="0" />
+<file name="sl-9.jpg" server="C:/wamp64/www/Harvel-Electric/" local="131871902796914493" remote="131871902790000000" Dst="0" />
+>>>>>>> origin/master
 </dwsync>

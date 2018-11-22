@@ -1,33 +1,46 @@
 #navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 17px;
-    line-height: 50px;
+	text-decoration: none;
+	color: white;
+	padding: 17px;
+	line-height: 50px;
 }
 
 #navbar a:hover {
-    background-color: brown;
+	background-color: brown;
 }
 
 #navbar {
-    background-color: #002125;
-    height: auto;
-    padding-left: 10px;
+	background-color: #002125;
+	height: auto;
+	padding-left: 10px;
+}
+
+#navbar-space {
+	height: 50px;
+	display: none;
+}
+
+.sticky {
+	position: fixed;
+    z-index: 69;
+	top: 0px;
+	width: 100%;
 }
 
 .active-nav {
-    background-color: rgba(29, 0, 219, 0.88);
+	background-color: rgba(29, 0, 219, 0.88);
 }
 
-@media only screen and (max-width : 700px){
+@media only screen and (max-width : 700px) {
 	#navbar a {
 		display: block;
 		height: 5px;
-/*		background-color: green;*/
+		/*		background-color: green;*/
 		text-align: center;
 		line-height: 5px;
 	}
+
 	#navbar {
-    padding-left: 0px;
-}
+		padding-left: 0px;
+	}
 }
