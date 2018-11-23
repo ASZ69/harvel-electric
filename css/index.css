@@ -233,3 +233,47 @@ body {
 	color: white;
     cursor: pointer;
 }
+.perent-div{
+	background-color: yellow;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	border:3px solid;
+}
+.items{
+	color: #FFFFFF;
+	font-size: 1.5vw;
+	text-align: center;
+/*	padding: 0;*/
+	width: 100px;
+	height: 100px
+	
+}
+.child-div1{
+	background: #F00004;
+/*	margin-bottom: auto;*/
+	border:3px solid;
+	width: 40%;
+	font-size: 2vw;
+	height: auto;
+}
+.child-div2{
+	background: #06FF22;
+	margin:auto;
+	border:3px solid;
+	width: 100%;
+	font-size: 2vw;
+	align-items: baseline;
+    
+}
+.child-div3{
+	background: #2B04EF;
+	margin-left: auto;
+	width: 50%;
+	height: auto;
+	border:3px solid;
+}
+.child-div4{
+	
+}
