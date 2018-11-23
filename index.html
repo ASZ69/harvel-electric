@@ -33,13 +33,18 @@
 	<!--	navbar start-->
 
 	<div id="navbar">
-		<a class="active-nav" href="index.html">Home</a>
+		<a id="navbar-first" class="active-nav" href="index.html">Home</a>
 		<a href="html/products.html">All Products</a>
 		<a href="html/products.html#ac">Air Conditioner</a>
 		<a href="html/products.html#tv">TV</a>
 		<a href="html/products.html#laptop">Laptop</a>
 		<a href="html/contact.html">Contact Us</a>
 		<a href="#about">About</a>
+            <div class="navbar-menu-container" onclick="navbarMenuClick(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+            </div>
 	</div>
 
 	<!--	to cover navbar space-->
@@ -240,6 +245,15 @@
 				$('#navbar-space').css("display", "none");
 			}
 		}
+        
+//        navbar menu button
+        function navbarMenuClick(btn) {
+            btn.classList.toggle("change");
+            var anchors = $('#navbar a');
+            for(var i = 1; i<anchors.length; i++){
+//                anchors[i].classList.toggle(" show-navbar-list");
+            }
+        }
 	</script>
 
 </body>
