@@ -7,18 +7,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/contact.css">
+    <script src="../javascript/script.js"></script>
 </head>
 
 <body>
 
-	<div id="navbar">
+	<div class="navbar" id="myNavbar">
 		<a href="../index.html">Home</a>
 		<a href="products.html">All Products</a>
 		<a href="products.html#ac">Air Conditioner</a>
 		<a href="products.html#tv">TV</a>
 		<a href="products.html#laptop">Laptop</a>
-		<a class="active-nav" href="contact.html">Contact Us</a>
+		<a href="contact.html" class="active">Contact Us</a>
 		<a href="#about">About</a>
+		<a href="javascript:void(0);" class="navbar-btn" onclick="showListNav()">
+			<div class="navbar-cont" id="nav-menu-btn">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</a>
 	</div>
 
 	<h2>Contact Us</h2>

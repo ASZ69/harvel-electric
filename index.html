@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="javascript/script.js"></script>
+	<script src="javascript/script.js"></script>
 
 	<title>Harvel Electric</title>
 
@@ -204,7 +204,84 @@
 	</div>
 
 	<script>
+		//slider script
+		var num = 0;
+		var sliderLength = 15;
+
+		//next button
+		function slideNext() {
+			"use strict";
+			if (sliderLength == num) {
+				num = 1;
+				slideImages(num);
+			} else {
+				slideImages(num);
+				num++;
+			}
+		}
+
+		//previous button
+		function slidePre() {
+			//check if num is on 1 or 0
+			"use strict";
+			if (num == 1 || num == 0) {
+				num = 14;
+			} else {
+				//decrease 2 because num was previsously incremented by autoSlideImages
+				num = num - 2;
+			}
+
+			slideImages(num);
+
+			if (sliderLength == num) {
+				num = 1;
+			} else {
+				num++;
+			}
+		}
+
+		//slide from dot
+		function slideImages(imgNo) {
+			"use strict";
+			var sImages = document.getElementsByClassName("slider-img");
+			var sDot = document.getElementsByClassName("slider-dot");
+
+			num = imgNo;
+			for (var i = 0; i < sImages.length; i++) {
+				sImages[i].style.display = "none";
+				sDot[i].className = "slider-dot";
+			}
+
+			sImages[num].style.display = "block";
+			sDot[num].className += " s-dot-active";
+		}
+
+		//calling my slider function
 		autoSlideImages();
+
+		//to change imags automaticallay
+		function autoSlideImages() {
+			"use strict";
+			var sImages = document.getElementsByClassName("slider-img");
+			var sDot = document.getElementsByClassName("slider-dot");
+
+			if (num == sliderLength) {
+				num = 0;
+			}
+
+			for (var i = 0; i < sImages.length; i++) {
+				sImages[i].style.display = "none";
+				sDot[i].className = "slider-dot";
+			}
+
+			sImages[num].style.display = "block";
+			sDot[num].className += " s-dot-active";
+
+			num++;
+
+			//			repeat function after some time make slider auto
+			setTimeout(autoSlideImages, 4000);
+		}
 	</script>
 
 </body>
