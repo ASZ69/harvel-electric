@@ -72,7 +72,7 @@
 
 
 	<!--	to cover navbar space-->
-	<!--	<div id="navbar-space"></div>-->
+		<div class="navbar-space"></div>
 
 	<!--	navbar end-->
 
@@ -204,6 +204,26 @@
 	</div>
 
 	<script>
+		//stick the navbar when scrolled
+		window.onscroll = function () {
+			"use strict";
+			stickNavbar();
+		};
+
+		var navbar = document.getElementById("myNavbar");
+		var navbarPosition = navbar.offsetTop;
+
+		function stickNavbar() {
+			"use strict";
+			if (window.pageYOffset >= navbarPosition) {
+				navbar.classList.add("sticky");
+				$('.navbar-space').css("display", "block");
+			} else {
+				navbar.classList.remove("sticky");
+				$('.navbar-space').css("display", "none");
+			}
+		}
+
 		//slider script
 		var num = 0;
 		var sliderLength = 15;

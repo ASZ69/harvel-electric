@@ -4,6 +4,18 @@
   background-color: #333;
 }
 
+.sticky {
+	position: fixed;
+    z-index: 3;
+	top: 0px;
+	width: 100%;
+}
+
+.navbar-space {
+	height: 49px;
+	display: none;
+}
+
 .navbar a {
   float: left;
   display: block;

@@ -1,0 +1,75 @@
+/* CSS Document */
+
+.left-block{
+    float: left;
+    width: 25%;
+    height: 1024px;
+    background-color: pink;
+}
+
+.main-block{
+    float: left;
+    width: 75%;
+    height: 1024px;
+    background-color: aqua;
+}
+
+/*to corrext navbar space*/
+.navbar-area{
+    height: 48px;
+}
+
+/*category list*/
+.main-category{
+    width: 100%;
+}
+
+.main-category h3{
+    font-size: 2vw;
+    padding-left: 5%;
+    margin: 5px 2%;
+/*    margin-bottom: 3px;*/
+}
+
+.main-category h3 span{
+    font-size: 0.9vw;
+    vertical-align: middle;
+    background-color: lightcoral;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 40%;
+}
+
+.main-category ul li span{
+    font-size: 0.9vw;
+    vertical-align: middle;
+    background-color: lightcoral;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 40%;
+}
+
+.main-category h3:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.main-category ul{
+    list-style-type: none;
+	list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.main-category ul li{
+    display: block;
+    font-size: 1.4vw;
+    text-align: left;
+    padding: 1.5% 10%;
+    margin: 0 2%;
+}
+
+.main-category ul li:hover{
+    cursor: pointer;
+    background-color: orange;
+}

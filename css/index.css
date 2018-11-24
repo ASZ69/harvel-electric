@@ -53,7 +53,7 @@ body {
 .right-block {
 	float: left;
 	height: 1024px;
-	margin-top: 10px;
+/*	margin-top: 10px;*/
 }
 
 .left-block,

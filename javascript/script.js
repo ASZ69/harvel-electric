@@ -19,25 +19,3 @@ function showListNav() {
         navBtn.className = "navbar-cont";
     }
 }
-
-//stick the navbar when scrolled
-window.onscroll = function () {
-    "use strict";
-    stickNavbar();
-};
-
-var navbar = document.getElementById("navbar");
-var navbarPosition = navbar.offsetTop;
-
-function stickNavbar() {
-    "use strict";
-    if (window.pageYOffset >= navbarPosition) {
-        navbar.classList.add("sticky");
-        $('#navbar-space').css("display", "block");
-    } else {
-        navbar.classList.remove("sticky");
-        $('#navbar-space').css("display", "none");
-    }
-}
-
-
