@@ -5,8 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/box.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
 
 	<title>Harvel Electric</title>
 
@@ -32,23 +33,46 @@
 
 	<!--	navbar start-->
 
-	<div id="navbar">
-		<a id="navbar-first" class="active-nav" href="index.html">Home</a>
+	<!--
+	<div id="navbar" class="m-navbar">
+		<a class="active-nav" href="index.html">Home</a>
 		<a href="html/products.html">All Products</a>
 		<a href="html/products.html#ac">Air Conditioner</a>
 		<a href="html/products.html#tv">TV</a>
 		<a href="html/products.html#laptop">Laptop</a>
 		<a href="html/contact.html">Contact Us</a>
 		<a href="#about">About</a>
+        <a class="nav-icon">
             <div class="navbar-menu-container" onclick="navbarMenuClick(this)">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
                   <div class="bar3"></div>
             </div>
+        </a>
+	</div>
+-->
+
+	<div class="navbar" id="myNavbar">
+		<a href="index.html" class="active">Home</a>
+		<a href="html/products.html">All Products</a>
+		<a href="html/products.html#ac">Air Conditioner</a>
+		<a href="html/products.html#tv">TV</a>
+		<a href="html/products.html#laptop">Laptop</a>
+		<a href="html/contact.html">Contact Us</a>
+		<a href="#about">About</a>
+		<a href="javascript:void(0);" class="navbar-btn" onclick="showListNav()">
+			<!--        <i class="fa fa-bars"></i>-->
+			<div class="navbar-cont" id="nav-menu-btn">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</a>
 	</div>
 
+
 	<!--	to cover navbar space-->
-	<div id="navbar-space"></div>
+	<!--	<div id="navbar-space"></div>-->
 
 	<!--	navbar end-->
 
@@ -64,9 +88,7 @@
 			<li>Small Kitchen Appliances</li>
 			<li>Vacuums &amp; Floor Care</li>
 			<li>Iron &amp; Garment Care</li>
-
 		</ul>
-
 	</div>
 
 	<!--	categories end-->
@@ -114,10 +136,10 @@
 				</div>
 			</div>
 		</center>
-        
-        
+
+
 		<!--			main div strt-->
-<!--
+		<!--
 		<div class="perent-div">
 			<div class="items child-div1"><b>HAIER 0.75 TON 2 STAR SPLIT AC [HSU-09G2W2C]</b></div>
 		<div class="items child-div2">
@@ -136,23 +158,30 @@
 		</div>
 		</div>
 -->
-        
-        
-        <div class="perent-div">
+
+
+		<div class="perent-div">
 			<div class="items child-div1"><b>HAIER 0.75 TON 2 STAR SPLIT AC [HSU-09G2W2C]</b></div>
-			<p style="">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit<img src="images/haire ac image.jpg" style="float: right; margin-left: 10px; margin-top: 10px;" alt="Image" width="40%" height="auto">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-		<div class="child-div4">
-			<ul>
-			<li>HAIER 0.75 TON</li>
-			<li>HAIER 0.75 TON</li>
-			<li>HAIER 0.75 TON</li>
-			<li>HAIER 0.75 TON</li>
-			</ul>
+			<p style="">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit<img src="images/haire ac image.jpg"
+				 style="float: right; margin-left: 10px; margin-top: 10px;" alt="Image" width="40%" height="auto">Sunt in culpa qui
+				officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+				et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia
+				deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt
+				mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			<div class="child-div4">
+				<ul>
+					<li>HAIER 0.75 TON</li>
+					<li>HAIER 0.75 TON</li>
+					<li>HAIER 0.75 TON</li>
+					<li>HAIER 0.75 TON</li>
+				</ul>
+			</div>
 		</div>
-		</div>
-        
-        
-<!--			main div end-->
+
+
+		<!--			main div end-->
 	</div>
 
 	<div class="right-block">
@@ -175,105 +204,7 @@
 	</div>
 
 	<script>
-		//slider
-
-		var num = 0;
-		var sliderLength = 15;
-
-		function slideNext() {
-			if (sliderLength == num) {
-				num = 1;
-				slideImages(num);
-			} else {
-				slideImages(num);
-				num++;
-			}
-		}
-
-		function slidePre() {
-			//check if num is on 1 or 0
-			if (num == 1 || num == 0) {
-				num = 14;
-			} else {
-				//decrease 2 because num was previsously incremented by autoSlideImages
-				num = num - 2;
-			}
-
-			slideImages(num);
-
-			if (sliderLength == num) {
-				num = 1;
-			} else {
-				num++;
-			}
-		}
-
-		function slideImages(imgNo) {
-
-			var sImages = document.getElementsByClassName("slider-img");
-			var sDot = document.getElementsByClassName("slider-dot");
-
-			num = imgNo;
-			for (var i = 0; i < sImages.length; i++) {
-				sImages[i].style.display = "none";
-				sDot[i].className = "slider-dot";
-			}
-
-			sImages[num].style.display = "block";
-			sDot[num].className += " s-dot-active";
-		}
-
 		autoSlideImages();
-
-		function autoSlideImages() {
-			var sImages = document.getElementsByClassName("slider-img");
-			var sDot = document.getElementsByClassName("slider-dot");
-
-			if (num == sliderLength) {
-				num = 0;
-			}
-
-			for (var i = 0; i < sImages.length; i++) {
-				sImages[i].style.display = "none";
-				sDot[i].className = "slider-dot";
-			}
-
-			sImages[num].style.display = "block";
-			sDot[num].className += " s-dot-active";
-
-			num++;
-
-			//			repeat function after some time make slider auto
-			setTimeout(autoSlideImages, 4000);
-		}
-
-		//		stick the navbar when scrolled
-
-		window.onscroll = function () {
-			stickNavbar();
-		}
-
-		var navbar = document.getElementById("navbar");
-		var navbarPosition = navbar.offsetTop;
-
-		function stickNavbar() {
-			if (window.pageYOffset >= navbarPosition) {
-				navbar.classList.add("sticky");
-				$('#navbar-space').css("display", "block");
-			} else {
-				navbar.classList.remove("sticky");
-				$('#navbar-space').css("display", "none");
-			}
-		}
-        
-//        navbar menu button
-        function navbarMenuClick(btn) {
-            btn.classList.toggle("change");
-            var anchors = $('#navbar a');
-            for(var i = 1; i<anchors.length; i++){
-//                anchors[i].classList.toggle(" show-navbar-list");
-            }
-        }
 	</script>
 
 </body>

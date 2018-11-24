@@ -86,7 +86,7 @@ body {
 	width: 80%;
 	height: auto;
 	position: relative;
-/*    z-index: 0;*/
+	/*    z-index: 0;*/
 }
 
 .slider-dot-div {
@@ -134,7 +134,7 @@ body {
 	top: 40%;
 	display: block;
 	padding: 10px 0px;
-    background-color: rgba(10,0,255,0.30);
+	background-color: rgba(10, 0, 255, 0.30);
 }
 
 .slider-span:hover {
@@ -156,11 +156,11 @@ body {
 }
 
 #slider-btn-pre .slider-span {
-    border-radius: 0px 20px 20px 0px;
+	border-radius: 0px 20px 20px 0px;
 }
 
 #slider-btn-next .slider-span {
-    border-radius: 20px 0px 0px 20px;
+	border-radius: 20px 0px 0px 20px;
 }
 
 
@@ -205,76 +205,80 @@ body {
 	}
 }
 
-.cat-heading{
-    text-align: center;
+.cat-heading {
+	text-align: center;
 	font-size: 2vw;
-/*	padding: 0;*/
+	/*	padding: 0;*/
 }
 
-.cat-ul{
+.cat-ul {
 	list-style-type: none;
-    list-style-position:inside;
+	list-style-position: inside;
 	margin: 0;
 	padding: 0;
 }
 
-.cat-ul li{
-    margin:0px 10px;
-    padding: 0px 10px;
+.cat-ul li {
+	margin: 0px 10px;
+	padding: 0px 10px;
 	font-size: 1.5vw;
 	line-height: 3vw;
-/*	margin: 5px 0px;*/
-/*	display: block;*/
-/*	text-align: justify;*/
-/*	text-align: left;*/
-	
+	/*	margin: 5px 0px;*/
+	/*	display: block;*/
+	/*	text-align: justify;*/
+	/*	text-align: left;*/
+
 }
-.cat-ul li:hover{
+
+.cat-ul li:hover {
 	background-color: #0FB42C;
 	color: white;
-    cursor: pointer;
+	cursor: pointer;
 }
-.perent-div{
+
+.perent-div {
 	background-color: yellow;
 	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
-	border:3px solid;
+	border: 3px solid;
 }
-.items{
+
+.items {
 	color: #FFFFFF;
 	font-size: 1.5vw;
 	text-align: center;
-/*	padding: 0;*/
+	/*	padding: 0;*/
 	width: 100px;
 	height: 100px
-	
 }
-.child-div1{
+
+.child-div1 {
 	background: #F00004;
-/*	margin-bottom: auto;*/
-	border:3px solid;
+	/*	margin-bottom: auto;*/
+	border: 3px solid;
 	width: 40%;
 	font-size: 2vw;
 	height: auto;
 }
-.child-div2{
+
+.child-div2 {
 	background: #06FF22;
-	margin:auto;
-	border:3px solid;
+	margin: auto;
+	border: 3px solid;
 	width: 100%;
 	font-size: 2vw;
 	align-items: baseline;
-    
+
 }
-.child-div3{
+
+.child-div3 {
 	background: #2B04EF;
 	margin-left: auto;
 	width: 50%;
 	height: auto;
-	border:3px solid;
+	border: 3px solid;
 }
-.child-div4{
-	
-}
+
+.child-div4 {}
