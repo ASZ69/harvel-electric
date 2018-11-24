@@ -236,13 +236,17 @@ body {
 	cursor: pointer;
 }
 
+
+
 .perent-div {
 	background-color: yellow;
 	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	border: 3px solid;
+	position: relative;
 }
 
 .items {
@@ -251,7 +255,7 @@ body {
 	text-align: center;
 	/*	padding: 0;*/
 	width: 100px;
-	height: 100px
+	height: 100px;
 }
 
 .child-div1 {
@@ -270,6 +274,7 @@ body {
 	width: 100%;
 	font-size: 2vw;
 	align-items: baseline;
+	
 
 }
 
@@ -279,6 +284,68 @@ body {
 	width: 50%;
 	height: auto;
 	border: 3px solid;
+/*	position: absolute;*/
+/*	top: 100%;*/
+/*	transform: translate(-50% -50%);*/
 }
 
-.child-div4 {}
+.child-div4 {
+	margin-right: auto ;
+/*	position: absolute;*/
+/*	bottom: 5%;*/
+/*	transform: translate(-50% -50%);*/
+}
+.flex-container{
+	background-color: lightsalmon;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+/*	flex-shrink: right;*/
+	border:3px solid;
+/*	margin: auto;*/
+}
+.flex1{
+	background-color: violet;
+	width: 50%;
+	height: auto;
+	border:3px solid;
+}
+.flex2{
+	background-color: royalblue;
+	width: 50%;
+	height: auto;
+	border:3px solid;
+/*	align-content:space-around;*/
+}
+.flex3{
+	background-color: aliceblue;
+	width: 100%;
+	height: auto;
+	border:3px solid;
+}
+.flex4{
+	background-color: #2405E9;
+	width: 33.5%;
+	height: auto;
+	border:3px solid;
+}
+.flex5{
+	background-color: #12DDC1;
+	width: 33.5%;
+	height: auto;
+	border:3px solid;
+}
+.flex6{
+	background-color: #BB86BC;
+	width: 33.5%;
+	height: auto;
+	border:3px solid;
+}
+.flex7{
+    background-color:teal;
+	width: 100%;
+	height: auto;
+	border:3px solid;
+}
