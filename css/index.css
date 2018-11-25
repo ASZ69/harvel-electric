@@ -1,4 +1,7 @@
 /* CSS Document */
+*{
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -236,10 +239,10 @@ body {
 	cursor: pointer;
 }
 
+/*card css started*/
 
-
-.perent-div {
-	background-color: yellow;
+.card {
+	background-color: white;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -247,106 +250,127 @@ body {
 	flex-wrap: wrap;
 	border: 3px solid;
 	position: relative;
+	padding: 0px 5%;
 }
 
-.items {
-	color: #FFFFFF;
-	font-size: 1.5vw;
+.card-heading{
+	font-size: 2vw;
 	text-align: center;
-	/*	padding: 0;*/
-	width: 100px;
+	border-bottom: 5px double #000000;
+}
+
+.card-text {
+	font-size: 1.7vw;
+	text-align: justify;
+	margin: 0;
+}
+
+.card-image{
+	width: 60%;
+	height: auto;
+	float: right;
+	margin-left: 10px;
+	margin-top: 10px;
+	border: 1px solid black;
+}
+
+.card-spec {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-areas: 
+		'card-heading card-heading card-heading'
+		'card-ul-left card-ul-mid card-ul-right';
+}
+
+.card-spec h3{
+	margin: 5px;
+	padding: 0;
+	font-size: 2.4vw;
+	grid-area: card-heading;
+	border-bottom: 1px solid black;
+}
+
+.card-spec ul{
+	margin: 3px;
+	margin-bottom: 10px;
+	padding: 0;
+	list-style-position: inside;
+	list-style-type: circle;
+}
+
+.card-spec .ul-left{
+	grid-area: card-ul-left;
+}
+
+.card-spec .ul-mid{
+	grid-area: card-ul-mid;
+}
+
+.card-spec .ul-right{
+	grid-area: card-ul-right;
+}
+/*grid container css started*/
+
+.grid-container{
+	background-color: red;
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-areas: 
+		'box1 box1 box1 box1 box1 box1'
+		'box2 box2 box2 box3 box3 box3'
+		'box4 box4 box5 box5 box6 box6'
+		'box4 box4 box7 box7 box7 box7'
+		'box8 box8 box8 box8 box8 box8'
+		'box9 box9 box10 box10 box11 box11'
+		'box12 box12 box12 box13 box13 box13'
+		'box14 box14 box14 box14 box14 box14';
+	grid-gap: 10px;
+}
+.grid-container > div{
 	height: 100px;
+	background-color: orangered;
 }
-
-.child-div1 {
-	background: #F00004;
-	/*	margin-bottom: auto;*/
-	border: 3px solid;
-	width: 40%;
-	font-size: 2vw;
-	height: auto;
+.grid-box-1{
+	grid-area: box1;
 }
-
-.child-div2 {
-	background: #06FF22;
-	margin: auto;
-	border: 3px solid;
-	width: 100%;
-	font-size: 2vw;
-	align-items: baseline;
-	
-
+.grid-box-2{
+	grid-area: box2;
 }
-
-.child-div3 {
-	background: #2B04EF;
-	margin-left: auto;
-	width: 50%;
-	height: auto;
-	border: 3px solid;
-/*	position: absolute;*/
-/*	top: 100%;*/
-/*	transform: translate(-50% -50%);*/
+.grid-box-3{
+	grid-area: box3;
 }
-
-.child-div4 {
-	margin-right: auto ;
-/*	position: absolute;*/
-/*	bottom: 5%;*/
-/*	transform: translate(-50% -50%);*/
+.grid-box-4{
+	grid-area: box4;
 }
-.flex-container{
-	background-color: lightsalmon;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-/*	flex-shrink: right;*/
-	border:3px solid;
-/*	margin: auto;*/
+.grid-box-5{
+	grid-area: box5;
 }
-.flex1{
-	background-color: violet;
-	width: 50%;
-	height: auto;
-	border:3px solid;
+.grid-box-6{
+	grid-area: box6;
 }
-.flex2{
-	background-color: royalblue;
-	width: 50%;
-	height: auto;
-	border:3px solid;
-/*	align-content:space-around;*/
-/*	margin: auto;*/
+.grid-box-7{
+	grid-area: box7;
 }
-.flex3{
-	background-color: aliceblue;
-	width: 100%;
-	height: auto;
-	border:3px solid;
+.grid-box-8{
+	grid-area: box8;
 }
-.flex4{
-	background-color: #2405E9;
-	width: 33.5%;
-	height: auto;
-	border:3px solid;
+.grid-box-9{
+	grid-area: box9;
 }
-.flex5{
-	background-color: #12DDC1;
-	width: 33.5%;
-	height: auto;
-	border:3px solid;
+.grid-box-10{
+	grid-area: box10;
 }
-.flex6{
-	background-color: #BB86BC;
-	width: 33.5%;
-	height: auto;
-	border:3px solid;
+.grid-box-11{
+	grid-area: box11;
 }
-.flex7{
-    background-color:teal;
-	width: 100%;
-	height: auto;
-	border:3px solid;
+.grid-box-12{
+	grid-area: box12;
+}
+.grid-box-13{
+	grid-area: box13;
+}
+.grid-box-14{
+	grid-area: box14;
 }
