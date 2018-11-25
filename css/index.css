@@ -329,7 +329,7 @@ body {
 	grid-gap: 10px;
 }
 .grid-container > div{
-	height: 100px;
+	height: auto;
 	background-color: orangered;
 }
 .grid-box-1{
