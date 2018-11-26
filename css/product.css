@@ -1,13 +1,13 @@
 /* CSS Document */
 
-.left-block{
+.left-block {
     float: left;
     width: 25%;
     height: 1024px;
     background-color: pink;
 }
 
-.main-block{
+.main-block {
     float: left;
     width: 75%;
     height: 1024px;
@@ -15,23 +15,23 @@
 }
 
 /*to corrext navbar space*/
-.navbar-area{
+.navbar-area {
     height: 48px;
 }
 
 /*category list*/
-.main-category{
+.main-category {
     width: 100%;
 }
 
-.main-category h3{
+.main-category h3 {
     font-size: 2vw;
     padding-left: 5%;
     margin: 5px 2%;
-/*    margin-bottom: 3px;*/
+    /*    margin-bottom: 3px;*/
 }
 
-.main-category h3 span{
+.main-category h3 span {
     font-size: 0.9vw;
     vertical-align: middle;
     background-color: lightcoral;
@@ -40,7 +40,7 @@
     border-radius: 40%;
 }
 
-.main-category ul li span{
+.main-category ul li span {
     font-size: 0.9vw;
     vertical-align: middle;
     background-color: lightcoral;
@@ -49,19 +49,19 @@
     border-radius: 40%;
 }
 
-.main-category h3:hover{
+.main-category h3:hover {
     background-color: deepskyblue;
     cursor: pointer;
 }
 
-.main-category ul{
+.main-category ul {
     list-style-type: none;
-	list-style-position: inside;
+    list-style-position: inside;
     padding: 0;
     margin: 0;
 }
 
-.main-category ul li{
+.main-category ul li {
     display: block;
     font-size: 1.4vw;
     text-align: left;
@@ -70,14 +70,14 @@
     transition: background 3.0s;
 }
 
-.main-category ul li:hover{
+.main-category ul li:hover {
     cursor: pointer;
     background-color: orange;
     transition: background 0.5s;
 }
 
 .menu-search {
-/*    text-decoration: none;*/
+    /*    text-decoration: none;*/
     background-color: inherit;
     border: none;
     border-bottom: 1px solid black;
@@ -91,31 +91,36 @@
     display: none;
     position: absolute;
     left: 70%;
-    top:0;
+    top: 0;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     animation: leftToRight 1s;
 }
 
 @keyframes leftToRight {
-	from {left: 0%;}
-	to {left: 70%;}
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 70%;
+    }
 }
 
-.menu-dropdown-content a{
+.menu-dropdown-content a {
     display: block;
     padding: 5px;
     text-decoration: none;
     color: red;
 }
 
-.menu-dropdown:hover li{
+.menu-dropdown:hover li {
     background-color: orange;
 }
 
-.menu-dropdown-content a:hover{
+.menu-dropdown-content a:hover {
     background-color: blue;
 }
 
