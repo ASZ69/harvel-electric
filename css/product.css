@@ -67,12 +67,15 @@
     text-align: left;
     padding: 1.5% 10%;
     margin: 0 2%;
+    transition: background 3.0s;
 }
 
 .main-category ul li:hover{
     cursor: pointer;
     background-color: orange;
+    transition: background 0.5s;
 }
+
 .menu-search {
 /*    text-decoration: none;*/
     background-color: inherit;
@@ -82,4 +85,44 @@
     margin: 10px;
     font-size: 1.5vw;
     outline: none;
+}
+
+.menu-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 70%;
+    top:0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    animation: leftToRight 1s;
+}
+
+@keyframes leftToRight {
+	from {left: 0%;}
+	to {left: 70%;}
+}
+
+.menu-dropdown-content a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: red;
+}
+
+.menu-dropdown:hover li{
+    background-color: orange;
+}
+
+.menu-dropdown-content a:hover{
+    background-color: blue;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-dropdown:hover .menu-dropdown-content {
+    display: block;
 }
