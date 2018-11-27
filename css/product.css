@@ -67,7 +67,7 @@
     text-align: left;
     padding: 1.5% 10%;
     margin: 0 2%;
-    transition: background 3.0s;
+    transition: background 1.5s;
 }
 
 .main-category ul li:hover {
@@ -101,7 +101,7 @@
 
 @keyframes leftToRight {
     from {
-        left: 0%;
+        left: 40%;
     }
 
     to {
