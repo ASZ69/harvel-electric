@@ -76,5 +76,39 @@
 <!--		sub-div end-->
 	</div>
 <!--	main-div end-->
+	<div class="grid-container">
+			<div class="grid-box-1">
+			<h1 class="map-heading">Also Find Him On Google Map</h1>
+			<div id="googleMap"></div>	
+		   </div>
+		
+		    <div class="grid-box-2">
+				<h1 class="box-heading">Contact Us</h1>
+<!--
+				<div>
+				<p>tel:(+92) 21-111 278 324  
+				   email:info@aptech-education.com.pk
+				   Suite # 102-103, 1st Floor 
+                   Progressive Center, Shahrah-e-Faisal,
+                   Karachi - Pakistan.</p>
+				</div>
+-->
+		   </div>
+	
+    </div>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap">
+</script>
+	
+
 </body>
 </html>
