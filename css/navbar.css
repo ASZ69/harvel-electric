@@ -1,7 +1,7 @@
 /* CSS Document */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #000;
 }
 
 .sticky {
@@ -27,12 +27,12 @@
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #DDDDDD;
   color: black;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #2F00CF;
   color: white;
 }
 

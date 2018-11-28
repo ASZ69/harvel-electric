@@ -19,18 +19,6 @@ body {
 .heading {
 	position: absolute;
 	font-size: 5vw;
-	/*	color: rgba(197,237,253,0.93);*/
-	/*	color: rgba(66,74,221,0.91);*/
-
-	/*
-	color: #00FFCB;
-	text-shadow:
-    -1px -1px 0 red,
-    1px -1px 0 red,
-    -1px 1px 0 red,
-    5px 5px 0 red;
-*/
-
 	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 	color: #000000;
 
@@ -56,18 +44,18 @@ body {
 .right-block {
 	float: left;
 	height: 1024px;
-/*	margin-top: 10px;*/
+	margin-top: 15px;
 }
 
 .left-block,
 .right-block {
 	width: 20%;
-	background-color: red;
+/*	background-color: red;*/
 }
 
 .mid-block {
 	width: 60%;
-	background-color: blue;
+/*	background-color: blue;*/
 }
 
 @media only screen and (max-width: 800px) {
@@ -86,7 +74,7 @@ body {
 
 /*slider css*/
 .slider {
-	width: 80%;
+	width: 90%;
 	height: auto;
 	position: relative;
 	/*    z-index: 0;*/
@@ -209,7 +197,8 @@ body {
 }
 
 .cat-heading {
-	text-align: center;
+/*	text-align: center;*/
+    margin: 15px 20px;
 	font-size: 2vw;
 	/*	padding: 0;*/
 }
@@ -226,6 +215,7 @@ body {
 	padding: 0px 10px;
 	font-size: 1.5vw;
 	line-height: 3vw;
+    border-bottom: 1px solid rgba(0,0,0,0.50);
 	/*	margin: 5px 0px;*/
 	/*	display: block;*/
 	/*	text-align: justify;*/
@@ -234,7 +224,7 @@ body {
 }
 
 .cat-ul li:hover {
-	background-color: #0FB42C;
+	background-color: #2F00CF;
 	color: white;
 	cursor: pointer;
 }
@@ -373,4 +363,11 @@ body {
 }
 .grid-box-14{
 	grid-area: box14;
+}
+.top-img {
+    opacity: 0.5;
+}
+
+.top-img:hover {
+    opacity: 0.6;
 }
