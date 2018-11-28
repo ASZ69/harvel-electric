@@ -22,6 +22,7 @@
 /*category list*/
 .main-category {
     width: 100%;
+    margin-top: 20px;
 }
 
 .main-category h3 {
@@ -69,7 +70,7 @@
     text-align: left;
     padding: 2% 7%;
     margin: 0 15% 0 6%;
-    transition: background 1.5s;
+    transition: background 1s;
     border-bottom: 1px solid rgba(0,0,0,0.50);
 }
 
@@ -98,15 +99,16 @@
     top: 0;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     animation: leftToRight 1s;
+/*    animation-delay: 0.2s;*/
     border-radius: 5px;
 }
 
 @keyframes leftToRight {
     from {
-        left: 40%;
+        left: 55%;
     }
 
     to {
@@ -124,6 +126,16 @@
 .menu-dropdown:hover li {
     background-color: #2F00CF;
     color: white;
+    margin-left: 18%;
+    animation: give-margin linear 2s infinite;
+}
+
+@keyframes give-margin{
+    0%{margin-left: 2%}
+    25%{margin-left: 9%}
+    50%{margin-left: 18%}
+    75%{margin-left: 9%}
+    100%{margin-left: 2%}
 }
 
 .menu-dropdown-content a:hover {
@@ -137,4 +149,14 @@
 
 .menu-dropdown:hover .menu-dropdown-content {
     display: block;
+}
+.main-flex-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
 }
