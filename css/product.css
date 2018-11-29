@@ -185,7 +185,8 @@
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
 .card .card-image {
@@ -200,6 +201,35 @@
 
 .card-text h2 {
     margin: 0;
+}
+
+.card-text hr {
+    visibility: hidden;
+    height: 2px;
+    margin: 0 15%;
+}
+
+.card-text h2:hover + hr {
+    visibility: visible;
+    width: 1%;
+    color: blue;
+    background-color: blue;
+    animation: linear border-bottom 2s infinite;
+}
+
+@keyframes border-bottom{
+    0%{
+        margin: 0 15%;
+        width: 1%;
+    }
+    50%{
+        margin: 0 0%;
+        width: 30%;
+    }
+    100%{
+        margin: 0 15%;
+        width: 1%;
+    }
 }
 
 .card-text p {
