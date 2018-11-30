@@ -131,10 +131,39 @@ body {
 
 .main-team h1 {
   grid-area: h;
-  margin: 20px auto;
+  margin: 20px auto;	
 
 }
-
+.main-team div{
+	position: relative;
+}
+.main-team div:hover h5{
+	display: block;
+	animation: 3s top-to-down linear;
+/*	opacity: 1.0;*/
+}
+.main-team div h5{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	z-index: 3;
+	display: none;
+	font-size: 15px;
+/*	color: white;*/
+	white-space: nowrap;
+	transform: translate(-50%, -50%);
+}
+@keyframes top-to-down{
+	from{
+		top: 0%;
+		font-size: 5px;
+		
+	}
+	to{
+		top: 35%;
+		font-size: 15px;
+	}
+}
 .pic1,
 .pic2,
 .pic3 {
@@ -142,12 +171,13 @@ body {
   border-radius: 50%;
   width: 128px;
   height: 128px;
+  overflow: hidden;
 }
 
-.pic1:hover,
-.pic2:hover,
-.pic3:hover {
-  opacity: 0.7;
+.pic1 img:hover,
+.pic2 img:hover,
+.pic3 img:hover {
+  opacity: 0.4;
 }
 
 .pic1 {
