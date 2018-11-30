@@ -100,3 +100,39 @@ body{
   margin-left: 10px;
   float: right;
 }
+.main-team{
+	width: 100%;
+	height: auto;
+	display: grid;
+/*	background-color: yellow;*/
+	grid-template-areas:
+		'h h h h h h'
+		'pic1 pic1 pic2 pic2 pic3 pic3';
+	grid-gap: 10px;
+}
+.main-team h1{
+     grid-area: h;
+	margin:20px auto;
+	
+}
+.pic1, .pic2, .pic3{
+	margin: auto;
+	border-radius: 50%;
+	width: 128px;
+	height: 128px;
+}
+.pic1:hover , .pic2:hover, .pic3:hover{
+ opacity: 0.7;
+}
+
+.pic1{
+	grid-area: pic1;
+	
+}
+.pic2{
+	grid-area: pic2;
+	
+}
+.pic3{
+	grid-area: pic3;
+}
