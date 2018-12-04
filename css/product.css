@@ -183,14 +183,14 @@ body {
     height: auto;
     margin: 5px;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     border: 1px solid lightgray;
     border-radius: 6px;
     box-sizing: border-box;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
     cursor: pointer;
 }
 
