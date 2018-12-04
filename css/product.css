@@ -1,5 +1,10 @@
 /* CSS Document */
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .left-block {
     float: left;
     width: 22%;
@@ -191,8 +196,8 @@
 
 .card .card-image {
     /*    border: 1px solid gray;*/
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
 }
 
 .card-text {
@@ -209,7 +214,7 @@
     margin: 0 15%;
 }
 
-.card-text h2:hover + hr {
+.card-text h2:hover+hr {
     visibility: visible;
     width: 1%;
     color: blue;
@@ -217,16 +222,18 @@
     animation: linear border-bottom 2s infinite;
 }
 
-@keyframes border-bottom{
-    0%{
+@keyframes border-bottom {
+    0% {
         margin: 0 15%;
         width: 1%;
     }
-    50%{
+
+    50% {
         margin: 0 0%;
         width: 30%;
     }
-    100%{
+
+    100% {
         margin: 0 15%;
         width: 1%;
     }
@@ -241,9 +248,9 @@
     font-size: 13px;
     text-align: right;
 }
-.card .card-company span{
+
+.card .card-company span {
     margin: 1px 0;
     font-size: 13px;
     float: left;
 }
-
