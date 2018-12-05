@@ -387,8 +387,9 @@ body {
 	padding: 10px 25px;
     color: #FFFFFF;
 	border: none;
-	margin-top: 8%;
+	margin-top: 45%;
 }
+
 .button:hover{
 	opacity: 0.8;
 }
@@ -441,6 +442,16 @@ body {
 
 .myImg {
 	border-radius: 5px;
+	width:100%;
+	max-width: 350px;
+	height: auto; 
+	max-height: 250px;
+}
+.imgMax{
+	width:100%; 
+	max-width: 
+	350px; height: auto;
+	max-height: 250px;
 }
 .myImg:hover{
    opacity: 0.7;
@@ -448,9 +459,8 @@ body {
 }
 
 .newImg2 {
- width: 50%;
+ width: 70%;
  height: auto;
- padding: 5%;
 }
 
 .img-text2 {
@@ -458,10 +468,7 @@ body {
   font-size: 1.5vw;
   float: left;
   color: #1B1B1B ;
-  margin-left: 10%;
-	margin-right: 9%;
-margin-top: 9%;
-
+  padding-left: 1%;
 }
 
 .long-div2 {
@@ -481,4 +488,19 @@ margin-top: 9%;
 	padding: 10px 40px;
     color: #FFFFFF;
 	border: none;
+}
+
+.newImg3 {
+	width: 50%;
+	height: auto;
+	padding: 4%;
+}
+
+.img-text3 {
+	width: 50%;
+  font-size: 1.5vw;
+  float: left;
+  color: #1B1B1B ;
+  padding: 10%;
+
 }
