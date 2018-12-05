@@ -9,18 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/product.js"></script>
 
     <title>Products - Harvel Electric</title>
 
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        body {
-			margin: 0;
-			padding: 0;
-		}
-	</style>
-
+    
 </head>
 
 <body>
@@ -56,48 +50,48 @@
         </center>
 
         <div class="main-category">
-            <h3>Home Appliances <span>90</span></h3>
+            <h3>Home Appliances <span>61</span></h3>
             <ul>
                 <div class="menu-dropdown">
-                    <li>AC <span>15</span></li>
+                    <li onClick="showCategory('ac')">AC <span>12</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Dawlence AC</a>
-                        <a href="#">GREE AC</a>
-                        <a href="#">Haier AC</a>
-                        <a href="#">LG AC</a>
-                        <a href="#">Orient AC</a>
+                        <a href="#" onClick="showByCompany('ac','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('ac','GREE')">GREE</a>
+                        <a href="#" onClick="showByCompany('ac','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('ac','LG')">LG</a>
+                        <a href="#" onClick="showByCompany('ac','Orient')">Orient</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>LED TV <span>9</span></li>
+                    <li onClick="showCategory('ledTv')">LED TV <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Panasonic LED TV</a>
-                        <a href="#">Samsung LED TV</a>
-                        <a href="#">Sony LED TV</a>
+                        <a href="#" onClick="showByCompany('ledTv','Panasonic')">Panasonic LED TV</a>
+                        <a href="#" onClick="showByCompany('ledTv','Samsung')">Samsung LED TV</a>
+                        <a href="#" onClick="showByCompany('ledTv','Sony')">Sony LED TV</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Iron <span>15</span></li>
+                    <li onClick="showCategory('iron')">Iron <span>12</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Black &amp; Decker IRON</a>
-                        <a href="#">Panasonic IRON</a>
-                        <a href="#">Rowenta IRON</a>
+                        <a href="#" onClick="showByCompany('iron','Black & Decker')">Black &amp; Decker</a>
+                        <a href="#" onClick="showByCompany('iron','Panasonic')">Panasonic</a>
+                        <a href="#" onClick="showByCompany('iron','Rowenta')">Rowenta</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Fan <span>15</span></li>
+                    <li onClick="showCategory('fan')">Fan <span>9</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Pak Fan</a>
-                        <a href="#">Royal Fan</a>
-                        <a href="#">GFC Fan</a>
+                        <a href="#" onClick="showByCompany('fan','Pak-Fan')">Pak Fan</a>
+                        <a href="#" onClick="showByCompany('fan','Royal')">Royal Fan</a>
+                        <a href="#" onClick="showByCompany('fan','GFC')">GFC Fan</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Air Cooler <span>15</span></li>
+                    <li onClick="showCategory('airCooler')">Air Cooler <span>12</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('airCooler','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('airCooler','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('airCooler','Orient')">Orient</a>
                     </div>
                 </div>
 
@@ -105,144 +99,135 @@
         </div>
 
         <div class="main-category">
-            <h3>Kitchen Appliances <span>60</span></h3>
+            <h3>Kitchen Appliances <span>86</span></h3>
             <ul>
                 <div class="menu-dropdown">
-                    <li>Tooster <span>15</span></li>
+                    <li onClick="showCategory('toaster')">Toaster <span>18</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('toaster','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('toaster','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('toaster','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('toaster','Pel')">PEL</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Oven <span>15</span></li>
+                    <li onClick="showCategory('oven')">Oven <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Samsung</a>
-                        <a href="#">Kenster</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">Haier</a>
+                        <a href="#" onClick="showByCompany('oven','Samsung')">Samsung</a>
+                        <a href="#" onClick="showByCompany('oven','Kenster')">Kenster</a>
+                        <a href="#" onClick="showByCompany('oven','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('oven','Haier')">Haier</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Juicer Blender <span>15</span></li>
+                    <li onClick="showCategory('juicer')">Juicer Blender <span>20</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('juicer','Omega')">Omega</a>
+                        <a href="#" onClick="showByCompany('juicer','Black & Decker')">Black &amp; Decker</a>
+                        <a href="#" onClick="showByCompany('juicer','Himilton')">Hamilton</a>
+                        <a href="#" onClick="showByCompany('juicer','Pel')">PEL</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Electric Stoove <span>5</span></li>
+                    <li onClick="showCategory('stoove')">Electric Stoove <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('stoove','Frigidaire')">Frigidaire</a>
+                        <a href="#" onClick="showByCompany('stoove','Kenmore-Elite')">Kenmore-Elite</a>
+                        <a href="#" onClick="showByCompany('stoove','LG-LRE')">LG-LRE</a>
+                        <a href="#" onClick="showByCompany('stoove','Samsung')">Samsung</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Sandwitch Maker <span>4</span></li>
+                    <li onClick="showCategory('sandwitchMaker')">Sandwitch Maker <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
-                    </div>
-                </div>
-                <div class="menu-dropdown">
-                    <li>Electric Kattle <span>4</span></li>
-                    <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('sandwitchMaker','Nova')">Nova</a>
+                        <a href="#" onClick="showByCompany('sandwitchMaker','Proctor Silex')">Proctor-Silex</a>
+                        <a href="#" onClick="showByCompany('sandwitchMaker','Solimo')">Solimo</a>
+                        <a href="#" onClick="showByCompany('sandwitchMaker','Hamilton')">Hamilton</a>
                     </div>
                 </div>
             </ul>
         </div>
 
         <div class="main-category">
-            <h3>Small Appliances <span>60</span></h3>
+            <h3>Small Appliances <span>76</span></h3>
             <ul>
                 <div class="menu-dropdown">
-                    <li>Vaccum Cleaner <span>15</span></li>
+                    <li onClick="showCategory('vacuumCleaner')">Vaccum Cleaner <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('vacuumCleaner','Aerus')">Aerus</a>
+                        <a href="#" onClick="showByCompany('vacuumCleaner','Betco')">Betco</a>
+                        <a href="#" onClick="showByCompany('vacuumCleaner','Bissell')">Bissell</a>
+                        <a href="#" onClick="showByCompany('vacuumCleaner','Orient')">Orient</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Laptops <span>15</span></li>
+                    <li onClick="showCategory('laptop')">Laptops <span>20</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">APPLE</a>
-                        <a href="#">DELL</a>
-                        <a href="#">HP</a>
-                        <a href="#">LENOVO</a>
+                        <a href="#" onClick="showByCompany('laptop','Apple')">APPLE</a>
+                        <a href="#" onClick="showByCompany('laptop','Dell')">DELL</a>
+                        <a href="#" onClick="showByCompany('laptop','HP')">HP</a>
+                        <a href="#" onClick="showByCompany('laptop','Lenovo')">LENOVO</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Hair Drayer <span>15</span></li>
+                    <li onClick="showCategory('hairDrayer')">Hair Drayer <span>20</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('hairDrayer','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('hairDrayer','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('hairDrayer','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('hairDrayer','Pel')">PEL</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Water Dispenser <span>15</span></li>
+                    <li onClick="showCategory('waterDispenser')">Water Dispenser <span>20</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('waterDispenser','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('waterDispenser','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('waterDispenser','Dawlance')">Dawlance</a>
+                        <a href="#" onClick="showByCompany('waterDispenser','Pel')">PEL</a>
                     </div>
                 </div>
             </ul>
         </div>
 
         <div class="main-category">
-            <h3>Large Appliances <span>60</span></h3>
+            <h3>large-appliances <span>64</span></h3>
             <ul>
                 <div class="menu-dropdown">
-                    <li>Water Geyser <span>15</span></li>
+                    <li onClick="showCategory('waterGayser')">Water Gayser <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('waterGayser','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('waterGayser','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('waterGayser','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('waterGayser','Pel')">PEL</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Referegerator <span>15</span></li>
+                    <li onClick="showCategory('referegerator')">Referegerator <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('referegerator','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('referegerator','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('referegerator','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('referegerator','Pel')">PEL</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Generator <span>4</span></li>
+                    <li onClick="showCategory('generator')">Generator <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('generator','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('generator','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('generator','Dawlance')">Dawlence</a>
+                        <a href="#" onClick="showByCompany('generator','Pel')">PEL</a>
                     </div>
                 </div>
                 <div class="menu-dropdown">
-                    <li>Water Pump <span>4</span></li>
+                    <li onClick="showCategory('waterPump')">Water Pump <span>16</span></li>
                     <div class="menu-dropdown-content">
-                        <a href="#">Kenwood</a>
-                        <a href="#">Haier</a>
-                        <a href="#">Dawlence</a>
-                        <a href="#">PEL</a>
+                        <a href="#" onClick="showByCompany('waterPump','Kenwood')">Kenwood</a>
+                        <a href="#" onClick="showByCompany('waterPump','Haier')">Haier</a>
+                        <a href="#" onClick="showByCompany('waterPump','Dawlance')">Dawlance</a>
+                        <a href="#" onClick="showByCompany('waterPump','Pel')">PEL</a>
                     </div>
                 </div>
             </ul>
@@ -255,7 +240,12 @@
         <center>
             <h2>Shop By Categories</h2>
         </center>
-        <div id="ac" style="display: none" class="main-flex-block">
+
+        <!--		Home appliances start-->
+
+        <!--		 Ac start-->
+
+        <div id="ac" class="main-flex-block">
             <div class="card">
                 <img class="card-image" src="../images/products/home-appliances/ac/dawlence/d1.jpg" alt="Image">
                 <div class="card-text">
@@ -365,6 +355,10 @@
                 </div>
             </div>
         </div>
+
+        <!--		AC End-->
+
+        <!--		Led Tv start-->
 
         <div id="ledTv" style="display: none" class="main-flex-block">
             <div class="card">
@@ -514,6 +508,9 @@
                 </div>
             </div>
         </div>
+        <!--		Led Tv End-->
+
+        <!--		Iron start-->
 
         <div id="iron" style="display: none" class="main-flex-block">
             <div class="card">
@@ -625,6 +622,9 @@
                 </div>
             </div>
         </div>
+        <!--		Iron End-->
+
+        <!--		Fan start-->
 
         <div id="fan" style="display: none" class="main-flex-block">
             <div class="card">
@@ -711,6 +711,9 @@
                 </div>
             </div>
         </div>
+        <!--		Fan End-->
+
+        <!--		Air Cooler start-->
 
         <div id="airCooler" style="display: none" class="main-flex-block">
             <div class="card">
@@ -824,1067 +827,2171 @@
                 </div>
             </div>
         </div>
-        <<<<<<< HEAD <!-- vacuum cleaner strt-->
+        <!--		Air Cooler end-->
 
-            <div id="vacuum cleaner" style="display: none" class="main-flex-block">
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/dawlance vc/do1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 22500/-</h2>
-                        <hr>
-                        <p>D-692 EasyWork</p>
-                        <p class="card-company"><span>Discount:1% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/dawlance vc/do2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 11500/-</h2>
-                        <hr>
-                        <p>D-622 GoodWork</p>
-                        <p class="card-company"><span>Discount:10% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/dawlance vc/do3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 22000/-</h2>
-                        <hr>
-                        <p>D-992 BestWork</p>
-                        <p class="card-company"><span>Discount:15% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/dawlance vc/do4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 22550/-</h2>
-                        <hr>
-                        <p>D-696 EasyUse</p>
-                        <p class="card-company"><span>Discount:11% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/haier vc/ho1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 21100/-</h2>
-                        <hr>
-                        <p>H-G66 EasyUse</p>
-                        <p class="card-company"><span>Discount:21% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/haier vc/ho2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 31100/-</h2>
-                        <hr>
-                        <p>H-G696 Easywork</p>
-                        <p class="card-company"><span>Discount:15% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/haier vc/ho3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 51100/-</h2>
-                        <hr>
-                        <p>H-S16 EasyWork</p>
-                        <p class="card-company"><span>Discount:0.1% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/haier vc/ho4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 65100/-</h2>
-                        <hr>
-                        <p>H-W466 EasyUse</p>
-                        <p class="card-company"><span>Discount:2% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/kenwood vc/ko1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 51100/-</h2>
-                        <hr>
-                        <p>K-K566 bestwork</p>
-                        <p class="card-company"><span>Discount:25% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/kenwood vc/ko2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 65100/-</h2>
-                        <hr>
-                        <p>K-K564 bestwork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/kenwood vc/ko3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 71100/-</h2>
-                        <hr>
-                        <p>K-K5656 Goodwork</p>
-                        <p class="card-company"><span>Discount:11% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/kenwood vc/ko4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 81900/-</h2>
-                        <hr>
-                        <p>K-K5966 bestwork</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/pel vc/po1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 33000/-</h2>
-                        <hr>
-                        <p>P-Pg66 Allwork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/pel vc/po2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 83000/-</h2>
-                        <hr>
-                        <p>P-Ps86 Easywork</p>
-                        <p class="card-company"><span>Discount:7% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/pel vc/po3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 43000/-</h2>
-                        <hr>
-                        <p>P-PG466 Goodwork</p>
-                        <p class="card-company"><span>Discount:9% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/vaccume cleaner/pel vc/po4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 56000/-</h2>
-                        <hr>
-                        <p>P-Po966 Allwork</p>
-                        <p class="card-company"><span>Discount:2% off</span>Pel</p>
-                    </div>
+        <!--		Home appliances end-->
+
+        <!--        kitchen category started-->
+
+        <!--		Toaster start-->
+
+        <div id="toaster" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>K-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
                 </div>
             </div>
-            <!--		vacuum cleaner end-->
-
-            <!--		leptop strt-->
-
-            <div id="Leptop" style="display: none" class="main-flex-block">
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Apple/ao1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 122500/-</h2>
-                        <hr>
-                        <p>A-IMAC Q692 New</p>
-                        <p class="card-company"><span>Discount:3% off</span>Apple</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Apple/ao2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 102500/-</h2>
-                        <hr>
-                        <p>A-IMAC G062 New</p>
-                        <p class="card-company"><span>Discount:7% off</span>Apple</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Apple/ao3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 132500/-</h2>
-                        <hr>
-                        <p>A-IMAC A982 New</p>
-                        <p class="card-company"><span>Discount:6% off</span>Apple</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Apple/ao4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 122500/-</h2>
-                        <hr>
-                        <p>A-IMAC B782 NewBlack</p>
-                        <p class="card-company"><span>Discount:5% off</span>Apple</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Apple/ao5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 95500/-</h2>
-                        <hr>
-                        <p>A-IMAC I092 New</p>
-                        <p class="card-company"><span>Discount:3% off</span>Apple</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Dell/do1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 55500/-</h2>
-                        <hr>
-                        <p>D-DELL Q92 New</p>
-                        <p class="card-company"><span>Discount:13% off</span>Dell</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Dell/do2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 60500/-</h2>
-                        <hr>
-                        <p>D-DELL Q902 New</p>
-                        <p class="card-company"><span>Discount:15% off</span>Dell</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Dell/do3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 75500/-</h2>
-                        <hr>
-                        <p>D-DELL Q9962 New</p>
-                        <p class="card-company"><span>Discount:13% off</span>Dell</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Dell/do4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 85500/-</h2>
-                        <hr>
-                        <p>D-DELL Q792 New</p>
-                        <p class="card-company"><span>Discount:3% off</span>Dell</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Dell/do5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 45500/-</h2>
-                        <hr>
-                        <p>D-DELL D692 New</p>
-                        <p class="card-company"><span>Discount:10% off</span>Dell</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Hp/ho1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 95500/-</h2>
-                        <hr>
-                        <p>H-HP Elite026 New</p>
-                        <p class="card-company"><span>Discount:0% off</span>HP</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Hp/ho2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 105500/-</h2>
-                        <hr>
-                        <p>H-HP Elite2026 New</p>
-                        <p class="card-company"><span>Discount:5% off</span>HP</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Hp/ho3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 95500/-</h2>
-                        <hr>
-                        <p>H-HP H5026 New</p>
-                        <p class="card-company"><span>Discount:10% off</span>HP</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Hp/ho4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 85500/-</h2>
-                        <hr>
-                        <p>H-HP Elit0260 New</p>
-                        <p class="card-company"><span>Discount:6% off</span>HP</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Hp/ho5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 75500/-</h2>
-                        <hr>
-                        <p>H-HP Q1026 New</p>
-                        <p class="card-company"><span>Discount:9% off</span>HP</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Lenovo/lo1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 56500/-</h2>
-                        <hr>
-                        <p>L-LO026 New</p>
-                        <p class="card-company"><span>Discount:9% off</span>Lenovo</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Lenovo/lo2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 86500/-</h2>
-                        <hr>
-                        <p>L-LO 5026 New</p>
-                        <p class="card-company"><span>Discount:5% off</span>Lenovo</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Lenovo/lo3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 66500/-</h2>
-                        <hr>
-                        <p>L-LO 96 New</p>
-                        <p class="card-company"><span>Discount:2% off</span>Lenovo</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Lenovo/lo4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 62500/-</h2>
-                        <hr>
-                        <p>L-LO69 New</p>
-                        <p class="card-company"><span>Discount:8% off</span>Lenovo</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Leptops/Lenovo/lo5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 51000/-</h2>
-                        <hr>
-                        <p>L-LO 286 New</p>
-                        <p class="card-company"><span>Discount:9% off</span>Lenovo</p>
-                    </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>K-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
                 </div>
             </div>
-            <!--		leptop end-->
-
-            <!--		hair drayer strt-->
-
-            <div id="Hair drayer" style="display: none" class="main-flex-block">
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/Dawlance/do1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 22300/-</h2>
-                        <hr>
-                        <p>D-G692 EasyWork</p>
-                        <p class="card-company"><span>Discount:10% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/Dawlance/do2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 22350/-</h2>
-                        <hr>
-                        <p>D-G695 EasyUse</p>
-                        <p class="card-company"><span>Discount:11% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/Dawlance/do3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 25200/-</h2>
-                        <hr>
-                        <p>D-G22 EasyWork</p>
-                        <p class="card-company"><span>Discount:15% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/Dawlance/do4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 12300/-</h2>
-                        <hr>
-                        <p>D-G02 EasyWork</p>
-                        <p class="card-company"><span>Discount:9% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/Dawlance/do5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 52300/-</h2>
-                        <hr>
-                        <p>D-G69 EasyWork</p>
-                        <p class="card-company"><span>Discount:10% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/haier/ho1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 32300/-</h2>
-                        <hr>
-                        <p>H-H41 GoodWork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/haier/ho2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 32300/-</h2>
-                        <hr>
-                        <p>H-H410 BestWork</p>
-                        <p class="card-company"><span>Discount:7% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/haier/ho3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 24300/-</h2>
-                        <hr>
-                        <p>H-H451 GoodWork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/haier/ho4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 42300/-</h2>
-                        <hr>
-                        <p>H-H691 EasyWork</p>
-                        <p class="card-company"><span>Discount:15% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/haier/ho5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 35300/-</h2>
-                        <hr>
-                        <p>H-H121 GoodWork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/kenwood/ko1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 55300/-</h2>
-                        <hr>
-                        <p>K-KE121 GoodWork</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/kenwood/ko2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 62300/-</h2>
-                        <hr>
-                        <p>K-KE123 BestWork</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/kenwood/ko3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 45300/-</h2>
-                        <hr>
-                        <p>K-KE691 GoodWork</p>
-                        <p class="card-company"><span>Discount:14% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/kenwood/ko4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 35300/-</h2>
-                        <hr>
-                        <p>K-K694 GoodWork</p>
-                        <p class="card-company"><span>Discount:3% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/kenwood/ko5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 65300/-</h2>
-                        <hr>
-                        <p>K-KE456 EasyWork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/pel/po1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 3652/-</h2>
-                        <hr>
-                        <p>P-Y364 GoodWork</p>
-                        <p class="card-company"><span>Discount:4% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/pel/po2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 2352/-</h2>
-                        <hr>
-                        <p>P-Y344 GoodWork</p>
-                        <p class="card-company"><span>Discount:16% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/pel/po3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 3692/-</h2>
-                        <hr>
-                        <p>P-Y314 GoodWork</p>
-                        <p class="card-company"><span>Discount:15% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/pel/po4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 65852/-</h2>
-                        <hr>
-                        <p>P-P36 BestWork</p>
-                        <p class="card-company"><span>Discount:5% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Hair Drayer/pel/po5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 3652/-</h2>
-                        <hr>
-                        <p>P-Y011 GoodWork</p>
-                        <p class="card-company"><span>Discount:20% off</span>Pel</p>
-                    </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>K-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
                 </div>
             </div>
-            <!--		hair drayer end-->
-
-            <!--		water dispenser strt-->
-
-            <div id="Water dispenser" style="display: none" class="main-flex-block">
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/dawlance/do1.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 20200/-</h2>
-                        <hr>
-                        <p>D-D156 New</p>
-                        <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/dawlance/do2.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 69100/-</h2>
-                        <hr>
-                        <p>D-D1135 NewModal</p>
-                        <p class="card-company"><span>Discount:6% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/dawlance/do3.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 22500/-</h2>
-                        <hr>
-                        <p>D-D145 New</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/dawlance/do4.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 80250/-</h2>
-                        <hr>
-                        <p>D-D154 Very Cold</p>
-                        <p class="card-company"><span>Discount:9% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/dawlance/do5.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 29500/-</h2>
-                        <hr>
-                        <p>D-D1557 New</p>
-                        <p class="card-company"><span>Discount:12% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/haier/ho1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 25500/-</h2>
-                        <hr>
-                        <p>H-D1557 New</p>
-                        <p class="card-company"><span>Discount:2% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/haier/ho2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 35500/-</h2>
-                        <hr>
-                        <p>H-D15357 Goodwork</p>
-                        <p class="card-company"><span>Discount:8% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/haier/ho3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 15500/-</h2>
-                        <hr>
-                        <p>H-D012 New</p>
-                        <p class="card-company"><span>Discount:32% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/haier/ho4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 95500/-</h2>
-                        <hr>
-                        <p>H-D1532 New</p>
-                        <p class="card-company"><span>Discount:9% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/haier/ho5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 83200/-</h2>
-                        <hr>
-                        <p>H-D10357 New</p>
-                        <p class="card-company"><span>Discount:12% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/kenwood/ko1.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 85500/-</h2>
-                        <hr>
-                        <p>K-L1517 New</p>
-                        <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/kenwood/ko2.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 55500/-</h2>
-                        <hr>
-                        <p>K-L037 New</p>
-                        <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/kenwood/ko3.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 32500/-</h2>
-                        <hr>
-                        <p>K-L017 New</p>
-                        <p class="card-company"><span>Discount:8% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/kenwood/ko4.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 42500/-</h2>
-                        <hr>
-                        <p>K-L1517 New</p>
-                        <p class="card-company"><span>Discount:6% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/kenwood/ko5.jpg"
-                        alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 45500/-</h2>
-                        <hr>
-                        <p>K-L1367 New</p>
-                        <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/pel/po1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 85500/-</h2>
-                        <hr>
-                        <p>P-O517 New</p>
-                        <p class="card-company"><span>Discount:15% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/pel/po2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 52500/-</h2>
-                        <hr>
-                        <p>P-U037 New</p>
-                        <p class="card-company"><span>Discount:3% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/pel/po3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 69500/-</h2>
-                        <hr>
-                        <p>P-O56 New</p>
-                        <p class="card-company"><span>Discount:12% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/pel/po4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 56500/-</h2>
-                        <hr>
-                        <p>P-O517 New</p>
-                        <p class="card-company"><span>Discount:9% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/Small Appliances/Water Dispanser/pel/po5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 26300/-</h2>
-                        <hr>
-                        <p>P-I317 New</p>
-                        <p class="card-company"><span>Discount:15% off</span>Pel</p>
-                    </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>K-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
                 </div>
             </div>
-            <!--		water dispenser end-->
-            =======
-
-            <div id="toaster" style="display: none" class="main-flex-block">
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>K-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>K-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>K-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>K-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>K-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/kenwood/k5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>K-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>H-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>H-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>H-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 4500/-</h2>
-                        <hr>
-                        <p>H-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 5500/-</h2>
-                        <hr>
-                        <p>D-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 5500/-</h2>
-                        <hr>
-                        <p>D-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 5500/-</h2>
-                        <hr>
-                        <p>D-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 5500/-</h2>
-                        <hr>
-                        <p>D-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d5.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 5500/-</h2>
-                        <hr>
-                        <p>D-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 6500/-</h2>
-                        <hr>
-                        <p>P-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 6500/-</h2>
-                        <hr>
-                        <p>P-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 6500/-</h2>
-                        <hr>
-                        <p>P-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Pel</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 6500/-</h2>
-                        <hr>
-                        <p>P-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Pel</p>
-                    </div>
-                </div>
-
             </div>
 
-            <div id="oven" class="main-flex-block">
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16500/-</h2>
-                        <hr>
-                        <p>S-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Samsung</p>
-                    </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>H-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16500/-</h2>
-                        <hr>
-                        <p>S-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Samsung</p>
-                    </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>H-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16500/-</h2>
-                        <hr>
-                        <p>S-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Samsung</p>
-                    </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>H-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16500/-</h2>
-                        <hr>
-                        <p>S-239 Toaster</p>
-                        <p class="card-company"><span>Discount:4% off</span>Samsung</p>
-                    </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/haier/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 4500/-</h2>
+                    <hr>
+                    <p>H-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
                 </div>
-
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 40500/-</h2>
-                        <hr>
-                        <p>K-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenster</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 40500/-</h2>
-                        <hr>
-                        <p>K-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenster</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 40500/-</h2>
-                        <hr>
-                        <p>K-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenster</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 40500/-</h2>
-                        <hr>
-                        <p>K-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Kenster</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16000/-</h2>
-                        <hr>
-                        <p>D-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16000/-</h2>
-                        <hr>
-                        <p>D-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16000/-</h2>
-                        <hr>
-                        <p>D-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 16000/-</h2>
-                        <hr>
-                        <p>D-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h1.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 13000/-</h2>
-                        <hr>
-                        <p>H-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h2.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 13000/-</h2>
-                        <hr>
-                        <p>H-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h3.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 13000/-</h2>
-                        <hr>
-                        <p>H-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h4.jpg" alt="Image">
-                    <div class="card-text">
-                        <h2>RS: 13000/-</h2>
-                        <hr>
-                        <p>H-239 Oven</p>
-                        <p class="card-company"><span>Discount:4% off</span>Haier</p>
-                    </div>
-                </div>
-
             </div>
 
-            >>>>>>> origin/master
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 5500/-</h2>
+                    <hr>
+                    <p>D-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 5500/-</h2>
+                    <hr>
+                    <p>D-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 5500/-</h2>
+                    <hr>
+                    <p>D-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 5500/-</h2>
+                    <hr>
+                    <p>D-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/dawlance/d5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 5500/-</h2>
+                    <hr>
+                    <p>D-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 6500/-</h2>
+                    <hr>
+                    <p>P-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 6500/-</h2>
+                    <hr>
+                    <p>P-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 6500/-</h2>
+                    <hr>
+                    <p>P-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/toaster/pel/p4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 6500/-</h2>
+                    <hr>
+                    <p>P-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Pel</p>
+                </div>
+            </div>
+
+        </div>
+        <!--		Toaster end-->
+
+        <!--		Oven start-->
+
+        <div id="oven" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16500/-</h2>
+                    <hr>
+                    <p>S-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Samsung</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16500/-</h2>
+                    <hr>
+                    <p>S-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Samsung</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16500/-</h2>
+                    <hr>
+                    <p>S-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Samsung</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/samsung/s4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16500/-</h2>
+                    <hr>
+                    <p>S-239 Toaster</p>
+                    <p class="card-company"><span>Discount:4% off</span>Samsung</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 40500/-</h2>
+                    <hr>
+                    <p>K-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenster</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 40500/-</h2>
+                    <hr>
+                    <p>K-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenster</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 40500/-</h2>
+                    <hr>
+                    <p>K-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenster</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/kenster/k4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 40500/-</h2>
+                    <hr>
+                    <p>K-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenster</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16000/-</h2>
+                    <hr>
+                    <p>D-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16000/-</h2>
+                    <hr>
+                    <p>D-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16000/-</h2>
+                    <hr>
+                    <p>D-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/dawlance/d4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16000/-</h2>
+                    <hr>
+                    <p>D-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13000/-</h2>
+                    <hr>
+                    <p>H-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13000/-</h2>
+                    <hr>
+                    <p>H-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13000/-</h2>
+                    <hr>
+                    <p>H-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/oven/haier/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13000/-</h2>
+                    <hr>
+                    <p>H-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+
+        </div>
+        <!--		Oven End-->
+
+        <!--		Juicer start-->
+
+        <div id="juicer" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/omega/o1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Omega</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/omega/o2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Omega</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/omega/o3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Omega</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/omega/o4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Omega</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/omega/o5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Omega</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/black-and-decker/b1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Black &amp; Decker</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/black-and-decker/b2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Black &amp; Decker</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/black-and-decker/b3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Black &amp; Decker</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/black-and-decker/b4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Black &amp; Decker</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/black-and-decker/b5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>O-239 Oven</p>
+                    <p class="card-company"><span>Discount:4% off</span>Black &amp; Decker</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/himilton/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>H-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Himilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/himilton/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>H-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Himilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/himilton/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>H-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Himilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/himilton/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>H-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Himilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/himilton/h5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>H-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Himilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/himilton/h6.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 18000/-</h2>
+                    <hr>
+                    <p>H-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Himilton</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/pel/p1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13200/-</h2>
+                    <hr>
+                    <p>P-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/pel/p2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13200/-</h2>
+                    <hr>
+                    <p>P-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/pel/p3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13200/-</h2>
+                    <hr>
+                    <p>P-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/juicer/pel/p4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13200/-</h2>
+                    <hr>
+                    <p>P-239 Juicer Blender</p>
+                    <p class="card-company"><span>Discount:14% off</span>Pel</p>
+                </div>
+            </div>
+        </div>
+        <!--		Juiser end-->
+
+        <!--        stoove start-->
+
+        <div id="stoove" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/frigidaire/f1.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 23200/-</h2>
+                    <hr>
+                    <p>P-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Frigidaire</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/frigidaire/f2.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 23200/-</h2>
+                    <hr>
+                    <p>P-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Frigidaire</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/frigidaire/f3.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 23200/-</h2>
+                    <hr>
+                    <p>P-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Frigidaire</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/frigidaire/f4.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 23200/-</h2>
+                    <hr>
+                    <p>P-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Frigidaire</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/kenmore-elite/k1.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 29200/-</h2>
+                    <hr>
+                    <p>K-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Kenmore-Elite</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/kenmore-elite/k2.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 29200/-</h2>
+                    <hr>
+                    <p>K-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Kenmore-Elite</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/kenmore-elite/k3.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 29200/-</h2>
+                    <hr>
+                    <p>K-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Kenmore-Elite</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/kenmore-elite/k4.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 29200/-</h2>
+                    <hr>
+                    <p>K-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Kenmore-Elite</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/LG-LRE/l1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>L-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>LG-LRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/LG-LRE/l2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>L-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>LG-LRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/LG-LRE/l3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>L-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>LG-LRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/LG-LRE/l4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>L-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>LG-LRE</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/samsung/s1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>S-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Samsung</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/samsung/s2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>S-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Samsung</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/samsung/s3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>S-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Samsung</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/electric-stove/samsung/s4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 39500/-</h2>
+                    <hr>
+                    <p>S-239 Electric Stoove</p>
+                    <p class="card-company"><span>Discount:14% off</span>Samsung</p>
+                </div>
+            </div>
+        </div>
+
+        <!--        stoove end-->
+
+        <!--        sandwitch maker start-->
+
+        <div id="sandwitchMaker" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/nova/n1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>N-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Nova</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/nova/n2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>N-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Nova</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/nova/n3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>N-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Nova</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/nova/n4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>N-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Nova</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/proctor-silex/p1.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>P-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Proctor Silex</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/proctor-silex/p2.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>P-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Proctor Silex</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/proctor-silex/p3.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>P-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Proctor Silex</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/proctor-silex/p4.jpg"
+                    alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>P-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Proctor Silex</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/solimo/s1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>S-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Solimo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/solimo/s2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>S-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Solimo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/solimo/s3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>S-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Solimo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/solimo/s4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>S-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Solimo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/hamilton/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>H-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Hamilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/hamilton/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>H-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Hamilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/hamilton/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>H-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Hamilton</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/kitchen-appliances/sandwitch-maker/hamilton/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 8500/-</h2>
+                    <hr>
+                    <p>H-239 Sandwitch Maker</p>
+                    <p class="card-company"><span>Discount:14% off</span>Hamilton</p>
+                </div>
+            </div>
+        </div>
+
+        <!--        sandwitch maker end-->
+
+        <!-- kitchen category end-->
+
+        <!-- vacuum cleaner start-->
+
+        <div id="vacuumCleaner" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/dawlance/do1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 22500/-</h2>
+                    <hr>
+                    <p>D-692 EasyWork</p>
+                    <p class="card-company"><span>Discount:1% off</span>Aerus</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/dawlance/do2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 11500/-</h2>
+                    <hr>
+                    <p>D-622 GoodWork</p>
+                    <p class="card-company"><span>Discount:10% off</span>Aerus</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/dawlance/do3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 22000/-</h2>
+                    <hr>
+                    <p>D-992 BestWork</p>
+                    <p class="card-company"><span>Discount:15% off</span>Aerus</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/dawlance/do4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 22550/-</h2>
+                    <hr>
+                    <p>D-696 EasyUse</p>
+                    <p class="card-company"><span>Discount:11% off</span>Aerus</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/haier/ho1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 21100/-</h2>
+                    <hr>
+                    <p>H-G66 EasyUse</p>
+                    <p class="card-company"><span>Discount:21% off</span>Betco</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/haier/ho2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 31100/-</h2>
+                    <hr>
+                    <p>H-G696 Easywork</p>
+                    <p class="card-company"><span>Discount:15% off</span>Betco</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/haier/ho3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 51100/-</h2>
+                    <hr>
+                    <p>H-S16 EasyWork</p>
+                    <p class="card-company"><span>Discount:0.1% off</span>Betco</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/haier/ho4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65100/-</h2>
+                    <hr>
+                    <p>H-W466 EasyUse</p>
+                    <p class="card-company"><span>Discount:2% off</span>Betco</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/kenwood/ko1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 51100/-</h2>
+                    <hr>
+                    <p>K-K566 bestwork</p>
+                    <p class="card-company"><span>Discount:25% off</span>Bissell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/kenwood/ko2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65100/-</h2>
+                    <hr>
+                    <p>K-K564 bestwork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Bissell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/kenwood/ko3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 71100/-</h2>
+                    <hr>
+                    <p>K-K5656 Goodwork</p>
+                    <p class="card-company"><span>Discount:11% off</span>Bissell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/kenwood/ko4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 81900/-</h2>
+                    <hr>
+                    <p>K-K5966 bestwork</p>
+                    <p class="card-company"><span>Discount:4% off</span>Bissell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/pel/po1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 33000/-</h2>
+                    <hr>
+                    <p>P-Pg66 Allwork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Orient</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/pel/po2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 83000/-</h2>
+                    <hr>
+                    <p>P-Ps86 Easywork</p>
+                    <p class="card-company"><span>Discount:7% off</span>Orient</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/pel/po3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 43000/-</h2>
+                    <hr>
+                    <p>P-PG466 Goodwork</p>
+                    <p class="card-company"><span>Discount:9% off</span>Orient</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/vaccume-cleaner/pel/po4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 56000/-</h2>
+                    <hr>
+                    <p>P-Po966 Allwork</p>
+                    <p class="card-company"><span>Discount:2% off</span>Orient</p>
+                </div>
+            </div>
+        </div>
+        <!--		vacuum cleaner end-->
+
+        <!--		leptop start-->
+
+        <div id="laptop" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Apple/ao1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 122500/-</h2>
+                    <hr>
+                    <p>A-IMAC Q692 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Apple</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Apple/ao2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 102500/-</h2>
+                    <hr>
+                    <p>A-IMAC G062 New</p>
+                    <p class="card-company"><span>Discount:7% off</span>Apple</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Apple/ao3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 132500/-</h2>
+                    <hr>
+                    <p>A-IMAC A982 New</p>
+                    <p class="card-company"><span>Discount:6% off</span>Apple</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Apple/ao4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 122500/-</h2>
+                    <hr>
+                    <p>A-IMAC B782 NewBlack</p>
+                    <p class="card-company"><span>Discount:5% off</span>Apple</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Apple/ao5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 95500/-</h2>
+                    <hr>
+                    <p>A-IMAC I092 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Apple</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Dell/do1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 55500/-</h2>
+                    <hr>
+                    <p>D-DELL Q92 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Dell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Dell/do2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 60500/-</h2>
+                    <hr>
+                    <p>D-DELL Q902 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Dell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Dell/do3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 75500/-</h2>
+                    <hr>
+                    <p>D-DELL Q9962 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Dell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Dell/do4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 85500/-</h2>
+                    <hr>
+                    <p>D-DELL Q792 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Dell/do5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45500/-</h2>
+                    <hr>
+                    <p>D-DELL D692 New</p>
+                    <p class="card-company"><span>Discount:10% off</span>Dell</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Hp/ho1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 95500/-</h2>
+                    <hr>
+                    <p>H-HP Elite026 New</p>
+                    <p class="card-company"><span>Discount:0% off</span>HP</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Hp/ho2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 105500/-</h2>
+                    <hr>
+                    <p>H-HP Elite2026 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>HP</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Hp/ho3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 95500/-</h2>
+                    <hr>
+                    <p>H-HP H5026 New</p>
+                    <p class="card-company"><span>Discount:10% off</span>HP</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Hp/ho4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 85500/-</h2>
+                    <hr>
+                    <p>H-HP Elit0260 New</p>
+                    <p class="card-company"><span>Discount:6% off</span>HP</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Hp/ho5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 75500/-</h2>
+                    <hr>
+                    <p>H-HP Q1026 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>HP</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Lenovo/lo1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 56500/-</h2>
+                    <hr>
+                    <p>L-LO026 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Lenovo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Lenovo/lo2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 86500/-</h2>
+                    <hr>
+                    <p>L-LO 5026 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Lenovo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Lenovo/lo3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 66500/-</h2>
+                    <hr>
+                    <p>L-LO 96 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Lenovo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Lenovo/lo4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 62500/-</h2>
+                    <hr>
+                    <p>L-LO69 New</p>
+                    <p class="card-company"><span>Discount:8% off</span>Lenovo</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Laptops/Lenovo/lo5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 51000/-</h2>
+                    <hr>
+                    <p>L-LO 286 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Lenovo</p>
+                </div>
+            </div>
+        </div>
+        <!--		leptop end-->
+
+        <!--		hair drayer start-->
+
+        <div id="hairDrayer" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/Dawlance/do1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 22300/-</h2>
+                    <hr>
+                    <p>D-G692 EasyWork</p>
+                    <p class="card-company"><span>Discount:10% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/Dawlance/do2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 22350/-</h2>
+                    <hr>
+                    <p>D-G695 EasyUse</p>
+                    <p class="card-company"><span>Discount:11% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/Dawlance/do3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>D-G22 EasyWork</p>
+                    <p class="card-company"><span>Discount:15% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/Dawlance/do4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 12300/-</h2>
+                    <hr>
+                    <p>D-G02 EasyWork</p>
+                    <p class="card-company"><span>Discount:9% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/Dawlance/do5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 52300/-</h2>
+                    <hr>
+                    <p>D-G69 EasyWork</p>
+                    <p class="card-company"><span>Discount:10% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/Small-Appliances/Hair-Drayer/haier/ho1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 32300/-</h2>
+                    <hr>
+                    <p>H-H41 GoodWork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/haier/ho2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 32300/-</h2>
+                    <hr>
+                    <p>H-H410 BestWork</p>
+                    <p class="card-company"><span>Discount:7% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/haier/ho3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 24300/-</h2>
+                    <hr>
+                    <p>H-H451 GoodWork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/haier/ho4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 42300/-</h2>
+                    <hr>
+                    <p>H-H691 EasyWork</p>
+                    <p class="card-company"><span>Discount:15% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/haier/ho5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35300/-</h2>
+                    <hr>
+                    <p>H-H121 GoodWork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/kenwood/ko1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 55300/-</h2>
+                    <hr>
+                    <p>K-KE121 GoodWork</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/kenwood/ko2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 62300/-</h2>
+                    <hr>
+                    <p>K-KE123 BestWork</p>
+                    <p class="card-company"><span>Discount:4% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/kenwood/ko3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45300/-</h2>
+                    <hr>
+                    <p>K-KE691 GoodWork</p>
+                    <p class="card-company"><span>Discount:14% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/kenwood/ko4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35300/-</h2>
+                    <hr>
+                    <p>K-K694 GoodWork</p>
+                    <p class="card-company"><span>Discount:3% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/kenwood/ko5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65300/-</h2>
+                    <hr>
+                    <p>K-KE456 EasyWork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/pel/po1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 3652/-</h2>
+                    <hr>
+                    <p>P-Y364 GoodWork</p>
+                    <p class="card-company"><span>Discount:4% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/pel/po2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 2352/-</h2>
+                    <hr>
+                    <p>P-Y344 GoodWork</p>
+                    <p class="card-company"><span>Discount:16% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/pel/po3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 3692/-</h2>
+                    <hr>
+                    <p>P-Y314 GoodWork</p>
+                    <p class="card-company"><span>Discount:15% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/pel/po4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65852/-</h2>
+                    <hr>
+                    <p>P-P36 BestWork</p>
+                    <p class="card-company"><span>Discount:5% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Hair-Drayer/pel/po5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 3652/-</h2>
+                    <hr>
+                    <p>P-Y011 GoodWork</p>
+                    <p class="card-company"><span>Discount:20% off</span>Pel</p>
+                </div>
+            </div>
+        </div>
+        <!--		hair drayer end-->
+
+        <!--		water dispenser start-->
+
+        <div id="waterDispenser" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/dawlance/do1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 20200/-</h2>
+                    <hr>
+                    <p>D-D156 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/dawlance/do2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 69100/-</h2>
+                    <hr>
+                    <p>D-D1135 NewModal</p>
+                    <p class="card-company"><span>Discount:6% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/dawlance/do3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 22500/-</h2>
+                    <hr>
+                    <p>D-D145 New</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/dawlance/do4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 80250/-</h2>
+                    <hr>
+                    <p>D-D154 Very Cold</p>
+                    <p class="card-company"><span>Discount:9% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/dawlance/do5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 29500/-</h2>
+                    <hr>
+                    <p>D-D1557 New</p>
+                    <p class="card-company"><span>Discount:12% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/haier/ho1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25500/-</h2>
+                    <hr>
+                    <p>H-D1557 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/haier/ho2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35500/-</h2>
+                    <hr>
+                    <p>H-D15357 Goodwork</p>
+                    <p class="card-company"><span>Discount:8% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/haier/ho3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 15500/-</h2>
+                    <hr>
+                    <p>H-D012 New</p>
+                    <p class="card-company"><span>Discount:32% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/haier/ho4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 95500/-</h2>
+                    <hr>
+                    <p>H-D1532 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/haier/ho5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 83200/-</h2>
+                    <hr>
+                    <p>H-D10357 New</p>
+                    <p class="card-company"><span>Discount:12% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/kenwood/ko1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 85500/-</h2>
+                    <hr>
+                    <p>K-L1517 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/kenwood/ko2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 55500/-</h2>
+                    <hr>
+                    <p>K-L037 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/kenwood/ko3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 32500/-</h2>
+                    <hr>
+                    <p>K-L017 New</p>
+                    <p class="card-company"><span>Discount:8% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/kenwood/ko4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 42500/-</h2>
+                    <hr>
+                    <p>K-L1517 New</p>
+                    <p class="card-company"><span>Discount:6% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/kenwood/ko5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45500/-</h2>
+                    <hr>
+                    <p>K-L1367 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/pel/po1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 85500/-</h2>
+                    <hr>
+                    <p>P-O517 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/pel/po2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 52500/-</h2>
+                    <hr>
+                    <p>P-U037 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/pel/po3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 69500/-</h2>
+                    <hr>
+                    <p>P-O56 New</p>
+                    <p class="card-company"><span>Discount:12% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/pel/po4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 56500/-</h2>
+                    <hr>
+                    <p>P-O517 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/small-appliances/Water-Dispanser/pel/po5.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 26300/-</h2>
+                    <hr>
+                    <p>P-I317 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Pel</p>
+                </div>
+            </div>
+        </div>
+        <!--		water dispenser end-->
+
+        <!--		Large Applainces start-->
+
+        <!--		Water gryzer starte-->
+
+        <div id="waterGayser" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Dawlance/d1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>D-D159 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Dawlance/d2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 48200/-</h2>
+                    <hr>
+                    <p>D-D859 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Dawlance/d3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45900/-</h2>
+                    <hr>
+                    <p>D-D15 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Dawlance/d4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>D-029 New</p>
+                    <p class="card-company"><span>Discount:4% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Haier/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>H-029 New</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Haier/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>H-02e9 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Haier/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 95200/-</h2>
+                    <hr>
+                    <p>H-04e9 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Haier/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 15200/-</h2>
+                    <hr>
+                    <p>H-029 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Kenwood/k1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>K-699 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Kenwood/k2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 26200/-</h2>
+                    <hr>
+                    <p>K-699 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Kenwood/k3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65200/-</h2>
+                    <hr>
+                    <p>K-199 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Kenwood/k4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>K-69 New</p>
+                    <p class="card-company"><span>Discount:19% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Pel/p1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 85200/-</h2>
+                    <hr>
+                    <p>P-699 New</p>
+                    <p class="card-company"><span>Discount:29% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Pel/p2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>P-6919 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Pel/p3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 82200/-</h2>
+                    <hr>
+                    <p>P-6969 New</p>
+                    <p class="card-company"><span>Discount:19% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Geyser/Pel/p4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>P-609 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Pel</p>
+                </div>
+            </div>
+
+        </div>
+        <!--		Water gryzer end-->
+
+        <!--		Referegerator start        -->
+
+        <div id="referegerator" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Dawlance/d1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>D-D159 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Dawlance/d2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 55200/-</h2>
+                    <hr>
+                    <p>D-D151 New</p>
+                    <p class="card-company"><span>Discount:1% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Dawlance/d3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>D-D359 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Dawlance/d4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 405200/-</h2>
+                    <hr>
+                    <p>D-D1509 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Haier/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 405200/-</h2>
+                    <hr>
+                    <p>H-509 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Haier/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 505200/-</h2>
+                    <hr>
+                    <p>H-529 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Haier/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 305200/-</h2>
+                    <hr>
+                    <p>H-5609 New</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Haier/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 455200/-</h2>
+                    <hr>
+                    <p>H-50269 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Kenwood/k1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 505200/-</h2>
+                    <hr>
+                    <p>K-Ks509 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Kenwood/k2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 555200/-</h2>
+                    <hr>
+                    <p>K-Ks5909 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Kenwood/k3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 515200/-</h2>
+                    <hr>
+                    <p>K-Ks5069 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Kenwood/k4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 465200/-</h2>
+                    <hr>
+                    <p>K-Ks109 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Pel/p1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 655200/-</h2>
+                    <hr>
+                    <p>p-K909 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Pel/p2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 705200/-</h2>
+                    <hr>
+                    <p>P-s909 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Pel/p3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 655200/-</h2>
+                    <hr>
+                    <p>P-q909 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Referegerator/Pel/p4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 555200/-</h2>
+                    <hr>
+                    <p>p-OP909 New</p>
+                    <p class="card-company"><span>Discount:15% off</span>Pel</p>
+                </div>
+            </div>
+        </div>
+        <!--			Referegerator end-->
+
+        <!--		Generator start-->
+        <div id="generator" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Dawlance/d1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>D-D169 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Dawlance/d2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35200/-</h2>
+                    <hr>
+                    <p>D-D1249 New</p>
+                    <p class="card-company"><span>Discount:6% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Dawlance/d3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>D-D69 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Dawlance/d4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35200/-</h2>
+                    <hr>
+                    <p>D-D152 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Haier/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>H-D169 New</p>
+                    <p class="card-company"><span>Discount:31% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Haier/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>H-D1659 New</p>
+                    <p class="card-company"><span>Discount:1% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Haier/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>H-D19 New</p>
+                    <p class="card-company"><span>Discount:18% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Haier/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 15200/-</h2>
+                    <hr>
+                    <p>H-D9 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Kenwood/k2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35200/-</h2>
+                    <hr>
+                    <p>K-P529 New</p>
+                    <p class="card-company"><span>Discount:19% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Kenwood/k1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 29200/-</h2>
+                    <hr>
+                    <p>K-P599 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Kenwood/k3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 105200/-</h2>
+                    <hr>
+                    <p>K-L559 New</p>
+                    <p class="card-company"><span>Discount:20% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Kenwood/k4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>K-P59 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Pel/p1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65200/-</h2>
+                    <hr>
+                    <p>P-H59 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Pel/p2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 55200/-</h2>
+                    <hr>
+                    <p>P-H599 New</p>
+                    <p class="card-company"><span>Discount:12% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Pel/p3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 45200/-</h2>
+                    <hr>
+                    <p>P-H599 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Generator/Pel/p4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65200/-</h2>
+                    <hr>
+                    <p>P-H010 New</p>
+                    <p class="card-company"><span>Discount:12% off</span>Pel</p>
+                </div>
+            </div>
+
+        </div>
+        <!--		Generator end-->
+
+        <!--		Water Pump start-->
+
+        <div id="waterPump" style="display: none" class="main-flex-block">
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Dawlance/d1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 65200/-</h2>
+                    <hr>
+                    <p>D-D169 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Dawlance/d2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 15200/-</h2>
+                    <hr>
+                    <p>D-D101 New</p>
+                    <p class="card-company"><span>Discount:5% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Dawlance/d3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 16200/-</h2>
+                    <hr>
+                    <p>D-D19 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Dawlance/d4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 12200/-</h2>
+                    <hr>
+                    <p>D-D69 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Dawlance</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Haier/h1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35200/-</h2>
+                    <hr>
+                    <p>H-D99 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Haier/h2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 15200/-</h2>
+                    <hr>
+                    <p>H-D939 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Haier/h3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>H-D969 New</p>
+                    <p class="card-company"><span>Discount:4% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Haier/h4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 13200/-</h2>
+                    <hr>
+                    <p>H-D59 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Haier</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Kenwood/k1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 35200/-</h2>
+                    <hr>
+                    <p>K-L99 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Kenwood/k2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 15260/-</h2>
+                    <hr>
+                    <p>K-L3699 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Kenwood/k3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 25200/-</h2>
+                    <hr>
+                    <p>K-L95779 New</p>
+                    <p class="card-company"><span>Discount:9% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Kenwood/k4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 12200/-</h2>
+                    <hr>
+                    <p>K-L699 New</p>
+                    <p class="card-company"><span>Discount:3% off</span>Kenwood</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Pel/p1.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 3256/-</h2>
+                    <hr>
+                    <p>P-Tff99 New</p>
+                    <p class="card-company"><span>Discount:23% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Pel/p2.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 32566/-</h2>
+                    <hr>
+                    <p>P-Tflp99 New</p>
+                    <p class="card-company"><span>Discount:13% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Pel/p3.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 33256/-</h2>
+                    <hr>
+                    <p>P-Tf5f99 New</p>
+                    <p class="card-company"><span>Discount:2% off</span>Pel</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="../images/products/large-appliances/Water-Pump/Pel/p4.jpg" alt="Image">
+                <div class="card-text">
+                    <h2>RS: 43256/-</h2>
+                    <hr>
+                    <p>P-Tff9d69 New</p>
+                    <p class="card-company"><span>Discount:10% off</span>Pel</p>
+                </div>
+            </div>
+        </div>
+
+        <!--		water pump end-->
+        <!--		Large Applainces end-->
+
     </div>
+
 
     <!--    footer-->
     <div></div>
 
     <script>
-        function searchMenu() {
-            var btnSearch, searchUpperCase;
-            btnSearch = $('#menu-search-input');
-            searchUpperCase = btnSearch[0].value.toUpperCase();
-            var menuElements = $('#menu-categories > .main-category > ul li');
 
-            for (var i = 0; i < menuElements.length; i++) {
 
-                if (menuElements[i].childNodes[0].nodeValue.toUpperCase().indexOf(searchUpperCase) > -1) {
-                    menuElements[i].style.display = "block";
-                } else {
-                    menuElements[i].style.display = "none";
-                }
-            }
-        }
     </script>
 
 </body>
