@@ -119,9 +119,11 @@ body {
 .main-team h1 {
   grid-area: h;
   margin: 20px auto;
-
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
 }
-
 .main-team div {
   position: relative;
 }
