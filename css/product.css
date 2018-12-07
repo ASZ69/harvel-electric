@@ -179,6 +179,7 @@ body {
 }
 
 .card {
+    position: relative;
     width: auto;
     height: auto;
     margin: 5px;
@@ -192,6 +193,50 @@ body {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
     cursor: pointer;
+    overflow: hidden;
+}
+
+.card .card-overlay{
+    display: none;
+    position: absolute;
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%,-50%);*/
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    padding-top: 24%;
+    font-size: 30px;
+    background-color: rgba(21,31,217,0.90);
+    box-sizing: border-box;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+@keyframes card-overlay{
+    from{
+        top: 50%;
+        left: 50%;
+        width: 0%;
+        height: 0%;
+        padding-top: 0%;
+    }
+    to{
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        padding-top: 24%;
+    }
+}
+
+.card:hover .card-overlay{
+    display: block;
+    animation: 0.5s card-overlay linear;
 }
 
 .card .card-image {
