@@ -40,14 +40,6 @@ body {
 .mini-div:hover {
   background: #ddd;
 }
-
-/*
-.mini-div i{
-  color: #3498db;
-  font-size: 34px;
-  margin-bottom: 30px;
-*/
-
 .mini-div h2 {
   font-size: 18px;
   text-transform: uppercase;
@@ -79,6 +71,7 @@ body {
   border-bottom: 4px solid #3498db;
   font-size: 20px;
   margin-left: 10px;
+  	
 }
 
 #googleMap {
@@ -92,7 +85,7 @@ body {
   height: auto;
   display: grid;
   grid-template-areas:
-    'box1 box1 box1 box2 box2 box2';
+    'box1 box1 box1 box1 box1 box1';
   grid-gap: 10px;
 }
 
@@ -104,11 +97,6 @@ body {
 .grid-box-1 {
   grid-area: box1;
 }
-
-.grid-box-2 {
-  grid-area: box2;
-}
-
 .box-heading {
   display: inline-block;
   text-transform: uppercase;
@@ -131,9 +119,11 @@ body {
 .main-team h1 {
   grid-area: h;
   margin: 20px auto;
-
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
 }
-
 .main-team div {
   position: relative;
 }
