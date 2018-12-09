@@ -1,0 +1,32 @@
+/* CSS Document */
+.lg-model {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 95%;
+    background-color: lightgray;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 8px 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: #C7C7C7;
+}
+
+.close:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}

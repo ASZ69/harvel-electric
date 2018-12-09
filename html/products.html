@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="../css/colors.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/model.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../javascript/script.js"></script>
     <script src="../javascript/product.js"></script>
+    <script src="../javascript/model.js"></script>
 
     <title>Products - Harvel Electric</title>
 
@@ -254,7 +256,7 @@
                     <p class="card-company"><span>Discount:20% off</span>Dawlance</p>
                 </div>
                 <div class="card-overlay">
-                    <div><h3>View This Item</h3><h3>Download Discription</h3></div>
+                    <div><h3 onClick="openModel('ac','1')">View This Item</h3><h3>Download Discription</h3></div>
                 </div>
             </div>
             <div class="card">
@@ -3553,18 +3555,19 @@
                 </div>
             </div>
         </div>
-    
+    </div>
         <!--		water pump end-->
         <!--		Large Applainces end-->
-   
+        <!--   card end-->
+    
+<!--    card model start-->
+    <div id="model" class="lg-model">
+        <span class="close" onClick="closeModel()">X</span>
+    </div>
+<!--    card model end-->
   
     <!--    footer-->
     <div></div>
-
-    <script>
-
-
-    </script>
 
 </body>
 
