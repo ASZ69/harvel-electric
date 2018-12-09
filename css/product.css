@@ -192,29 +192,45 @@ body {
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
-    cursor: pointer;
     overflow: hidden;
 }
 
 .card .card-overlay{
     display: none;
     position: absolute;
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-    
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
-    text-align: center;
-    padding-top: 24%;
-    font-size: 30px;
-    background-color: rgba(21,31,217,0.90);
+    background-color: rgba(21,31,217,0.65);
     box-sizing: border-box;
-    vertical-align: middle;
     overflow: hidden;
+}
+
+.card .card-overlay div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .card-overlay div h3{
+    display: block;
+    margin: 8px 0px;
+    white-space: nowrap;
+    padding: 10px 12px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    font-size: 90%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card .card-overlay div h3:hover{
+    background-color: #DB3A00;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
 @keyframes card-overlay{
@@ -223,14 +239,12 @@ body {
         left: 50%;
         width: 0%;
         height: 0%;
-        padding-top: 0%;
     }
     to{
         top: 0%;
         left: 0%;
         width: 100%;
         height: 100%;
-        padding-top: 24%;
     }
 }
 
