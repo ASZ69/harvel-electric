@@ -4443,31 +4443,35 @@
             <div id="mdCart" class="model-r-cart model-r-item">
                 <span id="closeBuy" class="close hide" onClick="closeBuy()">X</span>
                 <form id="cartForm" class="ct-form">
+                    <center>
                     <div>
                         <label for="ctName">Enter Name: </label>
-                        <input type="text" id="ctName">
+                        <input type="text" id="ctName" required>
                     </div>
                     <div>
                         <label for="ctAddr">Enter Address: </label>
-                        <input type="text" id="ctAddr">
+                        <input type="text" id="ctAddr" required>
                     </div>
                     <div>
                         <label for="ctEmail">Enter Email: </label>
-                        <input type="email" id="ctEmail">
+                        <input type="email" id="ctEmail" required>
                     </div>
                     <div>
                         <label for="ctPh">Enter Phone: </label>
-                        <input type="number" id="ctPh">
+                        <input type="text" id="ctPh" required>
                     </div>
                     <div>
                         <label for="ctQuantity">Enter Quantity: </label>
-                        <input type="number" id="ctQuantity" min="1" max="10">
+                        <input type="text" id="ctQuantity" onKeyUp="calculateBill()" required>
                     </div>
                     <div>
-                        <label for="ctPay">Total Payable: </label>
-                        <h3 id="ctPay">0/-</h3>
+                        <b>
+                            <label for="ctPay">Total Payable: </label>
+                            <h3 id="ctPay">0/-</h3>
+                        </b>
                     </div>
                     <input type="submit" value="ORDER NOW">
+                    </center>
                 </form>
             </div>
             <div id="mdBottom" class="model-r-bottom model-r-item">

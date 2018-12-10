@@ -21,7 +21,6 @@ function openModel(id, no) {
     var mdPrice = document.getElementsByClassName("md-price")[0];
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
 
-    //    alert(cardCompany);
     mdImg.style.width = "100%";
 
     mdImg.src = cardImg.src;
@@ -34,6 +33,7 @@ function openModel(id, no) {
 function closeModel() {
     var model = document.getElementById("model");
     model.style.display = "none";
+    closeBuy();
 }
 
 function modelImgZoomIn() {
@@ -81,8 +81,6 @@ function buy() {
         mdPrice.style.marginBottom = "5px";
     }, 2500);
 
-    //    var cartForm = document.getElementById("cartForm");
-    //    cartForm.style.display = "block";
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "block";
 }
@@ -113,9 +111,14 @@ function closeBuy() {
         mdPrice.style.marginTop = "30px";
         mdPrice.style.marginBottom = "30px";
     }, 2500);
-
-    //    var cartForm = document.getElementById("cartForm");
-    //    cartForm.style.display = "none";
+    
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "none";
+}
+
+function calculateBill(){
+    var mdPrice = document.getElementsByClassName("md-price")[0];
+    var quantity = document.getElementById("ctQuantity");
+    var ctPay = document.getElementById("ctPay");
+    ctPay.innerText = parseInt(mdPrice.innerText.replace( /[^\d.]/g,''))*quantity.value;
 }
