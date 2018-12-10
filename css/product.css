@@ -195,26 +195,26 @@ body {
     overflow: hidden;
 }
 
-.card .card-overlay{
+.card .card-overlay {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(21,31,217,0.65);
+    background-color: rgba(21, 31, 217, 0.65);
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.card .card-overlay div{
+.card .card-overlay div {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.card .card-overlay div h3{
+.card .card-overlay div h3 {
     display: block;
     margin: 8px 0px;
     white-space: nowrap;
@@ -228,19 +228,20 @@ body {
     cursor: pointer;
 }
 
-.card .card-overlay div h3:hover{
+.card .card-overlay div h3:hover {
     background-color: #DB3A00;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
-@keyframes card-overlay{
-    from{
+@keyframes card-overlay {
+    from {
         top: 50%;
         left: 50%;
         width: 0%;
         height: 0%;
     }
-    to{
+
+    to {
         top: 0%;
         left: 0%;
         width: 100%;
@@ -248,7 +249,7 @@ body {
     }
 }
 
-.card:hover .card-overlay{
+.card:hover .card-overlay {
     display: block;
     animation: 0.5s card-overlay linear;
 }

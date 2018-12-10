@@ -1,28 +1,29 @@
 // JavaScript Document
 
 var mdImg;
-function openModel(id,no){
+
+function openModel(id, no) {
     var model = document.getElementById("model");
     model.style.display = "block";
-    
+
     var cardParent = document.getElementById(id);
-    var card = cardParent.getElementsByClassName("card")[no-1];
+    var card = cardParent.getElementsByClassName("card")[no - 1];
     var cardImg = card.getElementsByTagName("img")[0];
     var cardPrice = card.getElementsByTagName("h2")[0];
     var cardName = card.getElementsByTagName("p")[0];
     var cardCompanyDiscount = card.getElementsByTagName("p")[1];
     var cardDiscount = cardCompanyDiscount.getElementsByTagName("span")[0];
-    var cardCompany = cardCompanyDiscount.innerText.replace(cardDiscount.innerHTML,"");
-    
+    var cardCompany = cardCompanyDiscount.innerText.replace(cardDiscount.innerHTML, "");
+
     mdImg = document.getElementById("modelImg");
     var mdCompany = document.getElementsByClassName("md-company")[0];
     var mdName = document.getElementsByClassName("md-name")[0];
     var mdPrice = document.getElementsByClassName("md-price")[0];
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
-    
-//    alert(cardCompany);
+
+    //    alert(cardCompany);
     mdImg.style.width = "100%";
-    
+
     mdImg.src = cardImg.src;
     mdCompany.textContent = cardCompany;
     mdName.textContent = cardName.innerText;
@@ -30,37 +31,38 @@ function openModel(id,no){
     mdDiscount.textContent = cardDiscount.innerText;
 }
 
-function closeModel(){
+function closeModel() {
     var model = document.getElementById("model");
     model.style.display = "none";
 }
 
-function modelImgZoomIn(){
+function modelImgZoomIn() {
     var currWidth = mdImg.clientWidth;
-    if(currWidth > 1000){
+    if (currWidth > 1000) {
         return false;
-    }else{
+    } else {
         mdImg.style.width = (currWidth + 100) + "px";
     }
 }
-function modelImgZoomOut(){
+
+function modelImgZoomOut() {
     var currWidth = mdImg.clientWidth;
-    if(currWidth < 200){
+    if (currWidth < 200) {
         return false;
-    }else{
+    } else {
         mdImg.style.width = (currWidth - 100) + "px";
     }
 }
 
-function buy(){
+function buy() {
     var top = document.getElementById("mdTop");
     var cart = document.getElementById("mdCart");
     var bottom = document.getElementById("mdBottom");
-    
+
     top.style.height = "25%";
     cart.style.height = "50%";
     bottom.style.height = "25%";
-    
+
     var mdCompany = document.getElementsByClassName("md-company")[0];
     mdCompany.style.animation = "model-margin 2.5s";
     var mdName = document.getElementsByClassName("md-name")[0];
@@ -69,8 +71,8 @@ function buy(){
     mdPrice.style.animation = "model-margin 2.5s";
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
     mdDiscount.style.display = "none";
-    
-    setTimeout(function(){
+
+    setTimeout(function () {
         mdCompany.style.marginTop = "5px";
         mdCompany.style.marginBottom = "5px";
         mdName.style.marginTop = "5px";
@@ -78,22 +80,22 @@ function buy(){
         mdPrice.style.marginTop = "5px";
         mdPrice.style.marginBottom = "5px";
     }, 2500);
-    
-    var cartForm = document.getElementById("cartForm");
-    cartForm.style.display = "block";
+
+    //    var cartForm = document.getElementById("cartForm");
+    //    cartForm.style.display = "block";
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "block";
 }
 
-function closeBuy(){
+function closeBuy() {
     var top = document.getElementById("mdTop");
     var cart = document.getElementById("mdCart");
     var bottom = document.getElementById("mdBottom");
-    
+
     top.style.height = "49%";
     cart.style.height = "2%";
     bottom.style.height = "49%";
-    
+
     var mdCompany = document.getElementsByClassName("md-company")[0];
     mdCompany.style.animation = "model-margin-reverse 2.5s";
     var mdName = document.getElementsByClassName("md-name")[0];
@@ -102,8 +104,8 @@ function closeBuy(){
     mdPrice.style.animation = "model-margin-reverse 2.5s";
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
     mdDiscount.style.display = "block";
-    
-    setTimeout(function(){
+
+    setTimeout(function () {
         mdCompany.style.marginTop = "30px";
         mdCompany.style.marginBottom = "30px";
         mdName.style.marginTop = "30px";
@@ -111,9 +113,9 @@ function closeBuy(){
         mdPrice.style.marginTop = "30px";
         mdPrice.style.marginBottom = "30px";
     }, 2500);
-    
-    var cartForm = document.getElementById("cartForm");
-//    cartForm.style.display = "none";
+
+    //    var cartForm = document.getElementById("cartForm");
+    //    cartForm.style.display = "none";
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "none";
 }

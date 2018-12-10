@@ -6,7 +6,7 @@
     z-index: 50;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 95%;
     height: 95%;
     background-color: lightgray;
@@ -15,7 +15,8 @@
     border: 1px solid lightgray;
     border-radius: 6px;
 }
-.close{
+
+.close {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -23,13 +24,13 @@
     border: 1px solid gray;
     border-radius: 6px;
     background-color: #C7C7C7;
-/*
+    /*
     animation: 1s shake linear;
     animation-iteration-count: 3;
 */
 }
 
-.close:hover{
+.close:hover {
     background-color: gray;
     color: white;
     cursor: pointer;
@@ -37,11 +38,25 @@
 }
 
 @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-25deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(25deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-25deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .model-left {
@@ -49,23 +64,23 @@
     float: left;
     width: 50%;
     height: 100%;
-/*    background-color: blue;*/
+    /*    background-color: blue;*/
     overflow: auto;
 }
 
-.model-left .model-zoom-btn{
+.model-left .model-zoom-btn {
     position: fixed;
     left: 7%;
     bottom: 10%;
     width: 35%;
-/*    background-color: red;*/
+    /*    background-color: red;*/
 }
 
-.model-left .model-zoom-btn button{
+.model-left .model-zoom-btn button {
     width: 45%;
     height: 50px;
     margin: 0 2%;
-    box-shadow: 0 4px 8px 0 rgba(58,58,58,1.00);
+    box-shadow: 0 4px 8px 0 rgba(58, 58, 58, 1.00);
     background-color: #000;
     color: white;
     border: none;
@@ -73,24 +88,24 @@
     cursor: pointer;
 }
 
-.model-left .model-zoom-btn button:hover{
+.model-left .model-zoom-btn button:hover {
     background-color: blue;
 }
 
-.model-left img{
+.model-left img {
     width: 100%;
     height: auto;
     transition: 0.5s linear;
 }
 
-.model-border{
+.model-border {
     box-sizing: border-box;
     width: 0.5%;
-/*    border: 5px solid black;*/
+    /*    border: 5px solid black;*/
     float: left;
     height: 100%;
     margin: 0;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .model-right {
@@ -98,41 +113,44 @@
     float: right;
     width: 49.5%;
     height: 100%;
-/*    background-color: yellow;*/
+    /*    background-color: yellow;*/
 }
 
-.model-r-item{
+.model-r-item {
     box-sizing: border-box;
     margin: 0 auto;
     width: 80%;
     transition: 3s linear;
 }
 
-@keyframes model-margin{
-    from{
+@keyframes model-margin {
+    from {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    
-    to{
+
+    to {
         margin-top: 5px;
         margin-bottom: 5px;
     }
 }
 
-@keyframes model-margin-reverse{
-    from{
+@keyframes model-margin-reverse {
+    from {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    
-    to{
+
+    to {
         margin-top: 30px;
         margin-bottom: 30px;
     }
 }
 
-.md-company, .md-name, .md-price, .md-discount{
+.md-company,
+.md-name,
+.md-price,
+.md-discount {
     margin-top: 30px;
     margin-bottom: 30px;
     animation: 2.5s model-margin-reverse;
@@ -143,11 +161,9 @@
     border-bottom: 5px double black;
 }
 
-.md-name {
-    
-}
+.md-name {}
 
-.md-price{
+.md-price {
     font-size: 2vw;
 }
 
@@ -158,7 +174,7 @@
 .model-r-top {
     height: 49%;
     position: relative;
-/*    background-color: hotpink;*/
+    /*    background-color: hotpink;*/
     overflow: hidden;
 }
 
@@ -174,36 +190,51 @@
 .model-r-bottom {
     position: relative;
     height: 49%;
-/*    background-color: hotpink;*/
+    /*    background-color: hotpink;*/
     padding: 15px;
 }
 
-.md-buy, .md-descrip {
+.md-buy,
+.md-descrip {
     display: block;
     width: 45%;
     min-width: 120px;
     height: 50px;
-    box-shadow: 0 4px 8px 0 rgba(58,58,58,1.00);
+    box-shadow: 0 4px 8px 0 rgba(58, 58, 58, 1.00);
     background-color: #000;
     color: white;
     border: none;
     border-radius: 8px;
     margin: 15px 0;
     cursor: pointer;
+    animation: 3s model-right-bottom-up;
 }
 
-.md-buy:hover , .md-descrip:hover{
+@keyframes model-right-bottom-up {
+    from {
+        margin: 50px 0;
+    }
+
+    to {
+        margin: 15px 0;
+    }
+}
+
+.md-buy:hover,
+.md-descrip:hover {
     background-color: blue;
 }
 
-.model-r-bottom p{
+.model-r-bottom p {
     margin-top: 25px;
     font-size: 20px;
     font-weight: bold;
 }
 
 .ct-form {
-    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: darkorange;
 }
 
 .hide {
