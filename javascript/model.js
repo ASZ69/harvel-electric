@@ -62,11 +62,11 @@ function buy(){
     bottom.style.height = "25%";
     
     var mdCompany = document.getElementsByClassName("md-company")[0];
-    mdCompany.style.animation = "model-margin 3s";
+    mdCompany.style.animation = "model-margin 2.5s";
     var mdName = document.getElementsByClassName("md-name")[0];
-    mdName.style.animation = "model-margin 3s";
+    mdName.style.animation = "model-margin 2.5s";
     var mdPrice = document.getElementsByClassName("md-price")[0];
-    mdPrice.style.animation = "model-margin 3s";
+    mdPrice.style.animation = "model-margin 2.5s";
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
     mdDiscount.style.display = "none";
     
@@ -77,7 +77,7 @@ function buy(){
         mdName.style.marginBottom = "5px";
         mdPrice.style.marginTop = "5px";
         mdPrice.style.marginBottom = "5px";
-    }, 3000);
+    }, 2500);
     
     var cartForm = document.getElementById("cartForm");
     cartForm.style.display = "block";
@@ -95,11 +95,11 @@ function closeBuy(){
     bottom.style.height = "49%";
     
     var mdCompany = document.getElementsByClassName("md-company")[0];
-    mdCompany.style.animation = "model-margin-reverse 3s";
+    mdCompany.style.animation = "model-margin-reverse 2.5s";
     var mdName = document.getElementsByClassName("md-name")[0];
-    mdName.style.animation = "model-margin-reverse 3s";
+    mdName.style.animation = "model-margin-reverse 2.5s";
     var mdPrice = document.getElementsByClassName("md-price")[0];
-    mdPrice.style.animation = "model-margin-reverse 3s";
+    mdPrice.style.animation = "model-margin-reverse 2.5s";
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
     mdDiscount.style.display = "block";
     
@@ -110,7 +110,7 @@ function closeBuy(){
         mdName.style.marginBottom = "30px";
         mdPrice.style.marginTop = "30px";
         mdPrice.style.marginBottom = "30px";
-    }, 3000);
+    }, 2500);
     
     var cartForm = document.getElementById("cartForm");
 //    cartForm.style.display = "none";

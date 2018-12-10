@@ -23,8 +23,10 @@
     border: 1px solid gray;
     border-radius: 6px;
     background-color: #C7C7C7;
+/*
     animation: 1s shake linear;
     animation-iteration-count: 3;
+*/
 }
 
 .close:hover{
@@ -133,6 +135,7 @@
 .md-company, .md-name, .md-price, .md-discount{
     margin-top: 30px;
     margin-bottom: 30px;
+    animation: 2.5s model-margin-reverse;
 }
 
 .md-company {
