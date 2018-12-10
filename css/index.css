@@ -243,6 +243,10 @@ body {
 	padding: 0px 5%;
 }
 
+.index-img:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
 .card-heading{
 	font-size: 2vw;
 	text-align: center;
@@ -380,6 +384,10 @@ body {
 	margin: 5%;
 }
 
+.card-div p{
+	margin-bottom: 50px;
+}
+
 .button {
    background:#191919;
 	text-align: center;
@@ -387,7 +395,8 @@ body {
 	padding: 10px 25px;
     color: #FFFFFF;
 	border: none;
-	margin-top:5%;
+/*	margin-top: 50px;*/
+	text-decoration: none;
 }
 
 .button:hover{
@@ -397,6 +406,12 @@ body {
 .vi-imgs{
 	width: 100%;
 	height: auto;
+	padding: 1%;
+}
+
+.vi-imgs:hover{
+	opacity: 0.6;
+	cursor: pointer;
 }
 .img-text{
 	float: left;
@@ -463,6 +478,12 @@ body {
  height: auto;
 }
 
+.newImg2:hover{
+	cursor: pointer;
+	opacity: 0.6;
+	transition-duration: 1s;
+}
+
 .img-text2 {
   width: 30%;
   font-size: 1.5vw;
@@ -505,11 +526,18 @@ body {
   font-size: 1.5vw;
   float: left;
   color: #1B1B1B ;
-  padding: 10%;
-
+  padding-left: 2%;
+  padding-right:2%; 
+  padding-top: 2%;
 }
 
 .btn-2ndLast {
 	margin-top: 30%;
 	margin-left: 20%;
+}
+
+
+
+.newImg:hover{
+	opacity: 0.6;
 }
