@@ -36,9 +36,9 @@
 
 @keyframes shake {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(-45deg); }
+    25% { transform: rotate(-25deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(45deg); }
+    75% { transform: rotate(25deg); }
     100% { transform: rotate(0deg); }
 }
 
@@ -80,14 +80,26 @@
     transition: 0.5s linear;
 }
 
-.model-right {
-    float: right;
-    width: 50%;
+.model-border{
+    box-sizing: border-box;
+    width: 0.5%;
+/*    border: 5px solid black;*/
+    float: left;
     height: 100%;
-    background-color: yellow;
+    margin: 0;
+    background-color: rgba(0,0,0,1);
+}
+
+.model-right {
+    box-sizing: border-box;
+    float: right;
+    width: 49.5%;
+    height: 100%;
+/*    background-color: yellow;*/
 }
 
 .model-r-item{
+    box-sizing: border-box;
     margin: 0 auto;
     width: 80%;
     transition: 3s linear;
@@ -95,31 +107,59 @@
 
 .model-r-top {
     height: 45%;
-    background-color: hotpink;
+/*    background-color: hotpink;*/
 }
 
 .md-company {
-    color: white;
+    color: black;
+    font-size: 3.5vw;
+    border-bottom: 5px double black;
 }
 
 .md-name {
-    color: white;
+    color: black;
 }
 
 .md-price{
-    color: white;
+    color: black;
+    font-size: 2vw;
 }
 
 .md-discount {
-    color: white;
+    color: black;
+    font-size: 2.5vw;
 }
-
 
 .model-r-cart {
     height: 10%;
     background-color: chocolate;
 }
+
 .model-r-bottom {
+    position: relative;
     height: 45%;
-    background-color: hotpink;
+/*    background-color: hotpink;*/
+    padding: 15px;
+}
+
+.md-buy, .md-descrip {
+    display: block;
+    width: 45%;
+    min-width: 120px;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(58,58,58,1.00);
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.md-buy:hover , .md-descrip:hover{
+    background-color: blue;
+}
+
+.model-r-bottom p{
+    margin-top: 25px;
+    font-size: 20px;
 }
