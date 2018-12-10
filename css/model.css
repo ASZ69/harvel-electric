@@ -10,7 +10,7 @@
     width: 95%;
     height: 95%;
     background-color: lightgray;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
     border: 1px solid lightgray;
     border-radius: 6px;
@@ -19,14 +19,107 @@
     position: absolute;
     top: 5px;
     right: 5px;
-    padding: 8px 10px;
+    padding: 8px 11px;
     border: 1px solid gray;
     border-radius: 6px;
     background-color: #C7C7C7;
+    animation: 1s shake linear;
+    animation-iteration-count: 3;
 }
 
 .close:hover{
     background-color: gray;
     color: white;
     cursor: pointer;
+    padding: 12px 15px;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-45deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(45deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.model-left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+/*    background-color: blue;*/
+    overflow: auto;
+}
+
+.model-left .model-zoom-btn{
+    position: fixed;
+    left: 7%;
+    bottom: 10%;
+    width: 35%;
+/*    background-color: red;*/
+}
+
+.model-left .model-zoom-btn button{
+    width: 45%;
+    height: 50px;
+    margin: 0 2%;
+    box-shadow: 0 4px 8px 0 rgba(58,58,58,1.00);
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.model-left .model-zoom-btn button:hover{
+    background-color: blue;
+}
+
+.model-left img{
+    width: 100%;
+    height: auto;
+    transition: 0.5s linear;
+}
+
+.model-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.model-r-item{
+    margin: 0 auto;
+    width: 80%;
+    transition: 3s linear;
+}
+
+.model-r-top {
+    height: 45%;
+    background-color: hotpink;
+}
+
+.md-company {
+    color: white;
+}
+
+.md-name {
+    color: white;
+}
+
+.md-price{
+    color: white;
+}
+
+.md-discount {
+    color: white;
+}
+
+
+.model-r-cart {
+    height: 10%;
+    background-color: chocolate;
+}
+.model-r-bottom {
+    height: 45%;
+    background-color: hotpink;
 }
