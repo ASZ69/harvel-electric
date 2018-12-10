@@ -68,6 +68,7 @@
     color: white;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .model-left .model-zoom-btn button:hover{
@@ -105,39 +106,71 @@
     transition: 3s linear;
 }
 
-.model-r-top {
-    height: 45%;
-/*    background-color: hotpink;*/
+@keyframes model-margin{
+    from{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    to{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@keyframes model-margin-reverse{
+    from{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    to{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.md-company, .md-name, .md-price, .md-discount{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .md-company {
-    color: black;
     font-size: 3.5vw;
     border-bottom: 5px double black;
 }
 
 .md-name {
-    color: black;
+    
 }
 
 .md-price{
-    color: black;
     font-size: 2vw;
 }
 
 .md-discount {
-    color: black;
     font-size: 2.5vw;
 }
 
+.model-r-top {
+    height: 49%;
+    position: relative;
+/*    background-color: hotpink;*/
+    overflow: hidden;
+}
+
 .model-r-cart {
-    height: 10%;
-    background-color: chocolate;
+    position: relative;
+    height: 2%;
+    background-color: darkgray;
+    border-top: 8px double black;
+    border-bottom: 8px double black;
+    overflow: hidden;
 }
 
 .model-r-bottom {
     position: relative;
-    height: 45%;
+    height: 49%;
 /*    background-color: hotpink;*/
     padding: 15px;
 }
@@ -153,6 +186,7 @@
     border: none;
     border-radius: 8px;
     margin: 15px 0;
+    cursor: pointer;
 }
 
 .md-buy:hover , .md-descrip:hover{
@@ -162,4 +196,13 @@
 .model-r-bottom p{
     margin-top: 25px;
     font-size: 20px;
+    font-weight: bold;
+}
+
+.ct-form {
+    display: none;
+}
+
+.hide {
+    display: none;
 }

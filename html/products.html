@@ -267,11 +267,7 @@
                     <p class="card-company"><span>Discount:17% off</span>Dawlance</p>
                 </div>
                  <div class="card-overlay">
-<<<<<<< HEAD
                     <div><h3 onClick="openModel('ac','2')">View This Item</h3><h3>Download Discription</h3></div>
-=======
-                    <div><h3 onClick="openModel('ac','1')">View This Item</h3><h3>Download Discription</h3></div>
->>>>>>> origin/master
                 </div>
             </div>
             <div class="card">
@@ -3578,7 +3574,7 @@
         </div>
         <div class="model-border"></div>
         <div class="model-right">
-            <div class="model-r-top model-r-item">
+            <div id="mdTop" class="model-r-top model-r-item">
                 <center>
                     <h2 class="md-company">Hello</h2>
                     <h3 class="md-name"></h3>
@@ -3586,10 +3582,27 @@
                     <h3 class="md-discount"></h3>
                 </center>
             </div>
-            <div class="model-r-cart model-r-item"></div>
-            <div class="model-r-bottom model-r-item">
+            <div id="mdCart" class="model-r-cart model-r-item">
+                <span id="closeBuy" class="close hide" onClick="closeBuy()">X</span>
+                <form id="cartForm" class="ct-form">
+                    <label for="ctName">Enter Name: </label>
+                    <input type="text" id="ctName">
+                    <label for="ctAddr">Enter Address: </label>
+                    <input type="text" id="ctAddr">
+                    <label for="ctEmail">Enter Email: </label>
+                    <input type="email" id="ctEmail">
+                    <label for="ctPh">Enter Phone: </label>
+                    <input type="number" id="ctPh">
+                    <label for="ctQuantity">Enter Quantity: </label>
+                    <input type="number" id="ctQuantity" min="1" max="10">
+                    <label for="ctPay">Total Payable: </label>
+                    <h3 id="ctPay">0/-</h3>
+                    <input type="submit" value="ORDER NOW">
+                </form>
+            </div>
+            <div id="mdBottom" class="model-r-bottom model-r-item">
                 <center>
-                    <button class="md-buy">BUY NOW</button>
+                    <button class="md-buy" onClick="buy()">BUY NOW</button>
                     <button class="md-descrip">DOWNLOAD DESCRIPTION</button>
                     <p>Easy Home Delivery With Cheap Prices</p>
                 </center>
