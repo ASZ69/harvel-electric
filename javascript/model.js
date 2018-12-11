@@ -83,6 +83,9 @@ function buy() {
 
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "block";
+    
+//    var cartForm = document.getElementById("cartForm");
+//    closeBuy.style.display = "block";
 }
 
 function closeBuy() {
@@ -114,6 +117,10 @@ function closeBuy() {
     
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "none";
+    
+    var cartForm = document.getElementById("cartForm");
+    cartForm.reset();
+    cartForm.style.display = "block";
 }
 
 function calculateBill(){
@@ -121,4 +128,18 @@ function calculateBill(){
     var quantity = document.getElementById("ctQuantity");
     var ctPay = document.getElementById("ctPay");
     ctPay.innerText = parseInt(mdPrice.innerText.replace( /[^\d.]/g,''))*quantity.value;
+}
+
+function orderNow(){
+    var cartForm = document.getElementById("cartForm");
+    cartForm.style.display = "none";
+    
+    var ctOrdered = document.getElementById("ctOrdered");
+    ctOrdered.style.display = "block";
+    
+    var mdPrice = document.getElementsByClassName("md-price")[0];
+    var price = parseInt(mdPrice.innerText.replace( /[^\d.]/g,''));
+    
+    var orderNo = ctOrdered.getElementsByTagName("h2")[0];
+    orderNo.innerText = "Ordered Number : " +parseInt((price*5)/4);
 }

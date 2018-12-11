@@ -278,3 +278,23 @@
 .hide {
     display: none;
 }
+.ct-ordered {
+    display: none;
+    padding: 10%;
+}
+
+.ct-ordered h2{
+    color: darkblue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ct-ordered h3{
+    color: saddlebrown;
+    font-size: 22px;
+}
+
+.ct-ordered p{
+    font-weight: bold;
+/*    color: #AA0101;*/
+}
