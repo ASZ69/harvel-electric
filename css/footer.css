@@ -1,9 +1,9 @@
 /* CSS Document */
 .footer-div {
   width: 100%;
-  background-color: black;
+  background-color: var(--bg-color);
   vertical-align: bottom;
-  color: white;
+  color: var(--text-color);
   line-height: 100px;
   text-align: center;
 }
