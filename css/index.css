@@ -385,7 +385,7 @@ body {
 }
 
 .card-div p{
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .button {
@@ -412,6 +412,10 @@ body {
 .vi-imgs:hover{
 	opacity: 0.6;
 	cursor: pointer;
+}
+
+.vi-imgs:hover + .goto-overlay{
+	display: block;
 }
 .img-text{
 	float: left;
@@ -540,4 +544,42 @@ body {
 
 .newImg:hover{
 	opacity: 0.6;
+}
+
+.goto-overlay-btn {
+/*    display: none;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 8px 15px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.goto-overlay:hover{
+    display: block;
+}
+
+.goto-overlay-btn:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.goto-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.50);
+}
+
+.vi-imgs-div {
+    position: relative;
 }
