@@ -38,13 +38,12 @@ body {
     font-size: 2vw;
     padding-left: 5%;
     margin: 5px 2%;
-    /*    margin-bottom: 3px;*/
 }
 
 .main-category h3 span {
     font-size: 0.9vw;
     vertical-align: middle;
-    background-color: #DDDDDD;
+    background-color: var(--primary-color);
     color: black;
     padding: 1px 4px;
     border-radius: 40%;
@@ -53,18 +52,11 @@ body {
 .main-category ul li span {
     font-size: 0.9vw;
     vertical-align: middle;
-    background-color: #DDDDDD;
+    background-color: var(--primary-color);
     color: black;
     padding: 1px 4px;
     border-radius: 40%;
 }
-
-/*
-.main-category h3:hover {
-    background-color: deepskyblue;
-    cursor: pointer;
-}
-*/
 
 .main-category ul {
     list-style-type: none;
@@ -85,13 +77,12 @@ body {
 
 .main-category ul li:hover {
     cursor: pointer;
-    background-color: #2F00CF;
-    color: white;
+    background-color: var(--hover-color);
+    color: var(--text-color);
     transition: background 0.5s;
 }
 
 .menu-search {
-    /*    text-decoration: none;*/
     background-color: inherit;
     border: none;
     border-bottom: 1px solid black;
@@ -108,10 +99,9 @@ body {
     top: 0;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.8);
     z-index: 1;
     animation: leftToRight 1s;
-    /*    animation-delay: 0.2s;*/
     border-radius: 5px;
 }
 
@@ -133,8 +123,8 @@ body {
 }
 
 .menu-dropdown:hover li {
-    background-color: #2F00CF;
-    color: white;
+    background-color: var(--hover-color);
+    color: var(--text-color);
     margin-left: 18%;
     animation: give-margin linear 2s infinite;
 }
@@ -162,8 +152,8 @@ body {
 }
 
 .menu-dropdown-content a:hover {
-    background-color: rgba(47, 0, 207, 0.4);
-    color: white;
+    background-color: var(--hover-pre-color);
+    color: var(--text-color);
 }
 
 .menu-dropdown {
@@ -223,8 +213,8 @@ body {
     margin: 8px 0px;
     white-space: nowrap;
     padding: 10px 12px;
-    background-color: orangered;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     font-size: 90%;
@@ -233,7 +223,7 @@ body {
 }
 
 .card .card-overlay div h3:hover {
-    background-color: #DB3A00;
+    background-color: var(--hover-color);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
@@ -259,7 +249,6 @@ body {
 }
 
 .card .card-image {
-    /*    border: 1px solid gray;*/
     width: 100%;
     height: auto;
 }
@@ -276,31 +265,6 @@ body {
     visibility: hidden;
     height: 2px;
     margin: 0 15%;
-}
-
-.card-text h2:hover+hr {
-    visibility: visible;
-    width: 1%;
-    color: blue;
-    background-color: blue;
-    animation: linear border-bottom 2s infinite;
-}
-
-@keyframes border-bottom {
-    0% {
-        margin: 0 15%;
-        width: 1%;
-    }
-
-    50% {
-        margin: 0 0%;
-        width: 30%;
-    }
-
-    100% {
-        margin: 0 15%;
-        width: 1%;
-    }
 }
 
 .card-text p {

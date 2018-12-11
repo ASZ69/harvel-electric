@@ -2,7 +2,8 @@
 :root{
 /*    declaring some variables*/
     --bg-color: black;
-    --hover-color: blue;
+    --hover-color: darkgreen;
+    --hover-pre-color: lightgreen;
     --text-color: white;
     --primary-color: #DDDDDD;
 }
