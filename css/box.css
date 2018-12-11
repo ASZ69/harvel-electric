@@ -1,6 +1,7 @@
 [class*="box-"] {
     box-sizing: border-box;
 }
+
 .line::after {
     content: "";
     clear: both;
@@ -12,18 +13,53 @@
 }
 
 /* for our desktop */
-.box-1 {width: 8.33%;}
-.box-2 {width: 16.66%;}
-.box-3 {width: 25%;}
-.box-4 {width: 33.33%;}
-.box-5 {width: 41.66%;}
-.box-6 {width: 50%;}
-.box-7 {width: 58.33%;}
-.box-8 {width: 66.66%;}
-.box-9 {width: 75%;}
-.box-10 {width: 83.33%;}
-.box-11 {width: 91.66%;}
-.box-12 {width: 100%;}
+.box-1 {
+    width: 8.33%;
+}
+
+.box-2 {
+    width: 16.66%;
+}
+
+.box-3 {
+    width: 25%;
+}
+
+.box-4 {
+    width: 33.33%;
+}
+
+.box-5 {
+    width: 41.66%;
+}
+
+.box-6 {
+    width: 50%;
+}
+
+.box-7 {
+    width: 58.33%;
+}
+
+.box-8 {
+    width: 66.66%;
+}
+
+.box-9 {
+    width: 75%;
+}
+
+.box-10 {
+    width: 83.33%;
+}
+
+.box-11 {
+    width: 91.66%;
+}
+
+.box-12 {
+    width: 100%;
+}
 
 @media only screen and (max-width: 768px) {
 
