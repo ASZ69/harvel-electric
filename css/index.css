@@ -429,6 +429,7 @@ body {
 	  background: #0E0E0E;
 	  display: inline-block;
 	  float: left;
+	min-width: 390px;
 }
 .head-font{
 	font-size: 20px;
@@ -466,9 +467,9 @@ body {
 }
 .imgMax{
 	width:100%; 
-	max-width: 350px;
+	max-width:200px;
 	height: auto;
-	max-height: 300px;
+	max-height: 200px;
 }
 .myImg:hover{
    opacity: 0.7;
@@ -589,5 +590,7 @@ body {
 }
 
 .vi-imgs-div {
-    position: relative;
+
+	
+	
 }
