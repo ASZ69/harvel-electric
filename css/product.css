@@ -5,18 +5,25 @@ body {
     padding: 0;
 }
 
+.parent{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+/*    background-color: red;*/
+}
+
 .left-block {
     float: left;
     width: 22%;
-    height: 1024px;
-    /*    background-color: pink;*/
+    height: 100%;
+/*        background-color: pink;*/
 }
 
 .main-block {
     float: left;
     width: 78%;
-    height: 1024px;
-    /*    background-color: aqua;*/
+    height: auto;
+/*        background-color: aqua;*/
 }
 
 /*to corrext navbar space*/
