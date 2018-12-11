@@ -1,19 +1,8 @@
 /* CSS Document */
-.bg-blue{
-    background-color: #2F00CF;
-}
-.bg-white{
-    background-color: white;
-}
-.bg-black{
-    background-color: black;
-}
-.t-black{
-    color: black;
-}
-.t-blue{
-    color: #2F00CF;
-}
-.t-white{
-    color: white;
+:root{
+/*    declaring some variables*/
+    --bg-color: black;
+    --hover-color: blue;
+    --text-color: white;
+    --primary-color: #DDDDDD;
 }

@@ -1,7 +1,7 @@
 /* CSS Document */
 .navbar {
   overflow: hidden;
-  background-color: #000;
+  background-color: var(--bg-color);
 }
 
 .sticky {
@@ -19,7 +19,7 @@
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -27,13 +27,13 @@
 }
 
 .navbar a:hover {
-  background-color: #DDDDDD;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 .active {
-  background-color: #2F00CF;
-  color: white;
+  background-color: var(--hover-color);
+  color: var(--text-color);
 }
 
 .navbar .navbar-btn {
@@ -86,19 +86,19 @@
 }
 
 .navbar-cont:hover {
-  background-color: white;
+  background-color: var(--text-color);
 }
 
 .navbar-cont:hover .bar1 {
-  background-color: black;
+  background-color: var(--bg-color);
 }
 
 .navbar-cont:hover .bar2 {
-  background-color: black;
+  background-color: var(--bg-color);
 }
 
 .navbar-cont:hover .bar3 {
-  background-color: black;
+  background-color: var(--bg-color);
 }
 
 .bar1,
@@ -106,7 +106,7 @@
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: white;
+  background-color: var(--text-color);
   margin: 6px 0;
   transition: 0.4s;
 }

@@ -24,10 +24,6 @@
     border: 1px solid gray;
     border-radius: 6px;
     background-color: #C7C7C7;
-    /*
-    animation: 1s shake linear;
-    animation-iteration-count: 3;
-*/
 }
 
 .close:hover {
@@ -64,7 +60,6 @@
     float: left;
     width: 50%;
     height: 100%;
-    /*    background-color: blue;*/
     overflow: auto;
 }
 
@@ -73,7 +68,6 @@
     left: 7%;
     bottom: 10%;
     width: 35%;
-    /*    background-color: red;*/
 }
 
 .model-left .model-zoom-btn button {
@@ -101,7 +95,6 @@
 .model-border {
     box-sizing: border-box;
     width: 0.5%;
-    /*    border: 5px solid black;*/
     float: left;
     height: 100%;
     margin: 0;
@@ -113,14 +106,13 @@
     float: right;
     width: 49.5%;
     height: 100%;
-    /*    background-color: yellow;*/
 }
 
 .model-r-item {
     box-sizing: border-box;
     margin: 0 auto;
     width: 80%;
-    transition: 3s linear;
+    transition: 1.8s linear;
 }
 
 @keyframes model-margin {
@@ -174,7 +166,6 @@
 .model-r-top {
     height: 49%;
     position: relative;
-    /*    background-color: hotpink;*/
     overflow: hidden;
 }
 
@@ -190,7 +181,6 @@
 .model-r-bottom {
     position: relative;
     height: 49%;
-    /*    background-color: hotpink;*/
     padding: 15px;
 }
 
