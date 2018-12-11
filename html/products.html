@@ -24,7 +24,7 @@
     <!--    navbar start-->
     <div class="navbar sticky" id="myNavbar">
         <a href="../index.html">Home</a>
-        <a href="products.html" class="active">All Products</a>
+        <a href="products.html#ac" class="active">All Products</a>
         <a href="products.html#ac">Air Conditioner</a>
         <a href="products.html#tv">TV</a>
         <a href="products.html#laptop">Laptop</a>
@@ -4498,6 +4498,10 @@
     <script>
         var urlId = window.location.toString().split("#")[1];
         showCategory(urlId);
+        
+        $( document ).ready(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
     </script>
 
 </body>
