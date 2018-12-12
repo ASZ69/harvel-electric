@@ -15,7 +15,7 @@ body {
 .main-div h1 {
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid #3498db;
+  border-bottom: 4px solid var(--hover-color);
   font-size: 20px;
   padding-bottom: 10px;
   margin-top: 40px;
@@ -30,7 +30,7 @@ body {
 
 .mini-div {
   display: inline-block;
-  width: calc(100% / 3);
+  width: 30%;
   margin: 0 -2px;
   padding: 20px;
   box-sizing: border-box;
@@ -70,10 +70,8 @@ body {
 .map-heading {
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid #3498db;
+  border-bottom: 4px solid var(--hover-color);
   font-size: 20px;
-  margin-left: 10px;
-
 }
 
 #googleMap {
@@ -87,7 +85,6 @@ body {
   display: grid;
   grid-template-areas:
     'box1 box1 box1 box1 box1 box1';
-  grid-gap: 10px;
 }
 
 .grid-container >div {
@@ -103,7 +100,6 @@ body {
   text-transform: uppercase;
   border-bottom: 4px solid #3498db;
   font-size: 20px;
-  margin-left: 10px;
 }
 
 .main-team {
@@ -121,7 +117,7 @@ body {
   margin: 20px auto;
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid #3498db;
+  border-bottom: 4px solid var(--hover-color);
   font-size: 20px;
 }
 
