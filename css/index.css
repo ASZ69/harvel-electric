@@ -427,6 +427,7 @@ body {
 	font-size: 15px;
 	margin: 0;
 	animation: 1.5s btn-to-top;
+	text-decoration: none;
 }
 
 @keyframes btn-to-top {
