@@ -220,11 +220,11 @@ body {
 /*card css started*/
 
 .top-img {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .top-img:hover {
-    opacity: 0.5;
+/*    opacity: 0.5;*/
 }
 
  /* index cards*/
@@ -450,15 +450,39 @@ body {
     height: 100%;
     background-color: rgba(0,0,0,0.50);
 }
-.box-head {
-/*	margin-left:12px;*/
-}
-
- 
-
-
-
 
 .vi-img-head {
 	margin-left: 2%;
+}
+
+
+
+.logos-parent {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.logos-parent div{
+            width: 2400px;
+            background-color: red;
+            animation: 15s logo-slider linear infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        .logos-parent div img{
+            width: 200px;
+            margin: -2px;
+        }
+
+        @keyframes logo-slider{
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: calc(-2400px + 100vw);
+            }
+        }
+.vi-imgs-div {
+    position: relative;
 }
