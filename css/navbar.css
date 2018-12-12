@@ -48,20 +48,13 @@
   .navbar a.navbar-btn {
     float: right;
     display: block;
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .navbar.nav-list {
-    position: relative;
   }
 
   .navbar.nav-list .navbar-btn {
-    position: absolute;
-    padding: 0;
-    right: 0;
-    top: 0;
+      margin-top: -336px;
+      display: inline-block;
+      padding: 14px 17px;
+      float: right;
   }
 
   .navbar.nav-list a {
@@ -74,11 +67,7 @@
 
 /*navbar menu btn*/
 .navbar-cont {
-  /*    display: none;*/
   cursor: pointer;
-  /*    padding: 3px 8px;*/
-  /*    position: absolute;*/
-  /*    right: 12px;*/
   border: 2px solid black;
   border-radius: 5px;
   padding: 0;

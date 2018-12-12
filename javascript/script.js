@@ -4,18 +4,11 @@
 function showListNav() {
     "use strict";
     var nav = document.getElementById("myNavbar");
-    if (nav.className === "navbar") {
-        nav.className += " nav-list";
+    if (nav.className === "navbar" || nav.className === "navbar sticky") {
+//        nav.className += " nav-list";
+        nav.classList.add("nav-list");
     } else {
-        nav.className = "navbar";
-    }
-
-    //control btn
-    var navBtn = document.getElementById("nav-menu-btn");
-
-    if (navBtn.className === "navbar-cont") {
-        navBtn.className += " change";
-    } else {
-        navBtn.className = "navbar-cont";
+//        nav.className = "navbar";
+        nav.classList.remove("nav-list");
     }
 }

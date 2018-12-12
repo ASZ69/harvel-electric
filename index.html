@@ -41,12 +41,7 @@
 		<a href="html/contact.html">Contact Us</a>
 		<a href="html/about.html">About</a>
 		<a href="javascript:void(0);" class="navbar-btn" onclick="showListNav()">
-			<!--        <i class="fa fa-bars"></i>-->
-			<div class="navbar-cont" id="nav-menu-btn">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
+            <i class="fa fa-bars"></i>
 		</a>
 	</div>
 
@@ -172,6 +167,7 @@
 		</div>
 
 	</div>
+    
 	<div class="line">
 		<div class="box-3" style="color: #76181A;">
 			<div class="card-div">
@@ -304,7 +300,6 @@
 
 	</div>
 
-
 	<!--row 3rd end-->
 
 	<!--row 4th start-->
@@ -350,7 +345,6 @@
 		</div>
 
 	</div>
-
 
 	<!--row 4th end-->
 	<!--5th row start-->
@@ -546,6 +540,7 @@
 			</div>
 		</center>
 	</div>
+    
 	<div class="last-div">
 		<h3>Contact Us For Membership.</h3>
 		<input type="button" class="last-btn" value="Click to Contact us...">
@@ -586,7 +581,6 @@
 	<script>
 		//stick the navbar when scrolled
 		window.onscroll = function () {
-			"use strict";
 			stickNavbar();
 		};
 
@@ -594,7 +588,6 @@
 		var navbarPosition = navbar.offsetTop;
 
 		function stickNavbar() {
-			"use strict";
 			if (window.pageYOffset >= navbarPosition) {
 				navbar.classList.add("sticky");
 				$('.navbar-space').css("display", "block");
