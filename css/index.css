@@ -470,8 +470,8 @@ body {
 }
 
 .logos-parent div {
-	width: 2400px;
-	animation: 15s logo-slider linear infinite;
+	width: 5200px;
+	animation: 25s logo-slider linear infinite;
 	animation-direction: alternate;
 }
 
@@ -486,7 +486,7 @@ body {
 	}
 
 	to {
-		margin-left: calc(-2400px + 100vw);
+		margin-left: calc(-5200px + 100vw);
 	}
 }
 
