@@ -231,13 +231,13 @@
     padding: 20px 0;
 }
 
-.ct-form div{
+.ct-form div {
     width: 100%;
     height: auto;
     margin: 2% auto;
 }
 
-.ct-form div input{
+.ct-form div input {
     width: 45%;
     height: 25px;
     border: none;
@@ -246,7 +246,7 @@
     padding: 0 5px;
 }
 
-.ct-form center > input{
+.ct-form center>input {
     display: block;
     width: 40%;
     min-width: 120px;
@@ -259,33 +259,34 @@
     cursor: pointer;
 }
 
-.ct-form center > input:hover{
+.ct-form center>input:hover {
     background-color: var(--hover-color);
 }
 
-.ct-form div h3{
+.ct-form div h3 {
     display: inline;
 }
 
 .hide {
     display: none;
 }
+
 .ct-ordered {
     display: none;
     padding: 10%;
 }
 
-.ct-ordered h2{
+.ct-ordered h2 {
     color: darkblue;
     font-weight: bold;
     font-size: 30px;
 }
 
-.ct-ordered h3{
+.ct-ordered h3 {
     color: saddlebrown;
     font-size: 22px;
 }
 
-.ct-ordered p{
+.ct-ordered p {
     font-weight: bold;
 }

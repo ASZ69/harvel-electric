@@ -19,32 +19,33 @@ function searchMenu() {
 
 //        show categories by click
 var shown = "ac";
+
 function showCategory(id) {
     var shownElement = document.getElementById(shown);
     shownElement.style.display = "none";
 
     var showThisElement = document.getElementById(id);
     showThisElement.style.display = "flex";
-    
-    var cards = showThisElement.getElementsByClassName("card");   
-    for(var i = 0; i < cards.length; i++){
+
+    var cards = showThisElement.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
         cards[i].style.display = "block";
     }
-    
+
     shown = id;
 }
 
-function showByCompany(id,company){
+function showByCompany(id, company) {
     showCategory(id);
     var category = document.getElementById(id);
-    var cards = category.getElementsByClassName("card");   
-    for(var i = 0; i < cards.length; i++){
+    var cards = category.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
         var p = cards[i].getElementsByTagName("p");
         var span = p[1].getElementsByTagName("span");
-        var cardCompany = p[1].innerText.replace(span[0].innerHTML,"");
-        if(cardCompany == company){
+        var cardCompany = p[1].innerText.replace(span[0].innerHTML, "");
+        if (cardCompany == company) {
             cards[i].style.display = "block";
-        }else{
+        } else {
             cards[i].style.display = "none";
         }
     }

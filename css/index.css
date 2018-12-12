@@ -1,12 +1,12 @@
 /* CSS Document */
-*{
+* {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-    background-color: var(--body-color);
+	background-color: var(--body-color);
 }
 
 .top-div {
@@ -19,16 +19,18 @@ body {
 	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 	color: #000;
 	top: 8vw;
-	left: 30%;
+	left: 31.5%;
 }
 
 .sub-text {
+	display: block;
 	position: absolute;
 	font-size: 2vw;
 	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 	color: #000;
 	top: 16vw;
-	left: 35%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .left-block,
@@ -75,10 +77,10 @@ body {
 }
 
 .slider-dot {
-    display: inline-block;
+	display: inline-block;
 	border-radius: 50%;
-/*	background: #bbb;*/
-    background: var(--primary-color);
+	/*	background: #bbb;*/
+	background: var(--primary-color);
 	width: 1vw;
 	height: 1vw;
 	margin: 2px 3px;
@@ -87,7 +89,7 @@ body {
 }
 
 .slider-dot:hover {
-    background-color: var(--hover-color);
+	background-color: var(--hover-color);
 	opacity: 0.5;
 }
 
@@ -133,7 +135,7 @@ body {
 #slider-btn-next:hover .slider-span,
 #slider-btn-pre:hover .slider-span {
 	background-color: var(--hover-color);
-    color: var(--text-color);
+	color: var(--text-color);
 }
 
 #slider-btn-pre .slider-span {
@@ -149,7 +151,7 @@ body {
 .typeit {
 	overflow: hidden;
 	/* Ensures the content is not revealed until the animation */
-	border-right: .15em solid orange;
+	border-right: .15em solid var(--hover-color);
 	/* The typwriter cursor */
 	white-space: nowrap;
 	/* Keeps the content on a single line */
@@ -158,18 +160,19 @@ body {
 	letter-spacing: .15em;
 	/* Adjust as needed */
 	animation:
-		typing 8s steps(40, end),
+		typing 8s steps(70, end) infinite,
 		blink-caret .75s step-end infinite;
+	animation-direction: alternate;
 }
 
 /* The typing effect */
 @keyframes typing {
 	from {
-		width: 0
+		width: 0;
 	}
 
 	to {
-		width: 100%
+		width: 33%;
 	}
 }
 
@@ -182,12 +185,12 @@ body {
 	}
 
 	50% {
-		border-color: orange;
+		border-color: var(--hover-color);
 	}
 }
 
 .cat-heading {
-    margin: 15px 20px;
+	margin: 15px 20px;
 	font-size: 2vw;
 }
 
@@ -203,12 +206,12 @@ body {
 	padding: 0px 10px;
 	font-size: 1.5vw;
 	line-height: 3vw;
-    border-bottom: 1px solid rgba(0,0,0,0.50);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.50);
 }
 
 .cat-ul a {
 	text-decoration: none;
-    color: inherit;
+	color: inherit;
 }
 
 .cat-ul li:hover {
@@ -220,85 +223,85 @@ body {
 /*card css started*/
 
 .top-img {
-    opacity: 1;
+	opacity: 1;
 }
 
 .top-img:hover {
-/*    opacity: 0.5;*/
+	/*    opacity: 0.5;*/
 }
 
- /* index cards*/
-.index-img{
+/* index cards*/
+.index-img {
 	width: 100%;
 	height: auto;
 }
 
-.index-img:hover{
+.index-img:hover {
 	opacity: 0.6;
 	cursor: pointer;
 }
 
-.card-div{
+.card-div {
 	margin: 5%;
 }
 
-.card-div p{
+.card-div p {
 	margin-bottom: 20px;
 }
 
 .button {
-    background: var(--bg-color);
+	background: var(--bg-color);
 	text-align: center;
 	border-radius: 5px;
 	padding: 10px 25px;
-    color: var(--text-color);
+	color: var(--text-color);
 	border: none;
 	text-decoration: none;
 }
 
-.button:hover{
+.button:hover {
 	opacity: 0.8;
 }
 
 /*vi imgs*/
-.vi-imgs{
+.vi-imgs {
 	width: 100%;
 	height: auto;
 	padding: 1%;
 }
 
-.vi-imgs:hover{
+.vi-imgs:hover {
 	opacity: 0.6;
 	cursor: pointer;
 }
 
-.vi-imgs:hover + .goto-overlay{
+.vi-imgs:hover+.goto-overlay {
 	display: block;
 }
 
-.img-text{
+.img-text {
 	float: left;
-	width: 22vw; 
+	width: 22vw;
 	padding: 2%;
-    background: #0E0E0E;
-    color: var(--text-color);
+	background: #0E0E0E;
+	color: var(--text-color);
 	font-size: 2vw;
 }
 
-.long-div{
-	  background: #0E0E0E;
-	  display: inline-block;
-    float: left;
-    min-width: 390px;
+.long-div {
+	background: #0E0E0E;
+	display: inline-block;
+	float: left;
+	min-width: 390px;
 }
 
-.head-font{
+.head-font {
 	font-size: 20px;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	margin: auto;
 }
 
-.bottom-font{
+.bottom-font {
 	font-size: 1.5vw;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-style: italic;
@@ -310,7 +313,7 @@ body {
 	text-align: center;
 }
 
-.set-2{
+.set-2 {
 	text-align: center;
 	margin-left: 2%;
 }
@@ -322,46 +325,46 @@ body {
 
 .myImg {
 	border-radius: 5px;
-	width:100%;
+	width: 100%;
 	max-width: 350px;
-	height: auto; 
+	height: auto;
 	max-height: 250px;
 }
 
-.imgMax{
-	width:100%; 
-	max-width:200px;
+.imgMax {
+	width: 100%;
+	max-width: 200px;
 	height: auto;
 	max-height: 200px;
 }
 
-.myImg:hover{
-   opacity: 0.7;
+.myImg:hover {
+	opacity: 0.7;
 	transition-duration: 1.5s;
 }
 
 .newImg2 {
- width: 70%;
- height: auto;
+	width: 70%;
+	height: auto;
 }
 
-.newImg2:hover{
+.newImg2:hover {
 	cursor: pointer;
 	opacity: 0.6;
 	transition-duration: 1s;
 }
 
 .img-text2 {
-  width: 30%;
-  font-size: 1.5vw;
-  float: left;
-  color: #1B1B1B ;
-  padding-left: 1%;
+	width: 30%;
+	font-size: 1.5vw;
+	float: left;
+	color: #1B1B1B;
+	padding-left: 1%;
 }
 
 .long-div2 {
-	 display: inline-block;
-	 float: right;
+	display: inline-block;
+	float: right;
 	background: #959595;
 }
 
@@ -369,18 +372,20 @@ body {
 
 	text-align: center;
 }
-.last-btn{
+
+.last-btn {
 	background: var(--hover-color);
 	text-align: center;
 	border-radius: 5px;
 	padding: 10px 40px;
-    color: var(--text-color);
+	color: var(--text-color);
 	border: none;
 }
-.last-btn:hover{
+
+.last-btn:hover {
 	opacity: 0.6;
 	transition-duration: 1s;
-    background: var(--bg-color);
+	background: var(--bg-color);
 }
 
 .newImg3 {
@@ -391,12 +396,12 @@ body {
 
 .img-text3 {
 	width: 50%;
-  font-size: 1.5vw;
-  float: left;
-  color: #1B1B1B ;
-  padding-left: 2%;
-  padding-right:2%; 
-  padding-top: 2%;
+	font-size: 1.5vw;
+	float: left;
+	color: #1B1B1B;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 2%;
 }
 
 .btn-2ndLast {
@@ -404,51 +409,52 @@ body {
 	margin-left: 20%;
 }
 
-.newImg:hover{
+.newImg:hover {
 	opacity: 0.6;
 }
 
 .goto-overlay-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 8px 20px;
-    background-color: var(--bg-color);
-    border-radius: 5px;
-    color: var(--text-color);
-    font-size: 15px;
-    margin: 0;
-    animation: 1.5s btn-to-top;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 8px 20px;
+	background-color: var(--bg-color);
+	border-radius: 5px;
+	color: var(--text-color);
+	font-size: 15px;
+	margin: 0;
+	animation: 1.5s btn-to-top;
 }
 
-@keyframes btn-to-top{
-    from{
-        margin-top: 70px;
-    }
-    top{
-        margin-top: 0px;
-    }
+@keyframes btn-to-top {
+	from {
+		margin-top: 70px;
+	}
+
+	top {
+		margin-top: 0px;
+	}
 }
 
-.goto-overlay:hover{
-    display: block;
+.goto-overlay:hover {
+	display: block;
 }
 
-.goto-overlay-btn:hover{
-    cursor: pointer;
-    background-color: blue;
+.goto-overlay-btn:hover {
+	cursor: pointer;
+	background-color: blue;
 }
 
 .goto-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.50);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.50);
 }
 
 .vi-img-head {
@@ -458,31 +464,32 @@ body {
 
 
 .logos-parent {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
 }
 
-.logos-parent div{
-            width: 2400px;
-            background-color: red;
-            animation: 15s logo-slider linear infinite;
-            animation-direction: alternate-reverse;
-        }
-        
-        .logos-parent div img{
-            width: 200px;
-            margin: -2px;
-        }
+.logos-parent div {
+	width: 2400px;
+	animation: 15s logo-slider linear infinite;
+	animation-direction: alternate;
+}
 
-        @keyframes logo-slider{
-            from{
-                margin-left: 0px;
-            }
-            to{
-                margin-left: calc(-2400px + 100vw);
-            }
-        }
+.logos-parent div img {
+	width: 200px;
+	margin: -2px;
+}
+
+@keyframes logo-slider {
+	from {
+		margin-left: 0px;
+	}
+
+	to {
+		margin-left: calc(-2400px + 100vw);
+	}
+}
+
 .vi-imgs-div {
-    position: relative;
+	position: relative;
 }

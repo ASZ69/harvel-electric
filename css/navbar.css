@@ -5,15 +5,15 @@
 }
 
 .sticky {
-	position: fixed;
-    z-index: 3;
-	top: 0px;
-	width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  width: 100%;
 }
 
 .navbar-space {
-	height: 49px;
-	display: none;
+  height: 49px;
+  display: none;
 }
 
 .navbar a {

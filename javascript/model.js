@@ -83,9 +83,9 @@ function buy() {
 
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "block";
-    
-//    var cartForm = document.getElementById("cartForm");
-//    closeBuy.style.display = "block";
+
+    //    var cartForm = document.getElementById("cartForm");
+    //    closeBuy.style.display = "block";
 }
 
 function closeBuy() {
@@ -114,32 +114,32 @@ function closeBuy() {
         mdPrice.style.marginTop = "30px";
         mdPrice.style.marginBottom = "30px";
     }, 2500);
-    
+
     var closeBuy = document.getElementById("closeBuy");
     closeBuy.style.display = "none";
-    
+
     var cartForm = document.getElementById("cartForm");
     cartForm.reset();
     cartForm.style.display = "block";
 }
 
-function calculateBill(){
+function calculateBill() {
     var mdPrice = document.getElementsByClassName("md-price")[0];
     var quantity = document.getElementById("ctQuantity");
     var ctPay = document.getElementById("ctPay");
-    ctPay.innerText = parseInt(mdPrice.innerText.replace( /[^\d.]/g,''))*quantity.value;
+    ctPay.innerText = parseInt(mdPrice.innerText.replace(/[^\d.]/g, '')) * quantity.value;
 }
 
-function orderNow(){
+function orderNow() {
     var cartForm = document.getElementById("cartForm");
     cartForm.style.display = "none";
-    
+
     var ctOrdered = document.getElementById("ctOrdered");
     ctOrdered.style.display = "block";
-    
+
     var mdPrice = document.getElementsByClassName("md-price")[0];
-    var price = parseInt(mdPrice.innerText.replace( /[^\d.]/g,''));
-    
+    var price = parseInt(mdPrice.innerText.replace(/[^\d.]/g, ''));
+
     var orderNo = ctOrdered.getElementsByTagName("h2")[0];
-    orderNo.innerText = "Ordered Number : " +parseInt((price*5)/4);
+    orderNo.innerText = "Ordered Number : " + parseInt((price * 5) / 4);
 }
