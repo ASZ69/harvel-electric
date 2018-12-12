@@ -1,37 +1,11 @@
-
-
-
+/* CSS Document */
 .about-panel {
-    display: grid;
-    
+	width: 100%;
+	height: 400px;
 }
 
-.about-logo {
-    grid-area: logo;
-    background-color: red;
-}
-
-.about-name {
-    grid-area: name;
-    background-color: red;
-}
-
-.about-h2-col2 {
-    grid-area: h2-cl2;
-    background-color: green;
-}
-
-.about-h4-col2-1 {
-    grid-area: h4-cl2-1;
-    background-color: yellow;
-}
-
-.about-h4-col2-2 {
-    grid-area: h4-cl2-2;
-    background-color: mediumvioletred;
-}
-
-.about-h4-col2-3 {
-    grid-area: h4-cl2-3;
-    background-color: yellowgreen;
+.ab-parent div {
+	height: 400px;
+	background-color: red;
+	border: 1px solid black;
 }
