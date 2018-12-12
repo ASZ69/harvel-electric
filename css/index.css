@@ -6,6 +6,7 @@
 body {
 	margin: 0;
 	padding: 0;
+    background-color: var(--body-color);
 }
 
 .top-div {
@@ -205,6 +206,11 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.50);
 }
 
+.cat-ul a {
+	text-decoration: none;
+    color: inherit;
+}
+
 .cat-ul li:hover {
 	background-color: var(--hover-color);
 	color: var(--text-color);
@@ -364,7 +370,7 @@ body {
 	text-align: center;
 }
 .last-btn{
-	background:#923E06;
+	background: var(--hover-color);
 	text-align: center;
 	border-radius: 5px;
 	padding: 10px 40px;
@@ -374,6 +380,7 @@ body {
 .last-btn:hover{
 	opacity: 0.6;
 	transition-duration: 1s;
+    background: var(--bg-color);
 }
 
 .newImg3 {

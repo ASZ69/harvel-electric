@@ -10,6 +10,12 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" 
+         rel = "stylesheet">
+<!--    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>-->
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
     <script src="../javascript/script.js"></script>
     <script src="../javascript/product.js"></script>
     <script src="../javascript/model.js"></script>
@@ -26,9 +32,9 @@
     <div class="navbar sticky" id="myNavbar">
         <a href="../index.html">Home</a>
         <a href="products.html#ac" class="active">All Products</a>
-        <a href="products.html#ac">Air Conditioner</a>
-        <a href="products.html#tv">TV</a>
-        <a href="products.html#laptop">Laptop</a>
+        <a href="products.html#laptop">Laptops</a>
+		<a href="products.html#ledTv">LED TV</a>
+		<a href="products.html#referegerator">Referegerators</a>
         <a href="contact.html">Contact Us</a>
         <a href="about.html">About</a>
         <a href="javascript:void(0);" class="navbar-btn" onclick="showListNav()">
@@ -237,6 +243,18 @@
                     </div>
                 </ul>
             </div>
+            
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Harvel-Product-Left-Long -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9879472653351292"
+                 data-ad-slot="5071270224"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
 
         </div>
 
@@ -4474,11 +4492,12 @@
     <div id="model" class="lg-model">
         <span class="close" onClick="closeModel()">X</span>
         <div class="model-left">
-            <img id="modelImg" src="../images/logo/logo.jpg" alt="Image">
+            <img id="modelImg" class="ui-widget-content" src="../images/logo/logo.jpg" alt="Image">
             <div class="model-zoom-btn">
                 <center>
                     <button onClick="modelImgZoomIn()">Zoom In</button>
                     <button onClick="modelImgZoomOut()">Zoom Out</button>
+                    <a>RESET</a>
                 </center>
             </div>
         </div>
@@ -4554,6 +4573,11 @@
                 scrollTop: 0
             }, "slow");
         });
+        
+        $(function() {
+            $( "#modelImg" ).draggable();
+        });
+        
     </script>
 
 </body>

@@ -82,6 +82,10 @@
     cursor: pointer;
 }
 
+.model-left .model-zoom-btn a {
+    margin-top: 10px;
+}
+
 .model-left .model-zoom-btn button:hover {
     background-color: var(--hover-color);
 }
@@ -89,7 +93,7 @@
 .model-left img {
     width: 100%;
     height: auto;
-    transition: 0.5s linear;
+    transition: 0.1s linear;
 }
 
 .model-border {
