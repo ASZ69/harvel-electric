@@ -257,10 +257,12 @@ body {
 	color: var(--text-color);
 	border: none;
 	text-decoration: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
 .button:hover {
 	opacity: 0.8;
+	background-color: var(--hover-color);
 }
 
 /*vi imgs*/
@@ -293,6 +295,7 @@ body {
 	display: inline-block;
 	float: left;
 	min-width: 390px;
+	
 }
 
 .head-font {
@@ -311,6 +314,11 @@ body {
 .set {
 	margin-top: 8%;
 	text-align: center;
+	width:100%; 
+	max-width: 250px;
+	height: auto; 
+	max-height: 150px; 
+	vertical-align: middle;
 }
 
 .set-2 {
@@ -336,6 +344,7 @@ body {
 	max-width: 200px;
 	height: auto;
 	max-height: 200px;
+	align-content: center;
 }
 
 .myImg:hover {
@@ -393,6 +402,10 @@ body {
 	height: auto;
 	padding: 4%;
 }
+.newImg3:hover{
+	opacity:.6;
+	transition-duration: 1.5s;
+}
 
 .img-text3 {
 	width: 50%;
@@ -411,8 +424,14 @@ body {
     border: 1px solid red;
 }
 
-.newImg:hover {
+.longImg:hover {
 	opacity: 0.6;
+	transition-duration: 1.5s;
+}
+.longImg {
+	width: 50vw; 
+	min-width: 300px;
+	float: left;
 }
 
 .goto-overlay-btn {
@@ -421,13 +440,14 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 8px 20px;
-	background-color: var(--bg-color);
+	background-color:rgba(0,0,0,0.87);
 	border-radius: 5px;
 	color: var(--text-color);
 	font-size: 15px;
 	margin: 0;
 	animation: 1.5s btn-to-top;
 	text-decoration: none;
+	 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
 @keyframes btn-to-top {
@@ -446,7 +466,7 @@ body {
 
 .goto-overlay-btn:hover {
 	cursor: pointer;
-	background-color: blue;
+	background-color: rgba(5,189,158,0.79);
 }
 
 .goto-overlay {
@@ -471,7 +491,7 @@ body {
 }
 
 .logos-parent div {
-	width: 5200px;
+	width: 5720px;
 	animation: 25s logo-slider linear infinite;
 	animation-direction: alternate;
 }
@@ -479,6 +499,8 @@ body {
 .logos-parent div img {
 	width: 200px;
 	margin: -2px;
+	padding-left:10px;
+	padding-right: 10px;
 }
 
 @keyframes logo-slider {
@@ -487,7 +509,7 @@ body {
 	}
 
 	to {
-		margin-left: calc(-5200px + 100vw);
+		margin-left: calc(-5720px + 100vw);
 	}
 }
 
@@ -500,3 +522,4 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
