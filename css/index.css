@@ -378,7 +378,7 @@ body {
 }
 
 .last-div {
-
+     position: relative;
 	text-align: center;
 }
 
@@ -389,6 +389,7 @@ body {
 	padding: 10px 40px;
 	color: var(--text-color);
 	border: none;
+	text-decoration: none;
 }
 
 .last-btn:hover {
