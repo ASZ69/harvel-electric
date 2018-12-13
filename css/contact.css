@@ -51,25 +51,31 @@ textarea {
 	max-width: 200px;
 }
 
+::placeholder {
+  color: var(--text-color);
+}
+
 textarea {
 	height: 150px;
 	margin-left: 10px;
 }
 
 .btn {
-	background: rgba(200,200,200,0.93);
+    background-color: rgba(0,0,0,0.65);
 	text-align: center;
-	border-color: rgba(50,50,50,1.00);
 	border-radius: 5px;
+	color: var(--text-color);
+	border: none;
+	text-decoration: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 	padding: 15px 60px;
-	color: rgba(27,27,27,0.94);
 	cursor: pointer;
 	text-transform: uppercase;
 	margin-left: 20px;
 }
 
 .btn:hover {
-	opacity: 0.5;
+	background-color: var(--hover-color);
 }
 
 .btn:active {
