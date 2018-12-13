@@ -1,14 +1,15 @@
 /* CSS Document */
 .about-panel {
-	width: 100%;
-	height: 350px;
+    width: 100%;
+    height: 350px;
 }
 
-.ab-parent > div {
-	height: 350px;
+.ab-parent>div {
+    height: 350px;
     background-color: black;
     border-bottom: 1px solid white;
 }
+
 .ab-sc .sc-parent img {
     display: block;
     width: 100%;
@@ -26,7 +27,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 40px;
     height: auto;
 }
@@ -52,13 +53,13 @@
     position: relative;
 }
 
-.ab-heading > div{
+.ab-heading>div {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.ab-logo-parent img{
+.ab-logo-parent img {
     width: 150px;
     height: auto;
 }
@@ -69,7 +70,7 @@
     margin-top: 0;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
@@ -77,39 +78,39 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 
 
-.ab-map > div{
+.ab-map>div {
     width: 75%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .mapouter {
-  text-align: right;
+    text-align: right;
     height: 100%;
-  width: 100%;
+    width: 100%;
 }
 
 .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
+    overflow: hidden;
+    background: none !important;
     height: 100%;
-  width: 100%;
+    width: 100%;
 }
 
 .gmap_iframe {
-	width: 100%;
+    width: 100%;
     height: 100%;
-	frameborder: 0; 
-	scrolling: no; 
-	marginheight: 0;
-	marginwidth: 0;
+    frameborder: 0;
+    scrolling: no;
+    marginheight: 0;
+    marginwidth: 0;
 }
 
 

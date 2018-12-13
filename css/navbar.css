@@ -51,10 +51,10 @@
   }
 
   .navbar.nav-list .navbar-btn {
-      margin-top: -336px;
-      display: inline-block;
-      padding: 14px 17px;
-      float: right;
+    margin-top: -336px;
+    display: inline-block;
+    padding: 14px 17px;
+    float: right;
   }
 
   .navbar.nav-list a {

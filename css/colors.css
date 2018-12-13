@@ -1,9 +1,9 @@
 /* CSS Document */
-:root{
-/*    declaring some variables for color*/
+:root {
+    /*    declaring some variables for color*/
     --bg-color: black;
     --hover-color: #05BD9E;
-    --hover-pre-color: rgba(5,218,182,0.65);
+    --hover-pre-color: rgba(5, 218, 182, 0.65);
     --text-color: white;
     --primary-color: #DDDDDD;
     --body-color: #fff;
