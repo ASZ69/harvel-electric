@@ -79,20 +79,8 @@ body {
   height: 400px;
 }
 
-.grid-container {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-areas:
-    'box1 box1 box1 box1 box1 box1';
-}
-
 .grid-container>div {
   height: auto;
-}
-
-.grid-box-1 {
-  grid-area: box1;
 }
 
 .box-heading {
@@ -127,7 +115,7 @@ body {
 
 .main-team div:hover h5 {
   display: block;
-  animation: 3s top-to-down linear;
+  animation: 1s top-to-down linear;
 }
 
 .main-team div h5 {

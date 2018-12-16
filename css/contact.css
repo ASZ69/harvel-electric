@@ -1,84 +1,80 @@
-* {
-	margin: 0;
-	padding: 0;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	box-sizing: border-box;
+/* CSS Document */
+*{
+    margin: 0;
 }
 
-.bg-img {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	z-index: -2;
-	background-size: cover;
+body{
+    background-color: whitesmoke;
 }
 
-.c-box {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	padding: 0 20px;
-	
+.contact-parent {
+    width: 100%;
+    height: auto;
+    margin-top: 48px;
+}
+
+.contact-parent h1 {
+    width: 70%;
+    font-size: 4vw;
+    border-bottom: 5px dashed black;
 }
 
 .contact-form {
-	max-width: 450px;
-	margin: 0 auto;
-	background: rgba(21,114,95,0.30);
-	padding: 30px;
-	border-radius: 5px;
-	display: flex ;
-	box-shadow: 0 0 10px gray;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.input-fields {
-	display: flex;
-	flex-direction: column;
-	margin-right: 4%;
+.contact-form > div{
+    width: 100%;
+    padding: 10px 1px;
 }
 
-.input,
-textarea {
-	margin: 10px 0;
-	background: transparent;
-	border: 0;
-	border-bottom: 2px solid #0EC3B5;
-	padding: 10px;
-	color: #c5ecfd;
-	width: 100%;
-	max-height: 200px;
-	max-width: 200px;
+label{
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: bolder;
 }
 
-::placeholder {
-	color: #868787;
+.contact-form > div input,textarea{
+    float: right;
+    width: 80%;
+    margin-right: 5%;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    background-color: inherit;
+    /*    for variable text area*/
+    min-width: 80%;
+    max-width: 80%;
+    max-height: 150px;
+    min-height: 10px;
 }
 
-textarea {
-	height: 150px;
-	margin-left: 10px;
-}
-
-.btn {
-	background-color: rgba(0, 0, 0, 0.65);
+.contact-form .btn{
+    margin: 25px 10px;
+    width: 70%;
+   	background: var(--bg-color);
 	text-align: center;
 	border-radius: 5px;
+	padding: 10px 25px;
 	color: var(--text-color);
 	border: none;
 	text-decoration: none;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
-	padding: 15px 60px;
-	cursor: pointer;
-	text-transform: uppercase;
-	margin-left: 20px;
+    cursor: pointer;
 }
 
-.btn:hover {
-	background-color: var(--hover-color);
+.contact-form .btn:hover{
+    background-color: var(--hover-color);
+}
+.c-right {
+    padding-top: 10%;
 }
 
-.btn:active {
-	border: 2px groove #00056A;
+.right-parent {
+    width: 100%;
+    height: 340px;
 }
+
+

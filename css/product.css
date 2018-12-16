@@ -250,6 +250,11 @@ body {
     animation: 0.5s card-overlay linear;
 }
 
+.card-overlay a{
+    text-decoration: none;
+    color: white;
+}
+
 .card .card-image {
     width: 100%;
     height: auto;
