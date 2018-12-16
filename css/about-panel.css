@@ -10,28 +10,6 @@
     border-bottom: 1px solid white;
 }
 
-.ab-sc .sc-parent img {
-    display: block;
-    width: 100%;
-    margin: 5px 0px;
-    border-radius: 50px;
-    transition: 1s linear;
-}
-
-.ab-sc .sc-parent img:hover {
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.ab-sc .sc-parent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: auto;
-}
-
 .ab-sc {
     position: relative;
 }
@@ -81,8 +59,6 @@
     transform: translate(-50%, -50%);
 }
 
-
-
 .ab-map>div {
     width: 75%;
     position: absolute;
@@ -112,8 +88,6 @@
     marginheight: 0;
     marginwidth: 0;
 }
-
-
 
 .ab-map-parent {
     border-top: 20px solid black;
