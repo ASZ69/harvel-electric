@@ -250,7 +250,7 @@ body {
     animation: 0.5s card-overlay linear;
 }
 
-.card-overlay a{
+.card-overlay a {
     text-decoration: none;
     color: white;
 }

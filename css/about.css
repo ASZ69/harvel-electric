@@ -9,7 +9,7 @@ body {
 
 .main-div {
   background: #f1f1f1;
-  text-align: center;	
+  text-align: center;
 }
 
 .main-div h1 {
@@ -25,7 +25,7 @@ body {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
-  padding: 20px;	
+  padding: 20px;
 }
 
 .mini-div {
@@ -36,7 +36,7 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.4s;
-  text-align: justify;	
+  text-align: justify;
 }
 
 .mini-div:hover {
@@ -74,6 +74,7 @@ body {
   border-bottom: 4px solid var(--hover-color);
   font-size: 20px;
 }
+
 .box-heading {
   display: inline-block;
   text-transform: uppercase;

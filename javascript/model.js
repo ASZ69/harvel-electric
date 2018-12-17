@@ -25,7 +25,7 @@ function openModel(id, no) {
     var mdDiscrip = mdBottom.getElementsByTagName("a")[0];
 
     mdDiscrip.href = cardDownload.href;
-    
+
     mdImg.style.width = "100%";
 
     mdImg.src = cardImg.src;
