@@ -14,7 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <!--    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
     <script src="../javascript/script.js"></script>
@@ -4467,68 +4466,71 @@
 
     </div>
 
-    <!--    about start -->
+	<!--    about start -->
 
-
-    <div class="about-panel">
-        <div class="line ab-parent">
-            <div class="box-2 relative">
-                <div class="ab-logo-parent">
-                    <img src="../images/logo/logo.png" alt="Logo">
-                    <h3>Harvel-Electric</h3>
-                </div>
-            </div>
-            <div class="box-2 ab-heading">
-                <div>
-                    <h2>Our Services</h2>
-                    <a>
-                        <h4>Services During Sale</h4>
-                    </a>
-                    <a>
-                        <h4>Services After Sale</h4>
-                    </a>
-                    <a>
-                        <h4>Technological Support</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="box-2 ab-heading">
-                <div>
-                    <h2>Our Team</h2>
-                    <a>
-                        <h4>Team Members</h4>
-                    </a>
-                    <a>
-                        <h4>Company Details</h4>
-                    </a>
-                    <a>
-                        <h4>Team Co-ordination</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="box-2 ab-heading">
-                <div>
-                    <h2>Help &amp; Support</h2>
-                    <a>
-                        <h4>Our Community</h4>
-                    </a>
-                    <a>
-                        <h4>Fair Price List</h4>
-                    </a>
-                    <a>
-                        <h4>About Harvel-Electric</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="box-4">
-				<div class="ab-map-parent">
-                    <img src="../images/about/map/map-small.png" width="100%" height="100%" alt="Map">
+	<div class="about-panel">
+		<div class="line ab-parent">
+			<div class="box-2 relative">
+				<div class="ab-logo-parent">
+					<a href="index.html"><img src="../images/logo/logo.png" alt="Logo"></a>
+					<h3>Harvel-Electric</h3>
 				</div>
 			</div>
+			<div class="box-2 ab-heading">
+				<div>
+					<h2>Our Services</h2>
+					<a href="../html/about.html#serviceDuringSale">
+						<h4>Services During Sale</h4>
+					</a>
+					<a href="../html/about.html#afterSaleServiceSupport">
+						<h4>Services After Sale</h4>
+					</a>
+					<a href="../html/about.html#technologicalSupport">
+						<h4>Technological Support</h4>
+					</a>
+				</div>
+			</div>
+			<div class="box-2 ab-heading">
+				<div>
+					<h2>Our Team</h2>
+					<a href="../html/about.html">
+						<h4>Team Members</h4>
+					</a>
+					<a href="../html/about.html#aboutHE">
+						<h4>Company Details</h4>
+					</a>
+					<a href="../html/about.html#ourCommunity">
+						<h4>Team Co-ordination</h4>
+					</a>
+				</div>
+			</div>
+			<div class="box-2 ab-heading">
+				<div>
+					<h2>Help &amp; Support</h2>
+					<a href="../html/about.html#ourCommunity">
+						<h4>Our Community</h4>
+					</a>
+					<a href="../download-discription-items/price-list/price-list.xlsx">
+						<h4>Fair Price List</h4>
+					</a>
+					<a href="../html/about.html#aboutHE">
+						<h4>About Harvel-Electric</h4>
+					</a>
+				</div>
+			</div>
+			<div class="box-4">
+				<div class="ab-map-parent">
+                    
+                    <img src="../images/about/map/map-small.png" width="100%" height="100%" alt="Map">
+                    
+				</div>
 
-        </div>
-    </div>
-    <!--    about end-->
+			</div>
+
+		</div>
+	</div>
+	<!--    about end-->
+
 
     <!--    footer-->
     <div class="footer-div">
@@ -4544,7 +4546,6 @@
                 <center>
                     <button onClick="modelImgZoomIn()">Zoom In</button>
                     <button onClick="modelImgZoomOut()">Zoom Out</button>
-                    <a>RESET</a>
                 </center>
             </div>
         </div>
@@ -4561,7 +4562,7 @@
             <div id="mdCart" class="model-r-cart model-r-item">
                 <span id="closeBuy" class="close hide" onClick="closeBuy()">X</span>
                 <form id="cartForm" class="ct-form" action="javascript:orderNow()">
-                    <center>
+                    
                         <div>
                             <label for="ctName">Enter Name: </label>
                             <input type="text" id="ctName" required>
@@ -4588,6 +4589,7 @@
                                 <h3 id="ctPay">0/-</h3>
                             </b>
                         </div>
+                    <center>
                         <input type="submit" value="ORDER NOW">
                     </center>
                 </form>
@@ -4603,7 +4605,7 @@
             <div id="mdBottom" class="model-r-bottom model-r-item">
                 <center>
                     <button class="md-buy" onClick="buy()">BUY NOW</button>
-                    <button class="md-descrip">DOWNLOAD DESCRIPTION</button>
+                    <a><button class="md-descrip">DOWNLOAD DESCRIPTION</button></a>
                     <p>Easy Home Delivery With Cheap Prices</p>
                 </center>
             </div>

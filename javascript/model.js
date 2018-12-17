@@ -14,13 +14,18 @@ function openModel(id, no) {
     var cardCompanyDiscount = card.getElementsByTagName("p")[1];
     var cardDiscount = cardCompanyDiscount.getElementsByTagName("span")[0];
     var cardCompany = cardCompanyDiscount.innerText.replace(cardDiscount.innerHTML, "");
+    var cardDownload = card.getElementsByTagName("a")[0];
 
     mdImg = document.getElementById("modelImg");
     var mdCompany = document.getElementsByClassName("md-company")[0];
     var mdName = document.getElementsByClassName("md-name")[0];
     var mdPrice = document.getElementsByClassName("md-price")[0];
     var mdDiscount = document.getElementsByClassName("md-discount")[0];
+    var mdBottom = document.getElementById("mdBottom");
+    var mdDiscrip = mdBottom.getElementsByTagName("a")[0];
 
+    mdDiscrip.href = cardDownload.href;
+    
     mdImg.style.width = "100%";
 
     mdImg.src = cardImg.src;
